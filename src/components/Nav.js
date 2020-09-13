@@ -24,7 +24,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
               }}
               to="/Generic"
             >
-              Generic Page
+              Team
             </Link>
           </li>
           <li>

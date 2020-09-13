@@ -30,17 +30,15 @@ const IndexPage = () => (
             <img src={pic1} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Magna arcu feugiat</h2>
+            <h2 className="major">Who are we?</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              Established in 1972, Asian Cultural Union remains the only Asian 
+              umbrella group at NYU and is one of the largest and  most prominent 
+              organizations in the history of the university.
             </p>
-            <a href="/#" className="special">
+            {/* <a href="/#" className="special">
               Learn more
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -51,17 +49,14 @@ const IndexPage = () => (
             <img src={pic2} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Tempus adipiscing</h2>
+            <h2 className="major">Our Mission</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              Our mission is to celebrate and promote Asian cultures cultural, social, and 
+              business-oriented events, as well as community service projects.
             </p>
-            <a href="/#" className="special">
+            {/* <a href="/#" className="special">
               Learn more
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -72,29 +67,25 @@ const IndexPage = () => (
             <img src={pic3} alt="" />
           </a>
           <div className="content">
-            <h2 className="major">Nullam dignissim</h2>
+            <h2 className="major">Why ACU?</h2>
             <p>
-              Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-              turpis ante, nullam sit amet turpis non, sollicitudin posuere
-              urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-              dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-              cursus.
+              Because of our diverse membership, ACU seeks to promote the 
+              learning and understanding of individual heritages, while simultaneously 
+              creating unity among students of all ethnic backgrounds.
             </p>
-            <a href="/#" className="special">
+            {/* <a href="/#" className="special">
               Learn more
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
 
       <section id="four" className="wrapper alt style1">
         <div className="inner">
-          <h2 className="major">Vitae phasellus</h2>
+          <h2 className="major">Who can join?</h2>
           <p>
-            Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-            Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-            egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-            in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+            ACU is an all-inclusive organization that welcomes members of all backgrounds. 
+            ACU was founded upon and continues to operate under the precepts of racial and social tolerance, indiscrimination, and equality.
           </p>
           <section className="features">
             <article>
