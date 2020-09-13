@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-solidstate/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Asian Cultural Union at NYU',
   subHeading: 'NYU\'s Largest Asian Umbrella Organization',
   // social
@@ -17,7 +17,7 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/acu-nyu',
     },
-    {
+    { 
       icon: 'fa-instagram',
       name: 'Instagram',
       url: 'https://instagram.com/nyu_acu',
