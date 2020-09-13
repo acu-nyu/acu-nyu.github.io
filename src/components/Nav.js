@@ -22,12 +22,12 @@ export default function Nav({ onMenuToggle = () => {} }) {
               onClick={e => {
                 onMenuToggle();
               }}
-              to="/Generic"
+              to="/Team"
             >
               Team
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               onClick={e => {
                 onMenuToggle();
@@ -36,7 +36,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
             >
               Elements
             </Link>
-          </li>
+          </li> */}
         </ul>
         <a
           className="close"
