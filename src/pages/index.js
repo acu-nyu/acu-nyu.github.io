@@ -7,6 +7,7 @@ import logo from '../assets/images/logo.png';
 import icon1 from '../assets/images/icon1.jpg';
 import icon2 from '../assets/images/icon2.jpg';
 import icon3 from '../assets/images/icon3.jpg';
+import f19team from '../assets/images/f19-team.jpg';
 
 import event_ghibli from '../assets/images/event_ghibli.jpg';
 import event_palentines from '../assets/images/event_palentines.jpg';
@@ -85,17 +86,26 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="four" className="wrapper alt style1">
+      <section id="four" className="wrapper alt spotlight style5">
         <div className="inner">
-          <h2 className="major">Who can join? | Recent Events</h2>
-          <p>
-            ACU is an all-inclusive organization that welcomes members of all
-            backgrounds. ACU was founded upon and continues to operate under the
-            precepts of racial and social tolerance, indiscrimination, and
-            equality.
-          </p>
+          <div className="image">
+            <img src={f19team} alt="" />
+          </div>
+          <div className="content">
+            <h2 className="major">Who can join?</h2>
+            <p>
+              ACU is an all-inclusive organization that welcomes members of all
+              backgrounds. ACU was founded upon and continues to operate under
+              the precepts of racial and social tolerance, indiscrimination, and
+              equality.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="five" className="wrapper style1">
+        <div className="inner">
+          <h2 className="major">Recent Events</h2>
           <section className="features">
-            {/* <h2 className="major">Events</h2> */}
             <article>
               <div className="image">
                 <img src={event_ghibli} alt="" />
@@ -162,14 +172,14 @@ const IndexPage = () => (
                 Learn more
               </a> */}
             </article>
-          </section>
-          {/* <ul className="actions">
+            {/* <ul className="actions">
             <li>
               <a href="/#" className="button">
                 Browse All
               </a>
             </li>
           </ul> */}
+          </section>
         </div>
       </section>
     </section>

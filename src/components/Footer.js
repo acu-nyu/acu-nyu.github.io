@@ -32,7 +32,7 @@ export default function Footer() {
           </li>
         </ul>
         <ul className="copyright">
-          <li>&copy; Solid State. All rights reserved.</li>
+          <li>&copy; Asian Cultural Union at NYU. All rights reserved.</li>
           <li>
             Design: <a href="http://html5up.net">HTML5 UP</a>
           </li>
