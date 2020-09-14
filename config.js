@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'ACU at NYU', // <title>
-  manifestName: 'SolidState',
+  manifestName: 'Official Website for ACU, NYU\'s Largest Umbrella Organization',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',

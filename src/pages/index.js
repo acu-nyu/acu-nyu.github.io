@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.png';
 
 import icon1 from '../assets/images/icon1.jpg';
 import icon2 from '../assets/images/icon2.jpg';
@@ -29,9 +29,9 @@ const IndexPage = () => (
     <section id="wrapper">
       <section id="one" className="wrapper spotlight style1">
         <div className="inner">
-          <a href="/#" className="image">
+          <div className="image">
             <img src={icon1} alt="" />
-          </a>
+          </div>
           <div className="content">
             <h2 className="major">Who are we?</h2>
             <p>
@@ -48,9 +48,9 @@ const IndexPage = () => (
 
       <section id="two" className="wrapper alt spotlight style2">
         <div className="inner">
-          <a href="/#" className="image">
+          <div className="image">
             <img src={icon2} alt="" />
-          </a>
+          </div>
           <div className="content">
             <h2 className="major">Our Mission</h2>
             <p>
@@ -67,9 +67,9 @@ const IndexPage = () => (
 
       <section id="three" className="wrapper spotlight style3">
         <div className="inner">
-          <a href="/#" className="image">
+          <div className="image">
             <img src={icon3} alt="" />
-          </a>
+          </div>
           <div className="content">
             <h2 className="major">Why ACU?</h2>
             <p>
@@ -97,9 +97,9 @@ const IndexPage = () => (
           <section className="features">
             {/* <h2 className="major">Events</h2> */}
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={event_ghibli} alt="" />
-              </a>
+              </div>
               <h3 className="major">Ghibli Getaway</h3>
               <p>
                 Play carnival games like Pin The Face On No Face, Totoro Relay,
@@ -113,42 +113,50 @@ const IndexPage = () => (
               </a> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={event_palentines} alt="" />
-              </a>
+              </div>
               <h3 className="major">Palentines</h3>
               <p>
-                Come out for some extraordinary treats!  And by treats, I mean our lovely E-Board 
-                members that will be raffled off for Valentine's day suitors. 
-                But there will be good food too of course. 
+                Come out for some extraordinary treats! And by treats, I mean
+                our lovely E-Board members that will be raffled off for
+                Valentine's day suitors. But there will be good food too of
+                course.
               </p>
               {/* <a href="/#" className="special">
                 Learn more
               </a> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={event_idol} alt="" />
-              </a>
+              </div>
               <h3 className="major">ACU Idol 2019</h3>
               <p>
-                Every year, we hold a singing competition for talented individuals to compete for the title of ACU Idol! There will be a panel of judges, very official!
-                There will also be additional performances from our lovely E-Board members but we're not professionals so please cheer even if we're not the best!
-                As one of biggest events of the semester, there'll be a ton of food so come hang out with us in our last event of the semester!
+                Every year, we hold a singing competition for talented
+                individuals to compete for the title of ACU Idol! There will be
+                a panel of judges, very official! There will also be additional
+                performances from our lovely E-Board members but we're not
+                professionals so please cheer even if we're not the best! As one
+                of biggest events of the semester, there'll be a ton of food so
+                come hang out with us in our last event of the semester!
               </p>
               {/* <a href="/#" className="special">
                 Learn more
               </a> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={event_smash} alt="" />
-              </a>
+              </div>
               <h3 className="major">Super Smash Bros Ultimate Tournament</h3>
               <p>
-                Stop BOWS(ER)-ing social media and come out to our Super Smash Bros Ultimate Tournament hosted with the EAS 
-                department for a FREE-to-enter tournament with CASH prizes and free food! The East Asian Studies department 
-                will say a few words about their wonderful courses to give you more of an INKLING about what they’re offering next Spring.
+                Stop BOWS(ER)-ing social media and come out to our Super Smash
+                Bros Ultimate Tournament hosted with the EAS department for a
+                FREE-to-enter tournament with CASH prizes and free food! The
+                East Asian Studies department will say a few words about their
+                wonderful courses to give you more of an INKLING about what
+                they’re offering next Spring.
               </p>
               {/* <a href="/#" className="special">
                 Learn more

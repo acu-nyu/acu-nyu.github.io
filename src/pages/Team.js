@@ -1,7 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import pic4 from '../assets/images/pic04.jpg';
+
+import cassidy from '../assets/images/cassidy.jpg';
+import jonah from '../assets/images/jonah.jpg';
+import yaoli from '../assets/images/yaoli.jpg';
+import kathleen from '../assets/images/kathleen.jpg';
+
 import pic5 from '../assets/images/pic05.jpg';
 
 const IndexPage = () => (
@@ -16,39 +21,6 @@ const IndexPage = () => (
 
       <div className="wrapper">
         <div className="inner">
-          {/* <h3 className="major">Lorem ipsum dolor</h3>
-          <p>
-            Morbi mattis mi consectetur tortor elementum, varius pellentesque
-            velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac
-            scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis
-            lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo.
-            Maecenas sagittis felis ac sagittis semper. Curabitur purus leo
-            donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo.
-            Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci
-            fringilla tincidunt. Aliquam eleifend ligula non velit accumsan
-            cursus. Etiam ut gravida sapien.
-          </p>
-
-          <p>
-            Vestibulum ultrices risus velit, sit amet blandit massa auctor sit
-            amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis
-            id vel diam. Praesent sit amet posuere risus, eu faucibus lectus.
-            Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.
-            Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id
-            quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor
-            consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec
-            felis elementum varius.
-          </p>
-
-          <h3 className="major">Vitae phasellus</h3>
-          <p>
-            Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-            Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-            egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-            in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-          </p> */}
-
           {/* Co-Presidents: Jonah & Cassidy
           VP of Events: Youli
           VP of Marketing: Kathleen
@@ -57,108 +29,174 @@ const IndexPage = () => (
 
           <section className="features">
             <article>
-              <a href="/#" className="image">
-                <img src={pic4} alt="" />
-              </a>
+              <div className="image">
+                <img src={cassidy} alt="" width="256" length="256" />
+              </div>
               <h3 className="major">Cassidy Syao | Co-President</h3>
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic5} alt="" />
-              </a>
+              <div className="image">
+                <img src={jonah} alt="" />
+              </div>
               <h3 className="major">Jonah Sun | Co-President</h3>
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Youli | VP of Events</h3>
-              <p>
+              <div className="image">
+                <img src={yaoli} alt="" />
+              </div>
+              <h3 className="major">Youli Yao | VP of Events</h3>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
-                <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Kathleen | VP of Marketing</h3>
-              <p>
+              <div className="image">
+                <img src={kathleen} alt="" />
+              </div>
+              <h3 className="major">Kathleen Shao | VP of Marketing</h3>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
+              </div>
+              <h3 className="major">Deborah Wei</h3>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
+              </div>
+              <h3 className="major">Crystal Gao</h3>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
+              </div>
+              <h3 className="major">Dorothy Rong</h3>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
             </article>
             <article>
-              <a href="/#" className="image">
+              <div className="image">
                 <img src={pic5} alt="" />
-              </a>
-              <h3 className="major">Nisl placerat</h3>
-              <p>
+              </div>
+              <h3 className="major">Elton Zhu</h3>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Vincent Yu</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Scarlett Jiang</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Coco Xu</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Sam Ye</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Lucy Lee</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Candice Huang</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Caroline Tian</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Lauren Gao</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={pic5} alt="" />
+              </div>
+              <h3 className="major">Matthew Apuya</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
             </article>
           </section>
         </div>
