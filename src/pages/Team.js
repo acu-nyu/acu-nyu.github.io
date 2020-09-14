@@ -182,7 +182,7 @@ const IndexPage = () => (
               <div className="image">
                 <img src={pic5} alt="" />
               </div>
-              <h3 className="major">Lauren Gao</h3>
+              <h3 className="major">Lauren Guo</h3>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
