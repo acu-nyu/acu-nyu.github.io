@@ -12,6 +12,7 @@ export default function Footer() {
               className="icon fa-instagram"
               href="https://instagram.com/nyu_acu"
               alt="Instagram"
+              target="_blank"
             ></a>
           </li>
 
@@ -20,6 +21,7 @@ export default function Footer() {
               className="icon fa-facebook"
               href="https://www.facebook.com/nyu.acu/"
               alt="Facebook"
+              target="_blank"
             ></a>
           </li>
 
@@ -28,6 +30,7 @@ export default function Footer() {
               className="icon fa-github"
               href="https://github.com/acu-nyu/"
               alt="GitHub"
+              target="_blank"
             ></a>
           </li>
         </ul>
