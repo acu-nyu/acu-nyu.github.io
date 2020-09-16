@@ -16,6 +16,7 @@ import coco from '../assets/images/e-board/coco.jpg';
 import sam from '../assets/images/e-board/sam.jpg';
 import lucy from '../assets/images/e-board/lucy.jpg';
 import elim from '../assets/images/e-board/elim.jpg';
+import catherine from '../assets/images/e-board/catherine.jpg'
 import candice from '../assets/images/e-board/candice.jpg';
 import caroline from '../assets/images/e-board/caroline.jpg';
 import lauren from '../assets/images/e-board/lauren.jpg';
@@ -175,6 +176,16 @@ const IndexPage = () => (
                 <img src={elim} alt="" />
               </div>
               <h3 className="major">Elim Wu</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={catherine} alt="" />
+              </div>
+              <h3 className="major">Catherine Nguyen</h3>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
