@@ -9,10 +9,10 @@ import icon2 from '../assets/images/icon2.jpg';
 import icon3 from '../assets/images/icon3.jpg';
 import f19team from '../assets/images/f19-team.jpg';
 
-import event_ghibli from '../assets/images/event_ghibli.jpg';
-import event_palentines from '../assets/images/event_palentines.jpg';
-import event_idol from '../assets/images/event_idol.jpg';
-import event_smash from '../assets/images/event_smash.jpg';
+import event_ghibli from '../assets/images/events/event_ghibli.jpg';
+import event_palentines from '../assets/images/events/event_palentines.jpg';
+import event_idol from '../assets/images/events/event_idol.jpg';
+import event_smash from '../assets/images/events/event_smash.jpg';
 
 import config from '../../config';
 const IndexPage = () => (

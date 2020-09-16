@@ -2,12 +2,24 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import cassidy from '../assets/images/cassidy.jpg';
-import jonah from '../assets/images/jonah.jpg';
-import yaoli from '../assets/images/yaoli.jpg';
-import kathleen from '../assets/images/kathleen.jpg';
-
-import pic5 from '../assets/images/pic05.jpg';
+import cassidy from '../assets/images/e-board/cassidy.jpg';
+import jonah from '../assets/images/e-board/jonah.jpg';
+import yaoli from '../assets/images/e-board/yaoli.jpg';
+import kathleen from '../assets/images/e-board/kathleen.jpg';
+import deborah from '../assets/images/e-board/deborah.jpg';
+import crystal from '../assets/images/e-board/crystal.jpg';
+import dorothy from '../assets/images/e-board/dorothy.jpg';
+import elton from '../assets/images/e-board/elton.jpg';
+import vincent from '../assets/images/e-board/vincent.jpg';
+import scarlett from '../assets/images/e-board/scarlett.jpg';
+import coco from '../assets/images/e-board/coco.jpg';
+import sam from '../assets/images/e-board/sam.jpg';
+import lucy from '../assets/images/e-board/lucy.jpg';
+import elim from '../assets/images/e-board/elim.jpg';
+import candice from '../assets/images/e-board/candice.jpg';
+import caroline from '../assets/images/e-board/caroline.jpg';
+import lauren from '../assets/images/e-board/lauren.jpg';
+import matthew from '../assets/images/e-board/matthew.png';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -70,7 +82,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={deborah} alt="" />
               </div>
               <h3 className="major">Deborah Wei</h3>
               {/* <p>
@@ -80,7 +92,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={crystal} alt="" />
               </div>
               <h3 className="major">Crystal Gao</h3>
               {/* <p>
@@ -90,7 +102,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={dorothy} alt="" />
               </div>
               <h3 className="major">Dorothy Rong</h3>
               {/* <p>
@@ -100,7 +112,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={elton} alt="" />
               </div>
               <h3 className="major">Elton Zhu</h3>
               {/* <p>
@@ -110,7 +122,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={vincent} alt="" />
               </div>
               <h3 className="major">Vincent Yu</h3>
               {/* <p>
@@ -120,7 +132,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={scarlett} alt="" />
               </div>
               <h3 className="major">Scarlett Jiang</h3>
               {/* <p>
@@ -130,7 +142,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={coco} alt="" />
               </div>
               <h3 className="major">Coco Xu</h3>
               {/* <p>
@@ -140,7 +152,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={sam} alt="" />
               </div>
               <h3 className="major">Sam Ye</h3>
               {/* <p>
@@ -150,7 +162,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={lucy} alt="" />
               </div>
               <h3 className="major">Lucy Lee</h3>
               {/* <p>
@@ -160,7 +172,17 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={elim} alt="" />
+              </div>
+              <h3 className="major">Elim Wu</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={candice} alt="" />
               </div>
               <h3 className="major">Candice Huang</h3>
               {/* <p>
@@ -170,7 +192,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={caroline} alt="" />
               </div>
               <h3 className="major">Caroline Tian</h3>
               {/* <p>
@@ -180,7 +202,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={lauren} alt="" />
               </div>
               <h3 className="major">Lauren Guo</h3>
               {/* <p>
@@ -190,7 +212,7 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={pic5} alt="" />
+                <img src={matthew} alt="" />
               </div>
               <h3 className="major">Matthew Apuya</h3>
               {/* <p>

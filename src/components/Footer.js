@@ -13,6 +13,7 @@ export default function Footer() {
               href="https://instagram.com/nyu_acu"
               alt="Instagram"
               target="_blank"
+              rel="noreferrer"
             ></a>
           </li>
 
@@ -22,6 +23,7 @@ export default function Footer() {
               href="https://www.facebook.com/nyu.acu/"
               alt="Facebook"
               target="_blank"
+              rel="noreferrer"
             ></a>
           </li>
 
@@ -31,6 +33,7 @@ export default function Footer() {
               href="https://github.com/acu-nyu/"
               alt="GitHub"
               target="_blank"
+              rel="noreferrer"
             ></a>
           </li>
         </ul>
