@@ -21,6 +21,10 @@ import candice from '../assets/images/e-board/candice.jpg';
 import caroline from '../assets/images/e-board/caroline.jpg';
 import lauren from '../assets/images/e-board/lauren.jpg';
 import matthew from '../assets/images/e-board/matthew.png';
+import sugin from '../assets/images/e-board/sugin.jpg';
+import gaurav from '../assets/images/e-board/gaurav.jpg';
+import chan from '../assets/images/e-board/chan.jpg';
+import irene from '../assets/images/e-board/irene.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -53,9 +57,9 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={jonah} alt="" />
+                <img src={kathleen} alt="" />
               </div>
-              <h3 className="major">Jonah Sun | Co-President</h3>
+              <h3 className="major">Kathleen Shao | Co-President</h3>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
@@ -73,9 +77,49 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={kathleen} alt="" />
+                <img src={lucy} alt="" />
               </div>
-              <h3 className="major">Kathleen Shao | VP of Marketing</h3>
+              <h3 className="major">Lucy Lee | VP of Marketing</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={lauren} alt="" />
+              </div>
+              <h3 className="major">Lauren Guo | Treasurer</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={elim} alt="" />
+              </div>
+              <h3 className="major">Elim Wu | Historian</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={matthew} alt="" />
+              </div>
+              <h3 className="major">Matthew Apuya | Secretary</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={jonah} alt="" />
+              </div>
+              <h3 className="major">Jonah Sun</h3>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
@@ -163,26 +207,6 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={lucy} alt="" />
-              </div>
-              <h3 className="major">Lucy Lee</h3>
-              {/* <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={elim} alt="" />
-              </div>
-              <h3 className="major">Elim Wu</h3>
-              {/* <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
-              </p> */}
-            </article>
-            <article>
-              <div className="image">
                 <img src={catherine} alt="" />
               </div>
               <h3 className="major">Catherine Nguyen</h3>
@@ -213,9 +237,9 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={lauren} alt="" />
+                <img src={sugin} alt="" />
               </div>
-              <h3 className="major">Lauren Guo</h3>
+              <h3 className="major">Sugin Li</h3>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
@@ -223,9 +247,29 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={matthew} alt="" />
+                <img src={gaurav} alt="" />
               </div>
-              <h3 className="major">Matthew Apuya</h3>
+              <h3 className="major">Gaurav</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={chan} alt="" />
+              </div>
+              <h3 className="major">Matthew Chan</h3>
+              {/* <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
+                nulla dignissim dapibus ultrices.
+              </p> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={irene} alt="" />
+              </div>
+              <h3 className="major">Irene Park</h3>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
