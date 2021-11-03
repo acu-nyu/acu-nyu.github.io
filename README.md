@@ -11,21 +11,24 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ### 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Using the right node version, install the dependencies.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Set up the site's project environment.
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # example using nvm, see https://github.com/nvm-sh/nvm#install--update-script for how to install
+    nvm install lts/fermium
+    nvm use lts/fermium
+    npm install
     ```
 
-1.  **Start developing.**
+1.  **Start developing**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate to the site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    # start developing
+    cd acu-nyu.github.io/
     gatsby develop
     ```
 

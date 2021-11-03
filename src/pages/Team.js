@@ -28,6 +28,8 @@ import irene from '../assets/images/e-board/irene.jpg';
 import elaina from '../assets/images/e-board/elaina.jpg';
 import eric from '../assets/images/e-board/eric.jpg';
 import bobby from '../assets/images/e-board/bobby.jpg';
+import harry from '../assets/images/e-board/harry.jpg';
+import phoebus from '../assets/images/e-board/phoebus.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -91,12 +93,12 @@ const IndexPage = () => (
               <h3 className="major">Matthew Apuya | Secretary</h3>
             </article>
 
-            {/* <article>
+            <article>
               <div className="image">
-                <img src={dorothy} alt="" />
+                <img src={phoebus} alt="" />
               </div>
               <h3 className="major">Phoebus Yip</h3>
-            </article> */}
+            </article>
 
             <article>
               <div className="image">
@@ -238,12 +240,12 @@ const IndexPage = () => (
               <h3 className="major">Elaina Feng</h3>
             </article>
 
-            {/* <article>
+            <article>
               <div className="image">
-                <img src={chan} alt="" />
+                <img src={harry} alt="" />
               </div>
               <h3 className="major">Harry Li</h3>
-            </article> */}
+            </article>
             
             {/* <article>
               <div className="image">
