@@ -30,6 +30,10 @@ import eric from '../assets/images/e-board/eric.jpg';
 import bobby from '../assets/images/e-board/bobby.jpg';
 import harry from '../assets/images/e-board/harry.jpg';
 import phoebus from '../assets/images/e-board/phoebus.jpg';
+import muang from '../assets/images/e-board/muang.jpg';
+import grace from '../assets/images/e-board/grace.jpg';
+import yujin from '../assets/images/e-board/yujin.jpg';
+
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -226,12 +230,12 @@ const IndexPage = () => (
               <h3 className="major">Eric Lai</h3>
             </article>
 
-            {/* <article>
+            <article>
               <div className="image">
-                <img src={chan} alt="" />
+                <img src={muang} alt="" />
               </div>
               <h3 className="major">Matthew Muang</h3>
-            </article> */}
+            </article>
 
             <article>
               <div className="image">
@@ -247,19 +251,19 @@ const IndexPage = () => (
               <h3 className="major">Harry Li</h3>
             </article>
             
-            {/* <article>
+            <article>
               <div className="image">
-                <img src={chan} alt="" />
+                <img src={grace} alt="" />
               </div>
               <h3 className="major">Grace Tan</h3>
-            </article> */}
+            </article>
             
-            {/* <article>
+            <article>
               <div className="image">
-                <img src={chan} alt="" />
+                <img src={yujin} alt="" />
               </div>
               <h3 className="major">Yujin Hong</h3>
-            </article> */}
+            </article>
           </section>
         </div>
       </div>
