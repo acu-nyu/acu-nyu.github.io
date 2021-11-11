@@ -13,6 +13,8 @@ import event_ghibli from '../assets/images/events/event_ghibli.jpg';
 import event_palentines from '../assets/images/events/event_palentines.jpg';
 import event_idol from '../assets/images/events/event_idol.jpg';
 import event_smash from '../assets/images/events/event_smash.jpg';
+import event_f21_game_night from '../assets/images/events/event_f21_game_night.jpg';
+import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -104,8 +106,35 @@ const IndexPage = () => (
       </section>
       <section id="five" className="wrapper style1">
         <div className="inner">
-          <h2 className="major">Recent Events</h2>
+          <h2 className="major">Recent and Upcoming Events</h2>
           <section className="features">
+            <article>
+              <div className="image">
+                <img src={event_f21_game_night} alt="" />
+              </div>
+              <h3 className="major">Game Night</h3>
+              <p>
+                We're back! Join us for game night in Kimmel to play some fun
+                games and win some amazing prizes.
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={event_f21_midterm_destress} alt="" />
+              </div>
+              <h3 className="major">Midterm Destress</h3>
+              <p>
+                Midterm season is here, so take a break at Kimmel and pick up
+                some free Muji stationary and pens! Supplies are limited, be
+                sure to snag yours before we run out!
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
             <article>
               <div className="image">
                 <img src={event_ghibli} alt="" />
