@@ -27,6 +27,16 @@ export default function Nav({ onMenuToggle = () => {} }) {
               Team
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={e => {
+                onMenuToggle();
+              }}
+              to="/Alumni"
+            >
+              Alumni
+            </Link>
+          </li>
           {/* <li>
             <Link
               onClick={e => {

@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 
 import cassidy from '../assets/images/e-board/cassidy.jpg';
 import jonah from '../assets/images/e-board/jonah.jpg';
-import youli from '../assets/images/e-board/youli.jpg';
 import kathleen from '../assets/images/e-board/kathleen.jpg';
 import deborah from '../assets/images/e-board/deborah.jpg';
 import crystal from '../assets/images/e-board/crystal.jpg';
@@ -27,7 +26,6 @@ import chan from '../assets/images/e-board/chan.jpg';
 import irene from '../assets/images/e-board/irene.jpg';
 import elaina from '../assets/images/e-board/elaina.jpg';
 import eric from '../assets/images/e-board/eric.jpg';
-import bobby from '../assets/images/e-board/bobby.jpg';
 import harry from '../assets/images/e-board/harry.jpg';
 import phoebus from '../assets/images/e-board/phoebus.jpg';
 import muang from '../assets/images/e-board/muang.jpg';
@@ -64,9 +62,9 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={youli} alt="" />
+                <img src={chan} alt="" />
               </div>
-              <h3 className="major">Youli Yao | VP of Events</h3>
+              <h3 className="major">Matthew Chan | VP of Events</h3>
             </article>
 
             <article>
@@ -151,13 +149,6 @@ const IndexPage = () => (
                 <img src={scarlett} alt="" />
               </div>
               <h3 className="major">Scarlett Jiang</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={bobby} alt="" />
-              </div>
-              <h3 className="major">Bobby Luo</h3>
             </article>
 
             <article>
