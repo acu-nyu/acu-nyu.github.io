@@ -202,13 +202,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={chan} alt="" />
-              </div>
-              <h3 className="major">Matthew Chan</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={irene} alt="" />
               </div>
               <h3 className="major">Irene Park</h3>
