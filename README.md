@@ -3,6 +3,8 @@
 # acu-nyu.github.io
 The Official Website for ACU, NYU's Largest Asian Umbrella Organization
 
+<img width="574" alt="ss" src="https://user-images.githubusercontent.com/15944396/151858047-681b024b-0a43-4786-827f-e53771441e70.png">
+
 ## How to use Gatsby
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
