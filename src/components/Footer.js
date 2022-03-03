@@ -5,7 +5,13 @@ export default function Footer() {
     <section id="footer">
       <div className="inner">
         <h2 className="major">Get in touch</h2>
-        <p style={{textAlign: 'center'}}>Feel free to reach out to us on any of our socials!</p>
+        <ul className="actions fit">
+          <li>
+            <a href="/#" className="button">
+              Join our mailing list!
+            </a>
+          </li>
+        </ul>
         <ul className="icons" style={{ textAlign: 'center' }}>
           <li>
             <a
@@ -37,6 +43,9 @@ export default function Footer() {
             ></a>
           </li>
         </ul>
+        <p style={{ textAlign: 'center' }}>
+          Feel free to reach out to us on any of our socials!
+        </p>
         <ul className="copyright">
           <li>&copy; Asian Cultural Union at NYU. All rights reserved.</li>
           <li>

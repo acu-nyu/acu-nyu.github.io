@@ -57,7 +57,7 @@ const IndexPage = () => (
           <div className="content">
             <h2 className="major">Our Mission</h2>
             <p>
-              Our mission is to celebrate and promote Asian cultures cultural,
+              Our mission is to celebrate and promote Asian cultures through cultural,
               social, and business-oriented events, as well as community service
               projects.
             </p>
