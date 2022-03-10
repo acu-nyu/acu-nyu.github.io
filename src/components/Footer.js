@@ -7,7 +7,11 @@ export default function Footer() {
         <h2 className="major">Get in touch</h2>
         <ul className="actions fit">
           <li>
-            <a href="http://eepurl.com/bc5n6r" className="button">
+            <a
+              href="http://eepurl.com/bc5n6r"
+              target="_blank"
+              className="button"
+            >
               Join our mailing list!
             </a>
           </li>
