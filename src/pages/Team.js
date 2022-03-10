@@ -31,7 +31,8 @@ import phoebus from '../assets/images/e-board/phoebus.jpg';
 import muang from '../assets/images/e-board/muang.jpg';
 import grace from '../assets/images/e-board/grace.jpg';
 import yujin from '../assets/images/e-board/yujin.jpg';
-
+import jocelyn from '../assets/images/e-board/jocelyn.jpg';
+import doyeon from '../assets/images/e-board/doyeon.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -83,9 +84,9 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={catherine} alt="" />
+                <img src={elim} alt="" />
               </div>
-              <h3 className="major">Catherine Nguyen | Historian</h3>
+              <h3 className="major">Elim Wu | Historian</h3>
             </article>
 
             <article>
@@ -106,14 +107,14 @@ const IndexPage = () => (
               <div className="image">
                 <img src={deborah} alt="" />
               </div>
-              <h3 className="major">Deborah Wei</h3>        
+              <h3 className="major">Deborah Wei</h3>
             </article>
 
             <article>
               <div className="image">
                 <img src={crystal} alt="" />
               </div>
-              <h3 className="major">Crystal Gao</h3> 
+              <h3 className="major">Crystal Gao</h3>
             </article>
 
             <article>
@@ -160,9 +161,9 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={elim} alt="" />
+                <img src={catherine} alt="" />
               </div>
-              <h3 className="major">Elim Wu</h3>
+              <h3 className="major">Catherine Nguyen</h3>
             </article>
 
             <article>
@@ -234,19 +235,33 @@ const IndexPage = () => (
               </div>
               <h3 className="major">Harry Li</h3>
             </article>
-            
+
             <article>
               <div className="image">
                 <img src={grace} alt="" />
               </div>
               <h3 className="major">Grace Tan</h3>
             </article>
-            
+
             <article>
               <div className="image">
                 <img src={yujin} alt="" />
               </div>
               <h3 className="major">Yujin Hong</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jocelyn} alt="" />
+              </div>
+              <h3 className="major">Jocelyn Xu</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={doyeon} alt="" />
+              </div>
+              <h3 className="major">Doyeon Kim</h3>
             </article>
           </section>
         </div>
