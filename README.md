@@ -19,8 +19,10 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```shell
     # example using nvm, see https://github.com/nvm-sh/nvm#install--update-script for how to install
-    nvm install lts/fermium
-    nvm use lts/fermium
+    # MAKE SURE YOU ARE IN THE PROJECT FOLDER ALREADY!
+    cd acu-nyu.github.io/
+    nvm install lts
+    nvm use lts/gallium
     npm install
     ```
 
@@ -30,7 +32,6 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```shell
     # start developing
-    cd acu-nyu.github.io/
     gatsby develop
     ```
 
