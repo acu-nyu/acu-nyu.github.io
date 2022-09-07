@@ -15,9 +15,9 @@ import event_idol from '../assets/images/events/event_idol.jpg';
 import event_smash from '../assets/images/events/event_smash.jpg';
 import event_f21_game_night from '../assets/images/events/event_f21_game_night.jpg';
 import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
-import event_s22_crafts from '../assets/images/events/event_s22_crafts.png'
-import event_s22_NOM from '../assets/images/events/event_s22_NOM.png'
-import event_s22_utopia from '../assets/images/events/event_s22_utopia.png'
+import event_s22_crafts from '../assets/images/events/event_s22_crafts.jpg'
+import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg'
+import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg'
 
 import config from '../../config';
 const IndexPage = () => (
