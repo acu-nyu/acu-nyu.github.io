@@ -15,6 +15,9 @@ import event_idol from '../assets/images/events/event_idol.jpg';
 import event_smash from '../assets/images/events/event_smash.jpg';
 import event_f21_game_night from '../assets/images/events/event_f21_game_night.jpg';
 import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
+import event_s22_crafts from '../assets/images/events/event_s22_crafts.png'
+import event_s22_NOM from '../assets/images/events/event_s22_NOM.png'
+import event_s22_utopia from '../assets/images/events/event_s22_utopia.png'
 
 import config from '../../config';
 const IndexPage = () => (
@@ -108,6 +111,58 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Upcoming Events</h2>
           <section className="features">
+          <article>
+              <div className="image">
+                <img src={event_s22_NOM} alt="" />
+              </div>
+              <h3 className="major">NOM!</h3>
+              <p>
+                We're back! Join us for game night in Kimmel to play some fun
+                games and win some amazing prizes.
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={event_s22_utopia} alt="" />
+              </div>
+              <h3 className="major">Asian Cartoon Utopia</h3>
+              <p>
+                We're back! Join us for game night in Kimmel to play some fun
+                games and win some amazing prizes.
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={event_s22_crafts} alt="" />
+              </div>
+              <h3 className="major">Arts and Crafts Night</h3>
+              <p>
+                We're back! Join us for game night in Kimmel to play some fun
+                games and win some amazing prizes.
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={event_f21_game_night} alt="" />
+              </div>
+              <h3 className="major">Game Night</h3>
+              <p>
+                We're back! Join us for game night in Kimmel to play some fun
+                games and win some amazing prizes.
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
             <article>
               <div className="image">
                 <img src={event_f21_game_night} alt="" />
