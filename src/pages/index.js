@@ -117,8 +117,9 @@ const IndexPage = () => (
               </div>
               <h3 className="major">NOM!</h3>
               <p>
-                We're back! Join us for game night in Kimmel to play some fun
-                games and win some amazing prizes.
+                Our annual food fest is back and better than ever! 
+                🗣 Come join us for a night of asian food 
+                🍱 We will also have games, and a chance to win some prizes
               </p>
               {/* <a href="/#" className="special">
                 Learn more
@@ -130,8 +131,8 @@ const IndexPage = () => (
               </div>
               <h3 className="major">Asian Cartoon Utopia</h3>
               <p>
-                We're back! Join us for game night in Kimmel to play some fun
-                games and win some amazing prizes.
+                Come hang out with us and your favorite cartoon/anime characters this Wednesday at Kimmel Rosenthal Hall 
+                🎉We'll have games, arts and crafts, and of course... prizes!
               </p>
               {/* <a href="/#" className="special">
                 Learn more
@@ -143,8 +144,8 @@ const IndexPage = () => (
               </div>
               <h3 className="major">Arts and Crafts Night</h3>
               <p>
-                We're back! Join us for game night in Kimmel to play some fun
-                games and win some amazing prizes.
+                We are so excited to invite you all to our first in-person event of the semester- Arts and Crafts Night 🎉! 
+                Join us for tote bag painting, felting, beading, origami, and other fun arts and crafts at Kimmel Rosenthal 🥰
               </p>
               {/* <a href="/#" className="special">
                 Learn more
