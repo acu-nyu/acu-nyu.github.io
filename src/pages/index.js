@@ -169,19 +169,6 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={event_f21_game_night} alt="" />
-              </div>
-              <h3 className="major">Game Night</h3>
-              <p>
-                We're back! Join us for game night in Kimmel to play some fun
-                games and win some amazing prizes.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
                 <img src={event_f21_midterm_destress} alt="" />
               </div>
               <h3 className="major">Midterm Destress</h3>
