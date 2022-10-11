@@ -15,9 +15,10 @@ import event_idol from '../assets/images/events/event_idol.jpg';
 import event_smash from '../assets/images/events/event_smash.jpg';
 import event_f21_game_night from '../assets/images/events/event_f21_game_night.jpg';
 import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
-import event_s22_crafts from '../assets/images/events/event_s22_crafts.jpg'
-import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg'
-import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg'
+import event_s22_crafts from '../assets/images/events/event_s22_crafts.jpg';
+import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg';
+import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg';
+import event_f22_sips from '../assets/images/events/event_f22_sips.jpg';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -60,9 +61,9 @@ const IndexPage = () => (
           <div className="content">
             <h2 className="major">Our Mission</h2>
             <p>
-              Our mission is to celebrate and promote Asian cultures through cultural,
-              social, and business-oriented events, as well as community service
-              projects.
+              Our mission is to celebrate and promote Asian cultures through
+              cultural, social, and business-oriented events, as well as
+              community service projects.
             </p>
             {/* <a href="/#" className="special">
               Learn more
@@ -111,14 +112,28 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Upcoming Events</h2>
           <section className="features">
-          <article>
+            <article>
+              <div className="image">
+                <img src={event_f22_sips} alt="" />
+              </div>
+              <h3 className="major">Sips n' Crafts!</h3>
+              <p>
+                ACU is back! Come out to our first event of the year in Kimmel
+                E&L (Floor 4 Auditorium) to decorate tote bags and notebooks all
+                while drinking delicious boba! See you there 😉
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
               <div className="image">
                 <img src={event_s22_NOM} alt="" />
               </div>
               <h3 className="major">NOM!</h3>
               <p>
-                Our annual food fest is back and better than ever! 
-                🗣 Come join us for a night of asian food!
+                Our annual food fest is back and better than ever! 🗣 Come join
+                us for a night of asian food!
                 <br></br>
                 🍱 We will also have games, and a chance to win some prizes!
               </p>
@@ -132,7 +147,8 @@ const IndexPage = () => (
               </div>
               <h3 className="major">Asian Cartoon Utopia</h3>
               <p>
-                Come hang out with us and your favorite cartoon/anime characters at Kimmel Rosenthal!
+                Come hang out with us and your favorite cartoon/anime characters
+                at Kimmel Rosenthal!
                 <br></br>
                 🎉 We'll have games, arts and crafts, and of course... prizes!
               </p>
@@ -146,9 +162,11 @@ const IndexPage = () => (
               </div>
               <h3 className="major">Arts and Crafts Night</h3>
               <p>
-                Our first in-person event of the S22 semester - Arts and Crafts Night 🎉! 
+                Our first in-person event of the S22 semester - Arts and Crafts
+                Night 🎉!
                 <br></br>
-                Join us for tote bag painting, felting, beading, origami, and other fun arts and crafts at Kimmel Rosenthal 🥰
+                Join us for tote bag painting, felting, beading, origami, and
+                other fun arts and crafts at Kimmel Rosenthal 🥰
               </p>
               {/* <a href="/#" className="special">
                 Learn more
