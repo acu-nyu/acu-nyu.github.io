@@ -28,9 +28,9 @@ import jake from '../assets/images/e-board/jake.jpg';
 import avery from '../assets/images/e-board/avery.jpg';
 import phoebe from '../assets/images/e-board/phoebe.jpg';
 import andy from '../assets/images/e-board/andy.jpg';
-// import tiffany from '../assets/images/e-board/tiffany.jpg';
+import tiffany from '../assets/images/e-board/tiffany.jpg';
 import lina from '../assets/images/e-board/lina.jpg';
-// import hailey from '../assets/images/e-board/hailey.jpg';
+import hailey from '../assets/images/e-board/hailey.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -227,12 +227,12 @@ const IndexPage = () => (
               <h3 className="major">Phoebe Huang</h3>
             </article>
 
-            {/* <article>
+            <article>
               <div className="image">
                 <img src={tiffany} alt="" />
               </div>
               <h3 className="major">Tiffany Lee</h3>
-            </article> */}
+            </article>
 
             <article>
               <div className="image">
@@ -241,12 +241,12 @@ const IndexPage = () => (
               <h3 className="major">Lina Gallo</h3>
             </article>
 
-            {/* <article>
+            <article>
               <div className="image">
                 <img src={hailey} alt="" />
               </div>
               <h3 className="major">Hailey Kim</h3>
-            </article> */}
+            </article>
           </section>
         </div>
       </div>
