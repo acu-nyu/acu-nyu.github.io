@@ -17,7 +17,6 @@ import chan from '../assets/images/e-board/chan.jpg';
 import irene from '../assets/images/e-board/irene.jpg';
 import elaina from '../assets/images/e-board/elaina.jpg';
 import eric from '../assets/images/e-board/eric.jpg';
-import harry from '../assets/images/e-board/harry.jpg';
 import maung from '../assets/images/e-board/maung.jpg';
 import grace from '../assets/images/e-board/grace.jpg';
 import yujin from '../assets/images/e-board/yujin.jpg';
@@ -54,23 +53,23 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={matthew} alt="" />
-              </div>
-              <h3 className="major"> Matthew Apuya | Co-President</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={chan} alt="" />
               </div>
-              <h3 className="major">Matthew Chan | VP of Events</h3>
+              <h3 className="major">Matthew Chan | Co- President</h3>
             </article>
 
             <article>
               <div className="image">
-                <img src={grace} alt="" />
+                <img src={irene} alt="" />
               </div>
-              <h3 className="major">Grace Tan | VP of Marketing</h3>
+              <h3 className="major">Irene Park | VP of Events</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={elaina} alt="" />
+              </div>
+              <h3 className="major">Elaina Feng | VP of Marketing</h3>
             </article>
 
             <article>
@@ -85,13 +84,6 @@ const IndexPage = () => (
                 <img src={elim} alt="" />
               </div>
               <h3 className="major">Elim Wu | Historian</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={maung} alt="" />
-              </div>
-              <h3 className="major">Matthew Maung | Secretary</h3>
             </article>
 
             <article>
@@ -113,6 +105,13 @@ const IndexPage = () => (
                 <img src={sam} alt="" />
               </div>
               <h3 className="major">Sam Ye</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={matthew} alt="" />
+              </div>
+              <h3 className="major"> Matthew Apuya | F22 Co-President</h3>
             </article>
 
             <article>
@@ -145,13 +144,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={irene} alt="" />
-              </div>
-              <h3 className="major">Irene Park</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={eric} alt="" />
               </div>
               <h3 className="major">Eric Lai</h3>
@@ -159,24 +151,25 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={elaina} alt="" />
-              </div>
-              <h3 className="major">Elaina Feng</h3>
-            </article>
-
-            {/* <article>
-              <div className="image">
-                <img src={harry} alt="" />
-              </div>
-              <h3 className="major">Harry Li</h3>
-            </article> */}
-
-            <article>
-              <div className="image">
                 <img src={yujin} alt="" />
               </div>
               <h3 className="major">Yujin Hong</h3>
             </article>
+
+            <article>
+              <div className="image">
+                <img src={grace} alt="" />
+              </div>
+              <h3 className="major">Grace Tan | F22 VP of Marketing</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={maung} alt="" />
+              </div>
+              <h3 className="major">Matthew Maung | F22 Secretary </h3>
+            </article>
+
 
             <article>
               <div className="image">
@@ -191,7 +184,6 @@ const IndexPage = () => (
               </div>
               <h3 className="major">Doyeon Kim</h3>
             </article>
-
             <article>
               <div className="image">
                 <img src={kyle} alt="" />
@@ -241,12 +233,12 @@ const IndexPage = () => (
               <h3 className="major">Lina Gallo</h3>
             </article>
 
-            <article>
+            {/* <article>
               <div className="image">
                 <img src={hailey} alt="" />
               </div>
               <h3 className="major">Hailey Kim</h3>
-            </article>
+            </article> */}
           </section>
         </div>
       </div>
