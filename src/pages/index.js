@@ -9,16 +9,16 @@ import icon2 from '../assets/images/icon2.jpg';
 import icon3 from '../assets/images/icon3.jpg';
 import f22team from '../assets/images/f22-team.jpg';
 
-import event_ghibli from '../assets/images/events/event_ghibli.jpg';
-import event_palentines from '../assets/images/events/event_palentines.jpg';
-import event_idol from '../assets/images/events/event_idol.jpg';
 import event_smash from '../assets/images/events/event_smash.jpg';
-import event_f21_game_night from '../assets/images/events/event_f21_game_night.jpg';
+import event_palentines from '../assets/images/events/event_palentines.jpg';
+import event_ghibli from '../assets/images/events/event_ghibli.jpg';
 import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
 import event_s22_crafts from '../assets/images/events/event_s22_crafts.jpg';
 import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg';
 import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg';
 import event_f22_sips from '../assets/images/events/event_f22_sips.jpg';
+import event_f22_game_night from '../assets/images/events/event_f22_game_night.jpg';
+import event_f22_idol from '../assets/images/events/event_f22_idol.jpg';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -114,6 +114,35 @@ const IndexPage = () => (
           <section className="features">
             <article>
               <div className="image">
+                <img src={event_f22_idol} alt="" />
+              </div>
+              <h3 className="major">ACU Idol</h3>
+              <p>
+                Every year, we hold a singing competition for talented
+                individuals to compete for the title of ACU Idol! As one of
+                biggest events of the semester, there'll be a ton of food so
+                come hang out with us in our last event of the semester!
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
+              <div className="image">
+                <img src={event_f22_game_night} alt="" />
+              </div>
+              <h3 className="major">Game Night</h3>
+              <p>
+                Join us for another night in Kimmel to play some fun games such
+                as Mahjong, Gonggi, Sushi Go, and more! Did we mention there
+                will be some amazing prizes too?
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+            <article>
+              <div className="image">
                 <img src={event_f22_sips} alt="" />
               </div>
               <h3 className="major">Sips n' Crafts!</h3>
@@ -174,19 +203,6 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={event_f21_game_night} alt="" />
-              </div>
-              <h3 className="major">Game Night</h3>
-              <p>
-                We're back! Join us for game night in Kimmel to play some fun
-                games and win some amazing prizes.
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
                 <img src={event_f21_midterm_destress} alt="" />
               </div>
               <h3 className="major">Midterm Destress</h3>
@@ -232,34 +248,13 @@ const IndexPage = () => (
             </article>
             <article>
               <div className="image">
-                <img src={event_idol} alt="" />
-              </div>
-              <h3 className="major">ACU Idol 2019</h3>
-              <p>
-                Every year, we hold a singing competition for talented
-                individuals to compete for the title of ACU Idol! There will be
-                a panel of judges, very official! There will also be additional
-                performances from our lovely E-Board members but we're not
-                professionals so please cheer even if we're not the best! As one
-                of biggest events of the semester, there'll be a ton of food so
-                come hang out with us in our last event of the semester!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
                 <img src={event_smash} alt="" />
               </div>
               <h3 className="major">Super Smash Bros Ultimate Tournament</h3>
               <p>
                 Stop BOWS(ER)-ing social media and come out to our Super Smash
                 Bros Ultimate Tournament hosted with the EAS department for a
-                FREE-to-enter tournament with CASH prizes and free food! The
-                East Asian Studies department will say a few words about their
-                wonderful courses to give you more of an INKLING about what
-                they’re offering next Spring.
+                FREE-to-enter tournament with CASH prizes and free food!
               </p>
               {/* <a href="/#" className="special">
                 Learn more

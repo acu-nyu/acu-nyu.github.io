@@ -41,17 +41,24 @@ class Layout extends Component {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Official Website for the Asian Cultural Union at NYU' },
+                {
+                  name: 'description',
+                  content:
+                    'Official Website for the Asian Cultural Union at NYU',
+                },
                 { name: 'keywords', content: 'site, web' },
               ]}
             >
               <html lang="en" />
-              <meta name="google-site-verification" content="UJigPNOUs3R-CEucJRTNmWtSxR8Vnpl4rhDm0p6bxrU" />
+              <meta
+                name="google-site-verification"
+                content="UJigPNOUs3R-CEucJRTNmWtSxR8Vnpl4rhDm0p6bxrU"
+              />
             </Helmet>
             <div
               className={isPreloaded ? ' main-body  is-preload' : ' main-body'}

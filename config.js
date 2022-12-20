@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'ACU at NYU', // <title>
-  manifestName: 'Official Website for ACU, NYU\'s Largest Umbrella Organization',
+  manifestName: "Official Website for ACU, NYU's Largest Umbrella Organization",
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Asian Cultural Union at NYU',
-  subHeading: 'NYU\'s Largest Asian Umbrella Organization',
+  subHeading: "NYU's Largest Asian Umbrella Organization",
   // social
   socialLinks: [
     {
@@ -17,7 +17,7 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/acu-nyu',
     },
-    { 
+    {
       icon: 'fa-instagram',
       name: 'Instagram',
       url: 'https://instagram.com/nyu_acu',

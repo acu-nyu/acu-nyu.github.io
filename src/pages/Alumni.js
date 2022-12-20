@@ -15,7 +15,6 @@ import vincent from '../assets/images/alumni/vincent.jpg';
 import scarlett from '../assets/images/alumni/scarlett.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
 
-
 const IndexPage = () => (
   <Layout fullMenu>
     <section id="wrapper">
@@ -34,9 +33,7 @@ const IndexPage = () => (
                 <img src={youli} alt="" />
               </div>
               <h3 className="major">Youli Yao | F21</h3>
-              <p>
-                {/* VP of Events */}
-              </p>
+              <p>{/* VP of Events */}</p>
             </article>
 
             <article>

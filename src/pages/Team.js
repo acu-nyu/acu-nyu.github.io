@@ -170,7 +170,6 @@ const IndexPage = () => (
               <h3 className="major">Matthew Maung | F22 Secretary </h3>
             </article>
 
-
             <article>
               <div className="image">
                 <img src={jocelyn} alt="" />
