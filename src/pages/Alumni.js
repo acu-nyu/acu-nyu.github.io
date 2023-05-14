@@ -52,7 +52,7 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={kathleen} alt="" />
+                <img src={kathleen} alt="" />z
               </div>
               <h3 className="major">Kathleen Shao | S22</h3>
             </article>
@@ -110,7 +110,7 @@ const IndexPage = () => (
               <div className="image">
                 <img src={phoebus} alt="" />
               </div>
-              <h3 className="major">Phoebus Yip | S23</h3>
+              <h3 className="major">Phoebus Yip | F23</h3>
             </article>
           </section>
         </div>
