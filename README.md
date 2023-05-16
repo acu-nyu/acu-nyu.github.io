@@ -23,7 +23,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     # MAKE SURE YOU ARE IN THE PROJECT FOLDER ALREADY!
     cd acu-nyu.github.io/
     nvm install lts
-    nvm use lts/gallium
+    nvm use lts/hydrogen
     npm install
     ```
 
