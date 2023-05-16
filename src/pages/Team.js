@@ -16,6 +16,7 @@ import phoebe from '../assets/images/e-board/phoebe.jpg';
 import andy from '../assets/images/e-board/andy.jpg';
 import tiffany from '../assets/images/e-board/tiffany.jpg';
 import lina from '../assets/images/e-board/lina.jpg';
+import piplup from '../assets/images/e-board/piplup.png';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -82,6 +83,13 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Patrick Wu | Treasurer</h3>
+            </article>
+
+            <article>
+              <div className="image">
                 <img src={phoebe} alt="" />
               </div>
               <h3 className="major">Phoebe Huang | Historian</h3>
@@ -127,6 +135,55 @@ const IndexPage = () => (
                 <img src={andy} alt="" />
               </div>
               <h3 className="major">Andy Cabindol</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Brian Lin</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Annika Vallabhanath</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Sophia Liang</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Stephan Park</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Alex Xie</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Saundra Tun</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Matt Zhang</h3>
             </article>
           </section>
         </div>
