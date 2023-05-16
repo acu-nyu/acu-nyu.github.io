@@ -13,6 +13,18 @@ import dorothy from '../assets/images/alumni/dorothy.jpg';
 import elton from '../assets/images/alumni/elton.jpg';
 import vincent from '../assets/images/alumni/vincent.jpg';
 import scarlett from '../assets/images/alumni/scarlett.jpg';
+import coco from '../assets/images/alumni/coco.jpg';
+import elim from '../assets/images/alumni/elim.jpg';
+import catherine from '../assets/images/alumni/catherine.jpg';
+import lucy from '../assets/images/alumni/lucy.jpg';
+import sam from '../assets/images/alumni/sam.jpg';
+import matthew from '../assets/images/alumni/matthew.png';
+import lauren from '../assets/images/alumni/lauren.jpg';
+import caroline from '../assets/images/alumni/caroline.jpg';
+import candice from '../assets/images/alumni/candice.jpg';
+import chan from '../assets/images/alumni/chan.jpg';
+import sugin from '../assets/images/alumni/sugin.jpg';
+import gaurav from '../assets/images/alumni/gaurav.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
 
 const IndexPage = () => (
@@ -104,6 +116,90 @@ const IndexPage = () => (
                 <img src={jonah} alt="" />
               </div>
               <h3 className="major">Jonah Sun | F22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={coco} alt="" />
+              </div>
+              <h3 className="major">Coco Xu | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={elim} alt="" />
+              </div>
+              <h3 className="major">Elim Wu | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={catherine} alt="" />
+              </div>
+              <h3 className="major">Catherine Ngyuen | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={lucy} alt="" />
+              </div>
+              <h3 className="major">Lucy Lee | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={sam} alt="" />
+              </div>
+              <h3 className="major">Sam Ye | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={matthew} alt="" />
+              </div>
+              <h3 className="major">Matthew Apuya | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={lauren} alt="" />
+              </div>
+              <h3 className="major">Lauren Guo | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={caroline} alt="" />
+              </div>
+              <h3 className="major">Caroline Tian | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={candice} alt="" />
+              </div>
+              <h3 className="major">Candice Huang | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={chan} alt="" />
+              </div>
+              <h3 className="major">Matthew Chan | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={sugin} alt="" />
+              </div>
+              <h3 className="major">Sugin Li | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={gaurav} alt="" />
+              </div>
+              <h3 className="major">Gaurav Kulkarni | S23</h3>
             </article>
 
             <article>
