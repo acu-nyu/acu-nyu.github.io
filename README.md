@@ -22,9 +22,9 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     # example using nvm, see https://github.com/nvm-sh/nvm#install--update-script for how to install
     # MAKE SURE YOU ARE IN THE PROJECT FOLDER ALREADY!
     cd acu-nyu.github.io/
-    nvm install lts
+    nvm install lts/hydrogen
     nvm use lts/hydrogen
-    npm install
+    npm install --legacy-peer-deps
     ```
 
 1.  **Start developing**
