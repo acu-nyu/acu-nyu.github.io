@@ -31,13 +31,12 @@ const IndexPage = () => (
       <div className="wrapper">
         <div className="inner">
           <section className="features">
-          <article>
+            <article>
               <div className="image">
                 <img src={eric} alt="" />
               </div>
               <h3 className="major">Eric Lai | Co-President</h3>
             </article>
-
 
             <article>
               <div className="image">
