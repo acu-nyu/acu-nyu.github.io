@@ -35,10 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@npmcli/fs": "^3.1.0",
-    "@sideway/address": "^5.0.0",
     "gh-pages": "^3.2.3",
-    "joi": "^17.9.2",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2"
   },
