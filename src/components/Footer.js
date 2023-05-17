@@ -10,6 +10,7 @@ export default function Footer() {
             <a
               href="http://eepurl.com/bc5n6r"
               target="_blank"
+              rel="noreferrer"
               className="button"
             >
               Join our mailing list!
@@ -24,7 +25,7 @@ export default function Footer() {
               alt="Instagram"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            > </a>
           </li>
 
           <li>
@@ -34,7 +35,7 @@ export default function Footer() {
               alt="Facebook"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            > </a>
           </li>
 
           <li>
@@ -44,7 +45,7 @@ export default function Footer() {
               alt="GitHub"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            > </a>
           </li>
         </ul>
         <p style={{ textAlign: 'center' }}>
