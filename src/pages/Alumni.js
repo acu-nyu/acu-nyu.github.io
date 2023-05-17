@@ -42,84 +42,6 @@ const IndexPage = () => (
           <section className="features">
             <article>
               <div className="image">
-                <img src={youli} alt="" />
-              </div>
-              <h3 className="major">Youli Yao | F21</h3>
-              <p>{/* VP of Events */}</p>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={bobby} alt="" />
-              </div>
-              <h3 className="major">Bobby Luo | F21</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={cassidy} alt="" />
-              </div>
-              <h3 className="major">Cassidy Syao | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={kathleen} alt="" />
-              </div>
-              <h3 className="major">Kathleen Shao | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={deborah} alt="" />
-              </div>
-              <h3 className="major">Deborah Wei | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={crystal} alt="" />
-              </div>
-              <h3 className="major">Crystal Gao | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={dorothy} alt="" />
-              </div>
-              <h3 className="major">Dorothy Rong | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={scarlett} alt="" />
-              </div>
-              <h3 className="major">Scarlett Jiang | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={elton} alt="" />
-              </div>
-              <h3 className="major">Elton Zhu | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={vincent} alt="" />
-              </div>
-              <h3 className="major">Vincent Yu | S22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={jonah} alt="" />
-              </div>
-              <h3 className="major">Jonah Sun | F22</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={coco} alt="" />
               </div>
               <h3 className="major">Coco Xu | S23</h3>
@@ -207,6 +129,84 @@ const IndexPage = () => (
                 <img src={phoebus} alt="" />
               </div>
               <h3 className="major">Phoebus Yip | F23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={cassidy} alt="" />
+              </div>
+              <h3 className="major">Cassidy Syao | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={kathleen} alt="" />
+              </div>
+              <h3 className="major">Kathleen Shao | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={deborah} alt="" />
+              </div>
+              <h3 className="major">Deborah Wei | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={crystal} alt="" />
+              </div>
+              <h3 className="major">Crystal Gao | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={dorothy} alt="" />
+              </div>
+              <h3 className="major">Dorothy Rong | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={scarlett} alt="" />
+              </div>
+              <h3 className="major">Scarlett Jiang | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={elton} alt="" />
+              </div>
+              <h3 className="major">Elton Zhu | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={vincent} alt="" />
+              </div>
+              <h3 className="major">Vincent Yu | S22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jonah} alt="" />
+              </div>
+              <h3 className="major">Jonah Sun | F22</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={youli} alt="" />
+              </div>
+              <h3 className="major">Youli Yao | F21</h3>
+              <p>{/* VP of Events */}</p>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={bobby} alt="" />
+              </div>
+              <h3 className="major">Bobby Luo | F21</h3>
             </article>
           </section>
         </div>

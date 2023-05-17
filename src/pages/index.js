@@ -19,6 +19,8 @@ import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg';
 import event_f22_sips from '../assets/images/events/event_f22_sips.jpg';
 import event_f22_game_night from '../assets/images/events/event_f22_game_night.jpg';
 import event_f22_idol from '../assets/images/events/event_f22_idol.jpg';
+import event_f23_spring from '../assets/images/events/event_spring_festival_f23.png';
+import event_f23_nom from '../assets/images/events/event_f23_nom.png';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -114,6 +116,37 @@ const IndexPage = () => (
           <section className="features">
             <article>
               <div className="image">
+                <img src={event_f23_nom} alt="" />
+              </div>
+              <h3 className="major">ACU NOM 23'</h3>
+              <p>
+                Our annual food festival is back again! Come join us for free food from places
+                like Woorijip and drinks from Whistle and Fizz at Kimmel, and stick around to 
+                make new friends or chat with the e-board members. We hope to see you there!
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={event_f23_spring} alt="" />
+              </div>
+              <h3 className="major">ACU x JCA Spring Festival</h3>
+              <p>
+                Our final and biggest event of the semester is here! Come join us at Kimmel
+                for the ACU x JCA Spring Festival! There will be plenty of food as well as Asian games
+                and prizes from student vendors. We also heard that Twice and Blackpink will be performing
+                at the event so don't miss out!
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+
+            <article>
+              <div className="image">
                 <img src={event_f22_idol} alt="" />
               </div>
               <h3 className="major">ACU Idol</h3>
@@ -127,6 +160,7 @@ const IndexPage = () => (
                 Learn more
               </a> */}
             </article>
+
             <article>
               <div className="image">
                 <img src={event_f22_game_night} alt="" />

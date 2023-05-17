@@ -20,6 +20,7 @@ import piplup from '../assets/images/e-board/piplup.png';
 import steph from '../assets/images/e-board/Steph.jpg';
 import sophia from '../assets/images/e-board/Sophia.jpg';
 import patrick from '../assets/images/e-board/Patrick.jpg';
+import alex from '../assets/images/e-board/alex.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -141,20 +142,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={piplup} alt="" />
-              </div>
-              <h3 className="major">Brian Lin</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={piplup} alt="" />
-              </div>
-              <h3 className="major">Annika Vallabhanath</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={sophia} alt="" />
               </div>
               <h3 className="major">Sophia Liang</h3>
@@ -169,9 +156,23 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={piplup} alt="" />
+                <img src={alex} alt="" />
               </div>
               <h3 className="major">Alex Xie</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Brian Lin</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Annika Vallabhanath</h3>
             </article>
 
             <article>
