@@ -113,7 +113,7 @@ const IndexPage = () => (
       </section>
       <section id="five" className="wrapper style1">
         <div className="inner">
-          <h2 className="major">Recent and Upcoming Events</h2>
+          <h2 className="major">Recent and Past Events</h2>
           <section className="features">
             <article>
               <div className="image">

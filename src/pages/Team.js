@@ -22,6 +22,7 @@ import sophia from '../assets/images/e-board/Sophia.jpg';
 import patrick from '../assets/images/e-board/Patrick.jpg';
 import alex from '../assets/images/e-board/alex.jpg';
 import saundra from '../assets/images/e-board/saundra.jpg';
+import annika from '../assets/images/e-board/annika.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -29,7 +30,7 @@ const IndexPage = () => (
       <header>
         <div className="inner">
           <h2>Meet the E-Board</h2>
-          <p>Hey there. We're here for you.</p>
+          <p>Hey there. We're here for you. Come meet us at our next event!</p>
         </div>
       </header>
 
@@ -171,16 +172,16 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={piplup} alt="" />
+                <img src={annika} alt="" />
               </div>
-              <h3 className="major">Brian Lin</h3>
+              <h3 className="major">Annika Vallabhanath</h3>
             </article>
 
             <article>
               <div className="image">
                 <img src={piplup} alt="" />
               </div>
-              <h3 className="major">Annika Vallabhanath</h3>
+              <h3 className="major">Brian Lin</h3>
             </article>
 
             <article>
