@@ -21,6 +21,7 @@ import steph from '../assets/images/e-board/Steph.jpg';
 import sophia from '../assets/images/e-board/Sophia.jpg';
 import patrick from '../assets/images/e-board/Patrick.jpg';
 import alex from '../assets/images/e-board/alex.jpg';
+import saundra from '../assets/images/e-board/saundra.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -163,6 +164,13 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
+                <img src={saundra} alt="" />
+              </div>
+              <h3 className="major">Saundra Tun</h3>
+            </article>
+
+            <article>
+              <div className="image">
                 <img src={piplup} alt="" />
               </div>
               <h3 className="major">Brian Lin</h3>
@@ -173,13 +181,6 @@ const IndexPage = () => (
                 <img src={piplup} alt="" />
               </div>
               <h3 className="major">Annika Vallabhanath</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={piplup} alt="" />
-              </div>
-              <h3 className="major">Saundra Tun</h3>
             </article>
 
             <article>

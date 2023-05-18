@@ -21,6 +21,7 @@ import event_f22_game_night from '../assets/images/events/event_f22_game_night.j
 import event_f22_idol from '../assets/images/events/event_f22_idol.jpg';
 import event_f23_spring from '../assets/images/events/event_spring_festival_f23.png';
 import event_f23_nom from '../assets/images/events/event_f23_nom.png';
+import event_f23_palentines from '../assets/images/events/event_f23_palentines.png';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -139,6 +140,21 @@ const IndexPage = () => (
                 for the ACU x JCA Spring Festival! There will be plenty of food as well as Asian games
                 and prizes from student vendors. We also heard that Twice and Blackpink will be performing
                 at the event so don't miss out!
+              </p>
+              {/* <a href="/#" className="special">
+                Learn more
+              </a> */}
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={event_f23_palentines} alt="" />
+              </div>
+              <h3 className="major">ACU Palentines</h3>
+              <p>
+                Valentine's day may be over but you can still make it to our Palentines day event!
+                Come out and join us to decorate Insomnia cookies and try winning a date with one of our
+                e-board members!
               </p>
               {/* <a href="/#" className="special">
                 Learn more
