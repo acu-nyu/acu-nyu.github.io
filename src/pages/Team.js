@@ -23,6 +23,7 @@ import patrick from '../assets/images/e-board/Patrick.jpg';
 import alex from '../assets/images/e-board/alex.jpg';
 import saundra from '../assets/images/e-board/saundra.jpg';
 import annika from '../assets/images/e-board/annika.jpg';
+import matt from '../assets/images/e-board/matt.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -179,16 +180,16 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={piplup} alt="" />
+                <img src={matt} alt="" />
               </div>
-              <h3 className="major">Brian Lin</h3>
+              <h3 className="major">Matt Zhang</h3>
             </article>
 
             <article>
               <div className="image">
                 <img src={piplup} alt="" />
               </div>
-              <h3 className="major">Matt Zhang</h3>
+              <h3 className="major">Brian Lin</h3>
             </article>
           </section>
         </div>
