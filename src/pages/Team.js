@@ -6,7 +6,6 @@ import irene from '../assets/images/e-board/irene.jpg';
 import elaina from '../assets/images/e-board/elaina.jpg';
 import eric from '../assets/images/e-board/eric.jpg';
 import grace from '../assets/images/e-board/grace.jpg';
-import yujin from '../assets/images/e-board/yujin.jpg';
 import jocelyn from '../assets/images/e-board/jocelyn.jpg';
 import doyeon from '../assets/images/e-board/doyeon.jpg';
 import kyle from '../assets/images/e-board/kyle.jpg';
@@ -106,13 +105,6 @@ const IndexPage = () => (
                 <img src={elaina} alt="" />
               </div>
               <h3 className="major">Elaina Feng</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={yujin} alt="" />
-              </div>
-              <h3 className="major">Yujin Hong</h3>
             </article>
 
             <article>

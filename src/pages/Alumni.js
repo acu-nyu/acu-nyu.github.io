@@ -26,6 +26,7 @@ import chan from '../assets/images/alumni/chan.jpg';
 import sugin from '../assets/images/alumni/sugin.jpg';
 import gaurav from '../assets/images/alumni/gaurav.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
+import yujin from '../assets/images/e-board/yujin.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -66,6 +67,13 @@ const IndexPage = () => (
                 <img src={lucy} alt="" />
               </div>
               <h3 className="major">Lucy Lee | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={yujin} alt="" />
+              </div>
+              <h3 className="major">Yujin Hong</h3>
             </article>
 
             <article>
