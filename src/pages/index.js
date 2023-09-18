@@ -106,7 +106,7 @@ const IndexPage = () => (
               ACU is an all-inclusive organization that welcomes members of all
               backgrounds. ACU was founded upon and continues to operate under
               the precepts of racial and social tolerance, indiscrimination, and
-              equality. E-board applications for this fall are now open! Apply <a href="https://bit.ly/acuappf23">here</a>!
+              equality. E-board applications for this fall are now closed. Look out for Spring 2024 apps in the future!
             </p>
           </div>
         </div>
