@@ -73,7 +73,7 @@ const IndexPage = () => (
               <div className="image">
                 <img src={yujin} alt="" />
               </div>
-              <h3 className="major">Yujin Hong</h3>
+              <h3 className="major">Yujin Hong | S23</h3>
             </article>
 
             <article>
@@ -132,12 +132,12 @@ const IndexPage = () => (
               <h3 className="major">Gaurav Kulkarni | S23</h3>
             </article>
 
-            <article>
+            {/* <article>
               <div className="image">
                 <img src={phoebus} alt="" />
               </div>
               <h3 className="major">Phoebus Yip | F23</h3>
-            </article>
+            </article> */}
 
             <article>
               <div className="image">
