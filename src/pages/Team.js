@@ -15,7 +15,6 @@ import phoebe from '../assets/images/e-board/phoebe.jpg';
 import andy from '../assets/images/e-board/andy.jpg';
 import tiffany from '../assets/images/e-board/tiffany.jpg';
 import lina from '../assets/images/e-board/lina.jpg';
-import piplup from '../assets/images/e-board/piplup.png';
 import steph from '../assets/images/e-board/Steph.jpg';
 import sophia from '../assets/images/e-board/Sophia.jpg';
 import patrick from '../assets/images/e-board/Patrick.jpg';
@@ -28,6 +27,8 @@ import matthew from '../assets/images/e-board/matthew.jpg';
 import haruto from '../assets/images/e-board/haruto.jpg';
 import tyler from '../assets/images/e-board/tyler.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
+import evan from '../assets/images/e-board/evan.jpg';
+import piplup from '../assets/images/e-board/piplup.png';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -107,13 +108,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={elaina} alt="" />
-              </div>
-              <h3 className="major">Elaina Feng</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={jocelyn} alt="" />
               </div>
               <h3 className="major">Jocelyn Xu</h3>
@@ -135,23 +129,9 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={andy} alt="" />
-              </div>
-              <h3 className="major">Andy Cabindol</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={sophia} alt="" />
               </div>
               <h3 className="major">Sophia Liang</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={steph} alt="" />
-              </div>
-              <h3 className="major">Stephan Park</h3>
             </article>
 
             <article>
@@ -212,10 +192,62 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
+                <img src={evan} alt="" />
+              </div>
+              <h3 className="major">Evan Chan</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Elise Schweng</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Amanda Foekri</h3>
+            </article>
+
+            <article>
+              <div className="image">
                 <img src={phoebus} alt="" />
               </div>
               <h3 className="major">Phoebus Yip</h3>
             </article>
+
+
+            <header>
+              <div className="inner">
+                <h2>Who's Abroad?</h2>
+                <p>See who's abroad for this semester!</p>
+              </div>
+            </header>
+            
+            <section className="features">
+                <article>
+                  <div className="image">
+                    <img src={andy} alt="" />
+                  </div>
+                  <h3 className="major">Andy Cabindol | Paris</h3>
+                </article>
+
+                <article>
+                  <div className="image">
+                    <img src={elaina} alt="" />
+                  </div>
+                  <h3 className="major">Elaina Feng | The World</h3>
+                </article>
+
+                <article>
+                  <div className="image">
+                    <img src={steph} alt="" />
+                  </div>
+                  <h3 className="major">Stephan Park | South Korean Army</h3>
+                </article>
+            </section>
           </section>
         </div>
       </div>
