@@ -24,6 +24,10 @@ import saundra from '../assets/images/e-board/saundra.jpg';
 import annika from '../assets/images/e-board/annika.jpg';
 import matt from '../assets/images/e-board/matt.jpg';
 import brian from '../assets/images/e-board/brian.jpg';
+import matthew from '../assets/images/e-board/matthew.jpg';
+import haruto from '../assets/images/e-board/haruto.jpg';
+import tyler from '../assets/images/e-board/tyler.jpg';
+import phoebus from '../assets/images/alumni/phoebus.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -183,6 +187,34 @@ const IndexPage = () => (
                 <img src={brian} alt="" />
               </div>
               <h3 className="major">Brian Lin</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={haruto} alt="" />
+              </div>
+              <h3 className="major">Haruto Uesugo</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={tyler} alt="" />
+              </div>
+              <h3 className="major">Tyler Shang</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={matthew} alt="" />
+              </div>
+              <h3 className="major">Matthew Cheng</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={phoebus} alt="" />
+              </div>
+              <h3 className="major">Phoebus Yip</h3>
             </article>
           </section>
         </div>
