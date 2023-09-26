@@ -29,6 +29,7 @@ import tyler from '../assets/images/e-board/tyler.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
 import evan from '../assets/images/e-board/evan.jpg';
 import amanda from '../assets/images/e-board/amanda.jpg';
+import jack from '../assets/images/e-board/jack.jpg';
 import piplup from '../assets/images/e-board/piplup.png';
 
 const IndexPage = () => (
@@ -175,6 +176,13 @@ const IndexPage = () => (
                 <img src={haruto} alt="" />
               </div>
               <h3 className="major">Haruto Uesugo</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jack} alt="" />
+              </div>
+              <h3 className="major">Jack Kim</h3>
             </article>
 
             <article>
