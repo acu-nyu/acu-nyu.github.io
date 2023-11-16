@@ -19,9 +19,12 @@ import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg';
 import event_f22_sips from '../assets/images/events/event_f22_sips.jpg';
 import event_f22_game_night from '../assets/images/events/event_f22_game_night.jpg';
 import event_f22_idol from '../assets/images/events/event_f22_idol.jpg';
-import event_f23_spring from '../assets/images/events/event_spring_festival_f23.png';
+import event_s23_spring from '../assets/images/events/event_spring_festival_s23.png';
+import event_s23_nom from '../assets/images/events/event_s23_nom.png';
+import event_s23_palentines from '../assets/images/events/event_s23_palentines.png';
 import event_f23_nom from '../assets/images/events/event_f23_nom.png';
-import event_f23_palentines from '../assets/images/events/event_f23_palentines.png';
+import event_f23_retirement from '../assets/images/events/event_f23_retirement.png';
+
 
 import config from '../../config';
 const IndexPage = () => (
@@ -116,10 +119,39 @@ const IndexPage = () => (
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
             <article>
+                <div className="image">
+                  <img src={event_f23_nom} alt="" />
+                </div>
+                <h3 className="major">ACU NOM F23'</h3>
+                <p>
+                  Our annual food festival is back again! Join us for free food from places
+                  like Saigon Shack and drinks from our partner Whistle and Fizz at Kimmel! Make sure you stay to 
+                  challenge some of our e-board members at games like arm wrestling and the Buldak Challenge!
+                </p>
+                {/* <a href="/#" className="special">
+                  Learn more
+                </a> */}
+            </article>
+
+            <article>
+                <div className="image">
+                  <img src={event_f23_retirement} alt="" />
+                </div>
+                <h3 className="major">ACU Retirement Home</h3>
+                <p>
+                  Give your old souls a break from midterms and come join us for a night of games, snacks, and prizes! 
+                  Play games like gingo, mahjong, and gonggi to win prizes such as the Miffy Humidifier, a crochet set, and more!
+                </p>
+                {/* <a href="/#" className="special">
+                  Learn more
+                </a> */}
+            </article>
+
+            <article>
               <div className="image">
-                <img src={event_f23_nom} alt="" />
+                <img src={event_s23_nom} alt="" />
               </div>
-              <h3 className="major">ACU NOM 23'</h3>
+              <h3 className="major">ACU NOM S23'</h3>
               <p>
                 Our annual food festival is back again! Come join us for free food from places
                 like Woorijip and drinks from Whistle and Fizz at Kimmel, and stick around to 
@@ -132,7 +164,7 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={event_f23_spring} alt="" />
+                <img src={event_s23_spring} alt="" />
               </div>
               <h3 className="major">ACU x JCA Spring Festival</h3>
               <p>
@@ -148,7 +180,7 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={event_f23_palentines} alt="" />
+                <img src={event_s23_palentines} alt="" />
               </div>
               <h3 className="major">ACU Palentines</h3>
               <p>
