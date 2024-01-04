@@ -7,7 +7,6 @@ import elaina from '../assets/images/e-board/elaina.jpg';
 import eric from '../assets/images/e-board/eric.jpg';
 import grace from '../assets/images/e-board/grace.jpg';
 import jocelyn from '../assets/images/e-board/jocelyn.jpg';
-import doyeon from '../assets/images/e-board/doyeon.jpg';
 import kyle from '../assets/images/e-board/kyle.jpg';
 import jake from '../assets/images/e-board/jake.jpg';
 import avery from '../assets/images/e-board/avery.jpg';
@@ -26,10 +25,10 @@ import brian from '../assets/images/e-board/brian.jpg';
 import matthew from '../assets/images/e-board/matthew.jpg';
 import haruto from '../assets/images/e-board/haruto.jpg';
 import tyler from '../assets/images/e-board/tyler.jpg';
-import phoebus from '../assets/images/alumni/phoebus.jpg';
 import evan from '../assets/images/e-board/evan.jpg';
 import amanda from '../assets/images/e-board/amanda.jpg';
 import jack from '../assets/images/e-board/jack.jpg';
+import elise from '../assets/images/e-board/elise.jpg';
 import piplup from '../assets/images/e-board/piplup.png';
 
 const IndexPage = () => (
@@ -61,13 +60,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={tiffany} alt="" />
-              </div>
-              <h3 className="major">Tiffany Lee | VP of Events</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={avery} alt="" />
               </div>
               <h3 className="major">Avery Teano | VP of Marketing</h3>
@@ -82,16 +74,23 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={jake} alt="" />
+                <img src={kyle} alt="" />
               </div>
-              <h3 className="major">Jake Tran | Social Chair</h3>
+              <h3 className="major">Kyle Park | Co-VP of Events</h3>
             </article>
 
             <article>
               <div className="image">
                 <img src={lina} alt="" />
               </div>
-              <h3 className="major">Lina Gallo | Secretary</h3>
+              <h3 className="major">Lina Gallo | Co-VP of Events</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jake} alt="" />
+              </div>
+              <h3 className="major">Jake Tran | Social Chair</h3>
             </article>
 
             <article>
@@ -110,30 +109,16 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
+                <img src={tiffany} alt="" />
+              </div>
+              <h3 className="major">Tiffany Lee</h3>
+            </article>
+
+            <article>
+              <div className="image">
                 <img src={jocelyn} alt="" />
               </div>
               <h3 className="major">Jocelyn Xu</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={doyeon} alt="" />
-              </div>
-              <h3 className="major">Doyeon Kim</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={kyle} alt="" />
-              </div>
-              <h3 className="major">Kyle Park</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={sophia} alt="" />
-              </div>
-              <h3 className="major">Sophia Liang</h3>
             </article>
 
             <article>
@@ -152,23 +137,9 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={annika} alt="" />
-              </div>
-              <h3 className="major">Annika Vallabhanath</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={matt} alt="" />
               </div>
               <h3 className="major">Matt Zhang</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={brian} alt="" />
-              </div>
-              <h3 className="major">Brian Lin</h3>
             </article>
 
             <article>
@@ -201,14 +172,7 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={evan} alt="" />
-              </div>
-              <h3 className="major">Evan Chan</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={piplup} alt="" />
+                <img src={elise} alt="" />
               </div>
               <h3 className="major">Elise Schweng</h3>
             </article>
@@ -220,14 +184,6 @@ const IndexPage = () => (
               <h3 className="major">Amanda Foekri</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={phoebus} alt="" />
-              </div>
-              <h3 className="major">Phoebus Yip</h3>
-            </article>
-
-
             <header>
               <div className="inner">
                 <h2>Who's Abroad?</h2>
@@ -236,6 +192,34 @@ const IndexPage = () => (
             </header>
             
             <section className="features">
+              <article>
+                <div className="image">
+                  <img src={brian} alt="" />
+                </div>
+                <h3 className="major">Brian Lin | London</h3>
+              </article>
+
+              <article>
+                <div className="image">
+                  <img src={sophia} alt="" />
+                </div>
+                <h3 className="major">Sophia Liang | London</h3>
+              </article>
+
+                <article>
+                  <div className="image">
+                    <img src={evan} alt="" />
+                  </div>
+                  <h3 className="major">Evan Chan | London</h3>
+                </article>
+
+                <article>
+                  <div className="image">
+                    <img src={annika} alt="" />
+                  </div>
+                  <h3 className="major">Annika Vallabhanath | Abu Dhabi</h3>
+                </article>
+
                 <article>
                   <div className="image">
                     <img src={andy} alt="" />

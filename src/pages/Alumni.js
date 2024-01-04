@@ -27,6 +27,7 @@ import sugin from '../assets/images/alumni/sugin.jpg';
 import gaurav from '../assets/images/alumni/gaurav.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
 import yujin from '../assets/images/e-board/yujin.jpg';
+import doyeon from '../assets/images/e-board/doyeon.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -41,6 +42,20 @@ const IndexPage = () => (
       <div className="wrapper">
         <div className="inner">
           <section className="features">
+          <article>
+              <div className="image">
+                <img src={doyeon} alt="" />
+              </div>
+              <h3 className="major">Doyeon Kim</h3>
+            </article>
+          
+          <article>
+              <div className="image">
+                <img src={phoebus} alt="" />
+              </div>
+              <h3 className="major">Phoebus Yip | F23</h3>
+            </article>
+
             <article>
               <div className="image">
                 <img src={coco} alt="" />
