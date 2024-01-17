@@ -24,6 +24,7 @@ import event_s23_nom from '../assets/images/events/event_s23_nom.png';
 import event_s23_palentines from '../assets/images/events/event_s23_palentines.png';
 import event_f23_nom from '../assets/images/events/event_f23_nom.png';
 import event_f23_retirement from '../assets/images/events/event_f23_retirement.png';
+import event_f23_muji from '../assets/images/events/event_f23_muji.png';
 
 
 import config from '../../config';
@@ -118,6 +119,21 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
+          <article>
+                <div className="image">
+                  <img src={event_f23_muji} alt="" />
+                </div>
+                <h3 className="major">ACU MUJI-CAL</h3>
+                <p>
+                  Our final event of the semester is here! Come join us at Kimmel E&L on December 12th for Muji-Cal!
+                  We'll be handing out free Muji notebooks and stationaries and providing Boba from our partners so 
+                  be sure to stop by!
+                </p>
+                {/* <a href="/#" className="special">
+                  Learn more
+                </a> */}
+            </article>
+
             <article>
                 <div className="image">
                   <img src={event_f23_nom} alt="" />
