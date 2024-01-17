@@ -67,13 +67,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={grace} alt="" />
-              </div>
-              <h3 className="major">Grace Tan | PR Chair</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={kyle} alt="" />
               </div>
               <h3 className="major">Kyle Park | Co-VP of Events</h3>
@@ -123,6 +116,13 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
+                <img src={elaina} alt="" />
+              </div>
+              <h3 className="major">Elaina Feng</h3>
+            </article>
+
+            <article>
+              <div className="image">
                 <img src={alex} alt="" />
               </div>
               <h3 className="major">Alex Xie</h3>
@@ -140,6 +140,13 @@ const IndexPage = () => (
                 <img src={matt} alt="" />
               </div>
               <h3 className="major">Matt Zhang</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={andy} alt="" />
+              </div>
+              <h3 className="major">Andy Cabindol</h3>
             </article>
 
             <article>
@@ -206,40 +213,33 @@ const IndexPage = () => (
                 <h3 className="major">Sophia Liang | London</h3>
               </article>
 
-                <article>
-                  <div className="image">
-                    <img src={evan} alt="" />
-                  </div>
-                  <h3 className="major">Evan Chan | London</h3>
-                </article>
+              <article>
+                <div className="image">
+                  <img src={grace} alt="" />
+                </div>
+                <h3 className="major">Grace Tan | PR Chair</h3>
+              </article>
 
-                <article>
-                  <div className="image">
-                    <img src={annika} alt="" />
-                  </div>
-                  <h3 className="major">Annika Vallabhanath | Abu Dhabi</h3>
-                </article>
+              <article>
+                <div className="image">
+                  <img src={evan} alt="" />
+                </div>
+                <h3 className="major">Evan Chan | London</h3>
+              </article>
 
-                <article>
-                  <div className="image">
-                    <img src={andy} alt="" />
-                  </div>
-                  <h3 className="major">Andy Cabindol | Paris</h3>
-                </article>
+              <article>
+                <div className="image">
+                  <img src={annika} alt="" />
+                </div>
+                <h3 className="major">Annika Vallabhanath | Abu Dhabi</h3>
+              </article>
 
-                <article>
-                  <div className="image">
-                    <img src={elaina} alt="" />
-                  </div>
-                  <h3 className="major">Elaina Feng | Singapore</h3>
-                </article>
-
-                <article>
-                  <div className="image">
-                    <img src={steph} alt="" />
-                  </div>
-                  <h3 className="major">Stephan Park | South Korean Army</h3>
-                </article>
+              <article>
+                <div className="image">
+                  <img src={steph} alt="" />
+                </div>
+                <h3 className="major">Stephan Park | South Korean Army</h3>
+              </article>
             </section>
           </section>
         </div>
