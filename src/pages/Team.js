@@ -153,7 +153,7 @@ const IndexPage = () => (
               <div className="image">
                 <img src={haruto} alt="" />
               </div>
-              <h3 className="major">Haruto Uesugo</h3>
+              <h3 className="major">Haruto Uesugi</h3>
             </article>
 
             <article>
