@@ -42,14 +42,21 @@ const IndexPage = () => (
       <div className="wrapper">
         <div className="inner">
           <section className="features">
-          <article>
+            <article>
+              <div className="image">
+                <img src={yujin} alt="" />
+              </div>
+              <h3 className="major">Yujin Hong | S24</h3>
+            </article>
+
+            <article>
               <div className="image">
                 <img src={doyeon} alt="" />
               </div>
-              <h3 className="major">Doyeon Kim</h3>
+              <h3 className="major">Doyeon Kim | F23</h3>
             </article>
-          
-          <article>
+
+            <article>
               <div className="image">
                 <img src={phoebus} alt="" />
               </div>
@@ -58,44 +65,23 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={coco} alt="" />
+                <img src={chan} alt="" />
               </div>
-              <h3 className="major">Coco Xu | S23</h3>
+              <h3 className="major">Matthew Chan | S23</h3>
             </article>
 
             <article>
               <div className="image">
-                <img src={elim} alt="" />
+                <img src={sugin} alt="" />
               </div>
-              <h3 className="major">Elim Wu | S23</h3>
+              <h3 className="major">Sugin Li | S23</h3>
             </article>
 
             <article>
               <div className="image">
-                <img src={catherine} alt="" />
+                <img src={gaurav} alt="" />
               </div>
-              <h3 className="major">Catherine Ngyuen | S23</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={lucy} alt="" />
-              </div>
-              <h3 className="major">Lucy Lee | S23</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={yujin} alt="" />
-              </div>
-              <h3 className="major">Yujin Hong | S23</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={sam} alt="" />
-              </div>
-              <h3 className="major">Sam Ye | S23</h3>
+              <h3 className="major">Gaurav Kulkarni | S23</h3>
             </article>
 
             <article>
@@ -128,31 +114,38 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={chan} alt="" />
+                <img src={coco} alt="" />
               </div>
-              <h3 className="major">Matthew Chan | S23</h3>
+              <h3 className="major">Coco Xu | S23</h3>
             </article>
 
             <article>
               <div className="image">
-                <img src={sugin} alt="" />
+                <img src={elim} alt="" />
               </div>
-              <h3 className="major">Sugin Li | S23</h3>
+              <h3 className="major">Elim Wu | S23</h3>
             </article>
 
             <article>
               <div className="image">
-                <img src={gaurav} alt="" />
+                <img src={catherine} alt="" />
               </div>
-              <h3 className="major">Gaurav Kulkarni | S23</h3>
+              <h3 className="major">Catherine Ngyuen | S23</h3>
             </article>
 
-            {/* <article>
+            <article>
               <div className="image">
-                <img src={phoebus} alt="" />
+                <img src={lucy} alt="" />
               </div>
-              <h3 className="major">Phoebus Yip | F23</h3>
-            </article> */}
+              <h3 className="major">Lucy Lee | S23</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={sam} alt="" />
+              </div>
+              <h3 className="major">Sam Ye | S23</h3>
+            </article>
 
             <article>
               <div className="image">

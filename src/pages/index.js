@@ -10,22 +10,21 @@ import icon3 from '../assets/images/icon3.jpg';
 import s23team from '../assets/images/s23-team.jpg';
 
 import event_smash from '../assets/images/events/event_smash.jpg';
-import event_palentines from '../assets/images/events/event_palentines.jpg';
+// import event_palentines from '../assets/images/events/event_palentines.jpg';
 import event_ghibli from '../assets/images/events/event_ghibli.jpg';
 import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
 import event_s22_crafts from '../assets/images/events/event_s22_crafts.jpg';
-import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg';
+// import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg';
 import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg';
 import event_f22_sips from '../assets/images/events/event_f22_sips.jpg';
 import event_f22_game_night from '../assets/images/events/event_f22_game_night.jpg';
 import event_f22_idol from '../assets/images/events/event_f22_idol.jpg';
 import event_s23_spring from '../assets/images/events/event_spring_festival_s23.png';
-import event_s23_nom from '../assets/images/events/event_s23_nom.png';
+// import event_s23_nom from '../assets/images/events/event_s23_nom.png';
 import event_s23_palentines from '../assets/images/events/event_s23_palentines.png';
 import event_f23_nom from '../assets/images/events/event_f23_nom.png';
 import event_f23_retirement from '../assets/images/events/event_f23_retirement.png';
 import event_f23_muji from '../assets/images/events/event_f23_muji.png';
-
 
 import config from '../../config';
 const IndexPage = () => (
@@ -110,7 +109,7 @@ const IndexPage = () => (
               ACU is an all-inclusive organization that welcomes members of all
               backgrounds. ACU was founded upon and continues to operate under
               the precepts of racial and social tolerance, indiscrimination, and
-              equality. E-board applications for this fall are now closed. Look out for Spring 2024 apps in the future!
+              equality. Look out for Spring 2024 apps in the future!
             </p>
           </div>
         </div>
@@ -119,63 +118,52 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
-          <article>
-                <div className="image">
-                  <img src={event_f23_muji} alt="" />
-                </div>
-                <h3 className="major">ACU MUJI-CAL</h3>
-                <p>
-                  Our final event of the semester is here! Come join us at Kimmel E&L on December 12th for Muji-Cal!
-                  We'll be handing out free Muji notebooks and stationaries and providing Boba from our partners so 
-                  be sure to stop by!
-                </p>
-                {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-            </article>
-
             <article>
-                <div className="image">
-                  <img src={event_f23_nom} alt="" />
-                </div>
-                <h3 className="major">ACU NOM F23'</h3>
-                <p>
-                  Our annual food festival is back again! Join us for free food from places
-                  like Saigon Shack and drinks from our partner Whistle and Fizz at Kimmel! Make sure you stay to 
-                  challenge some of our e-board members at games like arm wrestling and the Buldak Challenge!
-                </p>
-                {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-            </article>
-
-            <article>
-                <div className="image">
-                  <img src={event_f23_retirement} alt="" />
-                </div>
-                <h3 className="major">ACU Retirement Home</h3>
-                <p>
-                  Give your old souls a break from midterms and come join us for a night of games, snacks, and prizes! 
-                  Play games like gingo, mahjong, and gonggi to win prizes such as the Miffy Humidifier, a crochet set, and more!
-                </p>
-                {/* <a href="/#" className="special">
+              <div className="image">
+                <img src={event_f23_muji} alt="" />
+              </div>
+              <h3 className="major">ACU MUJI-CAL</h3>
+              <p>
+                Come join us at Kimmel E&L for your favorite Japanese goodies!
+                We'll be handing out free Muji notebooks and stationaries, as
+                well as providing boba from our partners, so be sure to stop by!
+              </p>
+              {/* <a href="/#" className="special">
                   Learn more
                 </a> */}
             </article>
 
             <article>
               <div className="image">
-                <img src={event_s23_nom} alt="" />
+                <img src={event_f23_nom} alt="" />
               </div>
-              <h3 className="major">ACU NOM S23'</h3>
+              <h3 className="major">ACU NOM</h3>
               <p>
-                Our annual food festival is back again! Come join us for free food from places
-                like Woorijip and drinks from Whistle and Fizz at Kimmel, and stick around to 
-                make new friends or chat with the e-board members. We hope to see you there!
+                Each year, we host our annual food festival! Join us for free
+                food from places like Saigon Shack and drinks from our partner
+                Whistle and Fizz at Kimmel. Make sure you stay to challenge some
+                of our e-board members at games like arm wrestling and the
+                Buldak Challenge!
               </p>
               {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
+                  Learn more
+                </a> */}
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={event_f23_retirement} alt="" />
+              </div>
+              <h3 className="major">ACU Retirement Home</h3>
+              <p>
+                Give your old souls a break from midterms and come join us for a
+                night of games, snacks, and prizes! Play games like gingo,
+                mahjong, and gonggi to win prizes such as the Miffy Humidifier,
+                a crochet set, and more!
+              </p>
+              {/* <a href="/#" className="special">
+                  Learn more
+                </a> */}
             </article>
 
             <article>
@@ -184,10 +172,11 @@ const IndexPage = () => (
               </div>
               <h3 className="major">ACU x JCA Spring Festival</h3>
               <p>
-                Our final and biggest event of the semester is here! Come join us at Kimmel
-                for the ACU x JCA Spring Festival! There will be plenty of food as well as Asian games
-                and prizes from student vendors. We also heard that Twice and Blackpink will be performing
-                at the event so don't miss out!
+                Our final and biggest event of the semester is here! Come join
+                us at Kimmel for the ACU x JCA Spring Festival! There will be
+                plenty of food as well as Asian games and prizes from student
+                vendors. We also heard that Twice and Blackpink will be
+                performing at the event so don't miss out!
               </p>
               {/* <a href="/#" className="special">
                 Learn more
@@ -200,9 +189,9 @@ const IndexPage = () => (
               </div>
               <h3 className="major">ACU Palentines</h3>
               <p>
-                Valentine's day may be over but you can still make it to our Palentines day event!
-                Come out and join us to decorate Insomnia cookies and try winning a date with one of our
-                e-board members!
+                Valentine's day may be over but you can still make it to our
+                Palentines day event! Come out and join us to decorate Insomnia
+                cookies and try winning a date with one of our e-board members!
               </p>
               {/* <a href="/#" className="special">
                 Learn more
@@ -248,21 +237,6 @@ const IndexPage = () => (
                 ACU is back! Come out to our first event of the year in Kimmel
                 E&L (Floor 4 Auditorium) to decorate tote bags and notebooks all
                 while drinking delicious boba! See you there 😉
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_s22_NOM} alt="" />
-              </div>
-              <h3 className="major">NOM!</h3>
-              <p>
-                Our annual food fest is back and better than ever! 🗣 Come join
-                us for a night of asian food!
-                <br></br>
-                🍱 We will also have games, and a chance to win some prizes!
               </p>
               {/* <a href="/#" className="special">
                 Learn more
@@ -324,21 +298,6 @@ const IndexPage = () => (
                 bottle your own soot sprites to take home! Connect with other
                 Ghibli fans over free food and film soundtracks! It will be a
                 TOTORO-ly fun night!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_palentines} alt="" />
-              </div>
-              <h3 className="major">Palentines</h3>
-              <p>
-                Come out for some extraordinary treats! And by treats, I mean
-                our lovely E-Board members that will be raffled off for
-                Valentine's day suitors. But there will be good food too of
-                course.
               </p>
               {/* <a href="/#" className="special">
                 Learn more
