@@ -37,7 +37,7 @@ const IndexPage = () => (
       <header>
         <div className="inner">
           <h2>Meet the E-Board</h2>
-          <p>Hey there. We're here for you. Come meet us at our next event!</p>
+          <p>Come meet us at our next event! We'd love to talk and get to know you</p>
         </div>
       </header>
 
