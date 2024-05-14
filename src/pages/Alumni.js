@@ -28,6 +28,10 @@ import gaurav from '../assets/images/alumni/gaurav.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
 import yujin from '../assets/images/e-board/yujin.jpg';
 import doyeon from '../assets/images/e-board/doyeon.jpg';
+import irene from '../assets/images/e-board/irene.jpg';
+import eric from '../assets/images/e-board/eric.jpg';
+import jocelyn from '../assets/images/e-board/jocelyn.jpg';
+import andy from '../assets/images/e-board/andy.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -42,6 +46,34 @@ const IndexPage = () => (
       <div className="wrapper">
         <div className="inner">
           <section className="features">
+            <article>
+              <div className="image">
+                <img src={eric} alt="" />
+              </div>
+              <h3 className="major">Eric Lai | S24</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={irene} alt="" />
+              </div>
+              <h3 className="major">Irene Park | S24</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jocelyn} alt="" />
+              </div>
+              <h3 className="major">Jocelyn Xu | S24</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={andy} alt="" />
+              </div>
+              <h3 className="major">Andy Cabindol</h3>
+            </article>
+
             <article>
               <div className="image">
                 <img src={yujin} alt="" />
