@@ -13,7 +13,7 @@ import lina from '../assets/images/e-board/lina.jpg';
 import steph from '../assets/images/e-board/Steph.jpg';
 import sophia from '../assets/images/e-board/Sophia.jpg';
 import patrick from '../assets/images/e-board/Patrick.jpg';
-import alex from '../assets/images/e-board/alex.jpg';
+import alex from '../assets/images/e-board/Alex.jpg';
 import saundra from '../assets/images/e-board/saundra.jpg';
 import annika from '../assets/images/e-board/annika.jpg';
 import matt from '../assets/images/e-board/matt.jpg';
