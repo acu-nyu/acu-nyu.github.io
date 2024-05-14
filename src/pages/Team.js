@@ -25,6 +25,12 @@ import evan from '../assets/images/e-board/evan.jpg';
 import amanda from '../assets/images/e-board/amanda.jpg';
 import jack from '../assets/images/e-board/jack.jpg';
 import elise from '../assets/images/e-board/elise.jpg';
+import matthewHo from '../assets/images/e-board/MatthewHo.jpg';
+import phoebeLai from '../assets/images/e-board/PhoebeLai.jpg';
+import danielLi from '../assets/images/e-board/daniel.jpg';
+import jacklynWong from '../assets/images/e-board/JaclynWong.jpg';
+import jamesShin from '../assets/images/e-board/JamesShin.jpg';
+import natalieKang from '../assets/images/e-board/NatalieKang.jpg';
 import piplup from '../assets/images/e-board/piplup.png';
 
 const IndexPage = () => (
@@ -58,7 +64,7 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={piplup} alt="" />
+                <img src={phoebeLai} alt="" />
               </div>
               <h3 className="major">Phoebe Lai | VP of Marketing</h3>
             </article>
@@ -100,7 +106,7 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={piplup} alt="" />
+                <img src={matthewHo} alt="" />
               </div>
               <h3 className="major">Matthew Ho | R/S Chair</h3>
             </article>
@@ -117,13 +123,6 @@ const IndexPage = () => (
                 <img src={kyle} alt="" />
               </div>
               <h3 className="major">Kyle Park</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={lina} alt="" />
-              </div>
-              <h3 className="major">Lina Gallo </h3>
             </article>
 
             <article>
@@ -203,6 +202,34 @@ const IndexPage = () => (
               <h3 className="major">Matthew Cheng</h3>
             </article>
 
+            <article>
+              <div className="image">
+                <img src={danielLi} alt="" />
+              </div>
+              <h3 className="major">Daniel Li</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jacklynWong} alt="" />
+              </div>
+              <h3 className="major">Jacklyn Wong</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={natalieKang} alt="" />
+              </div>
+              <h3 className="major">Natalie Kang</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={jamesShin} alt="" />
+              </div>
+              <h3 className="major">James Shin</h3>
+            </article>
+
             <header>
               <div className="inner">
                 <h2>Who's Abroad?</h2>
@@ -222,8 +249,15 @@ const IndexPage = () => (
                 <div className="image">
                   <img src={tiffany} alt="" />
                 </div>
-                <h3 className="major">Tiffany Lee</h3>
+                <h3 className="major">Tiffany Lee | Yonsei University</h3>
               </article>
+
+              <article>
+              <div className="image">
+                <img src={lina} alt="" />
+              </div>
+              <h3 className="major">Lina Gallo | NYU Madrid</h3>
+            </article>
             </section>
           </section>
         </div>
