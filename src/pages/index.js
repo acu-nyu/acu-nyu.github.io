@@ -25,6 +25,8 @@ import event_s23_palentines from '../assets/images/events/event_s23_palentines.p
 import event_f23_nom from '../assets/images/events/event_f23_nom.png';
 import event_f23_retirement from '../assets/images/events/event_f23_retirement.png';
 import event_f23_muji from '../assets/images/events/event_f23_muji.png';
+import event_s24_inferno from '../assets/images/events/event_s24_inferno.jpg';
+import event_s24_springfest from '../assets/images/events/event_s24_springfest.png';
 
 import config from '../../config';
 const IndexPage = () => (
@@ -118,6 +120,34 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
+            <article>
+                  <div className="image">
+                    <img src={event_s24_springfest} alt="" />
+                  </div>
+                  <h3 className="major">ACU Spring Festival</h3>
+                  <p>
+                    Come join us for the carnival/festival celebration of the spring season with free food, games, and activities. 
+                    We will be holding raffles for prizes as well, so come and have fun with ACU to close out the semester!
+                  </p>
+                  {/* <a href="/#" className="special">
+                      Learn more
+                    </a> */}
+            </article>
+            
+            <article>
+                <div className="image">
+                  <img src={event_s24_inferno} alt="" />
+                </div>
+                <h3 className="major">ACU Inferno</h3>
+                <p>
+                  Inspired by the hit show Single's Inferno, come meet our lovely E-Board members that will be raffled off for suitors.
+                  ACU is also excited to host YouTuber Kelly Wakasa as a special guest for this event! Come out for a chance to hear him speak and for a Q&A panel!
+                </p>
+                {/* <a href="/#" className="special">
+                    Learn more
+                  </a> */}
+            </article>
+
             <article>
               <div className="image">
                 <img src={event_f23_muji} alt="" />
