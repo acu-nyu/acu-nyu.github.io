@@ -16,7 +16,6 @@ import patrick from '../assets/images/e-board/Patrick.jpg';
 import alex from '../assets/images/e-board/Alex.jpg';
 import saundra from '../assets/images/e-board/saundra.jpg';
 import annika from '../assets/images/e-board/annika.jpg';
-import matt from '../assets/images/e-board/matt.jpg';
 import brian from '../assets/images/e-board/brian.jpg';
 import matthew from '../assets/images/e-board/matthew.jpg';
 import haruto from '../assets/images/e-board/haruto.jpg';
@@ -148,13 +147,6 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={matt} alt="" />
-              </div>
-              <h3 className="major">Matt Zhang</h3>
-            </article>
-
-            <article>
-              <div className="image">
                 <img src={brian} alt="" />
               </div>
               <h3 className="major">Brian Lin</h3>
@@ -228,6 +220,34 @@ const IndexPage = () => (
                 <img src={jamesShin} alt="" />
               </div>
               <h3 className="major">James Shin</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Brian Wang</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Izza Virani</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Kenny Ku</h3>
+            </article>
+
+            <article>
+              <div className="image">
+                <img src={piplup} alt="" />
+              </div>
+              <h3 className="major">Josh Zhang</h3>
             </article>
 
             <header>
