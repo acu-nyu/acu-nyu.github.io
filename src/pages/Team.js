@@ -43,9 +43,157 @@ const IndexPage = () => (
           </p>
         </div>
       </header>
-
-      <div className="wrapper">
+      <div className="wrapper team-page">
         <div className="inner">
+          {/* President Section for Website */}
+          <h2 className='section-header'>Presidents</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <img src={grace} alt="Grace Tan" />
+              <h4>Grace Tan | Co-President</h4>
+            </article>
+            <article className="grid-item">
+              <img src={jake} alt="Jake Tran" />
+              <h4>Jake Tran | Co-President</h4>
+            </article>
+          </section>
+
+
+          {/* Events Team */}
+          <h2 className='section-header'>Events</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <img src={tyler} alt="" />
+                <h4>Tyler Shang | Co-VP of Events</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={amanda} alt="" />
+                <h4>Amanda Foekri | Co-VP of Events</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={danielLi} alt="" />
+                <h4>Daniel Li</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={evan} alt="" />
+                <h4>Evan Chan</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={jamesShin} alt="" />
+                <h4>James Shin</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={matthew} alt="" />
+                <h4>Matthew Cheng</h4>
+            </article>
+          </section>
+
+          {/* Marketing Team */}
+          <h2 className='section-header'>Marketing</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <img src={phoebeLai} alt="" />
+                <h4>Phoebe Lai | VP of Marketing</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={alex} alt="" />
+                <h4>Alex Xie</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={jacklynWong} alt="" />
+                <h4>Jacklyn Wong</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={sophia} alt="" />
+                <h4>Sophia Liang</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={annika} alt="" />
+                <h4> Annika Vallabhanath </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={phoebe} alt="" />
+                <h4> Phoebe Huang </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={elaina} alt="" />
+                <h4> Elaina Feng </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={saundra} alt="" />
+                <h4> Saundra Tun </h4>
+            </article>
+          </section>
+
+          {/* PR Team */}
+          <h2 className='section-header'>Public Relations</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <img src={elise} alt="" />
+                <h4> Elise Schweng | PR Chair</h4>
+            </article>
+            
+            <article className='grid-item'>
+                <img src={brian} alt="" />
+                <h4> Brian Wang </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={kyle} alt="" />
+                <h4> Kyle Park </h4>
+            </article>
+          </section>
+
+          {/* RS Team */}
+          <h2 classname='section-header'>Recruitment and Social</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <img src={matthewHo} alt="" />
+                <h4> Matthew HO | Recruitment Chair </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={jack} alt="" />
+                <h4> Jack Kim </h4>
+            </article>
+          </section>
+
+          {/* Newbies */}
+          <h2 className='section-header'>Class of Fall 2024 Newbies</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <img src={piplup} alt="" />
+                <h4> Kenny Ku </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={piplup} alt="" />
+                <h4> Izza Virani </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={piplup} alt="" />
+                <h4> Brian Wang </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={piplup} alt="" />
+                <h4> Josh Zhang </h4>
+            </article>
+          </section>
+
           <section className="features">
             <article>
               <div className="image">
