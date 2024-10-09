@@ -162,7 +162,7 @@ const IndexPage = () => (
           </section>
 
           {/* RS Team */}
-          <h2 classname='section-header'>Recruitment and Social</h2>
+          <h2 className='section-header'>Recruitment and Social</h2>
           <section className='grid-section'>
             <article className='grid-item'>
                 <img src={matthewHo} alt="" />
