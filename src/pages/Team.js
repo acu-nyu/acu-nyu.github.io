@@ -50,11 +50,13 @@ const IndexPage = () => (
           <section className="grid-section">
             <article className="grid-item">
               <img src={grace} alt="Grace Tan" />
-              <h4>Grace Tan | Co-President</h4>
+              <h4 className='leader'>Grace Tan</h4>
+              <p className='position'>Co-President</p>
             </article>
             <article className="grid-item">
               <img src={jake} alt="Jake Tran" />
-              <h4>Jake Tran | Co-President</h4>
+              <h4 className='leader'>Jake Tran</h4>
+              <p className='position'>Co-President</p>
             </article>
           </section>
 
@@ -64,12 +66,14 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <img src={tyler} alt="" />
-                <h4>Tyler Shang | Co-VP of Events</h4>
+                <h4 className='leader'>Tyler Shang</h4>
+                <p className='position'>Co-VP of Events</p>
             </article>
 
             <article className='grid-item'>
                 <img src={amanda} alt="" />
-                <h4>Amanda Foekri | Co-VP of Events</h4>
+                <h4 className='leader'>Amanda Foekri</h4>
+                <p className='position'>Co-VP of Events</p>
             </article>
 
             <article className='grid-item'>
@@ -98,7 +102,8 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <img src={phoebeLai} alt="" />
-                <h4>Phoebe Lai | VP of Marketing</h4>
+                <h4 className='leader'>Phoebe Lai</h4>
+                <p className='position'>VP of Marketing</p>
             </article>
 
             <article className='grid-item'>
@@ -147,7 +152,8 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <img src={elise} alt="" />
-                <h4> Elise Schweng | PR Chair</h4>
+                <h4 className='leader'> Elise Schweng</h4>
+                <p className='position'>PR Chair</p>
             </article>
             
             <article className='grid-item'>
@@ -166,7 +172,8 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <img src={matthewHo} alt="" />
-                <h4> Matthew HO | Recruitment Chair </h4>
+                <h4 className='leader'>Matthew Ho</h4>
+                <p className='position'>Recruitment and Social Chair</p>
             </article>
 
             <article className='grid-item'>
