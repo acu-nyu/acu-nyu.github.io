@@ -27,7 +27,7 @@ import elise from '../assets/images/e-board/elise.jpg';
 import matthewHo from '../assets/images/e-board/MatthewHo.jpg';
 import phoebeLai from '../assets/images/e-board/PhoebeLai.jpg';
 import danielLi from '../assets/images/e-board/daniel.jpg';
-import jacklynWong from '../assets/images/e-board/JaclynWong.jpg';
+import jaclynWong from '../assets/images/e-board/JaclynWong.jpg';
 import jamesShin from '../assets/images/e-board/JamesShin.jpg';
 import natalieKang from '../assets/images/e-board/NatalieKang.jpg';
 import piplup from '../assets/images/e-board/piplup.png';
@@ -73,8 +73,8 @@ const IndexPage = () => (
             </article>
 
             <article className='grid-item'>
-                <img src={danielLi} alt="" />
-                <h4>Daniel Li</h4>
+                <img src={haruto} alt="" />
+                <h4>Haruto Uesugi</h4>
             </article>
 
             <article className='grid-item'>
@@ -107,8 +107,13 @@ const IndexPage = () => (
             </article>
 
             <article className='grid-item'>
-                <img src={jacklynWong} alt="" />
-                <h4>Jacklyn Wong</h4>
+                <img src={jaclynWong} alt="" />
+                <h4>Jaclyn Wong</h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={avery} alt="" />
+                <h4>Avery Teano</h4>
             </article>
 
             <article className='grid-item'>
@@ -167,6 +172,16 @@ const IndexPage = () => (
             <article className='grid-item'>
                 <img src={jack} alt="" />
                 <h4> Jack Kim </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={danielLi} alt="" />
+                <h4> Daniel Li </h4>
+            </article>
+
+            <article className='grid-item'>
+                <img src={natalieKang} alt="" />
+                <h4> Natalie Kang </h4>
             </article>
           </section>
 
@@ -351,9 +366,9 @@ const IndexPage = () => (
 
             <article>
               <div className="image">
-                <img src={jacklynWong} alt="" />
+                <img src={jaclynWong} alt="" />
               </div>
-              <h3 className="major">Jacklyn Wong</h3>
+              <h3 className="major">Jaclyn Wong</h3>
             </article>
 
             <article>
