@@ -164,7 +164,7 @@ const IndexPage = () => (
             
             <article className='grid-item'>
                 <img src={brian} alt="" />
-                <h4> Brian Wang </h4>
+                <h4> Brian Lin </h4>
             </article>
 
             <article className='grid-item'>
