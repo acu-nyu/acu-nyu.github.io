@@ -155,6 +155,12 @@ const IndexPage = () => (
                 <h4 className='leader'> Elise Schweng</h4>
                 <p className='position'>PR Chair</p>
             </article>
+
+            <article className='grid-item'>
+                <img src={patrick} alt="" />
+                <h4 className='leader'>Patrick Wu</h4>
+                <p className='position'>Treasurer</p>
+            </article>
             
             <article className='grid-item'>
                 <img src={brian} alt="" />
