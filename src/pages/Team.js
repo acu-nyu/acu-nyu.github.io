@@ -221,6 +221,22 @@ const IndexPage = () => (
                 <h4> Josh Zhang </h4>
             </article>
           </section>
+
+          {/* Abroad Section */}
+          <h2 className='section-header'>Who's Abroad?</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <img src={steph} alt="" />
+                <h4 className='leader'>Stephen Park</h4>
+                <p className='position'>South Korean Army</p>
+            </article>
+
+            <article className='grid-item'>
+                <img src={lina} alt="" />
+                <h4 className='leader'>Lina Gallo</h4>
+                <p className='position'>NYU Madrid</p>
+            </article>
+          </section>
         </div>
       </div>
     </section>
