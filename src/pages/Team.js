@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
+import TeamSection from '../components/TeamSection';
 
 import elaina from '../assets/images/e-board/elaina.jpg';
 import grace from '../assets/images/e-board/grace.jpg';
@@ -32,211 +32,81 @@ import jamesShin from '../assets/images/e-board/JamesShin.jpg';
 import natalieKang from '../assets/images/e-board/NatalieKang.jpg';
 import piplup from '../assets/images/e-board/piplup.png';
 
+const presidents = [
+  { name: 'Grace Tan', position: 'Co-President', image: grace },
+  { name: 'Jake Tran', position: 'Co-President', image: jake }
+];
+
+const eventsTeam = [
+  { name: 'Tyler Shang', position: 'Co-VP of Events', image: tyler },
+  { name: 'Amanda Foekri', position: 'Co-VP of Events', image: amanda },
+  { name: 'Haruto Uesugi', image: haruto},
+  { name: 'Evan Chan', image: evan},
+  { name: 'James Shin', image: jamesShin},
+  { name: 'Matthew Cheng', image: matthew}
+];
+
+const marketingTeam = [
+  { name: 'Phoebe Lai', position: 'VP of Marketing', image: phoebeLai},
+  { name: 'Alex Xie', image: alex},
+  { name: 'Jaclyn Wong', image:jaclynWong},
+  { name: 'Avery Teano', image:avery},
+  { name: 'Sophia Liang', image: sophia},
+  { name: 'Annika Vallabhanath', image:annika},
+  { name: 'Saundra Tun', image: saundra},
+  { name: 'Elaina Feng', image: elaina},
+  { name: 'Phoebe Huang', image: phoebe}
+]
+
+const PRTeam = [
+  { name: 'Elise Schweng', position: 'PR Chair', image:elise},
+  { name: 'Patrick Wu', position: 'Treasurer', image:patrick},
+  { name: 'Brian Lin', image: brian},
+  { name: 'Kyle Park', image:kyle}
+]
+
+const RSTeam = [
+  { name: 'Matthew Ho', position: 'RS Chair', image:matthewHo},
+  { name: 'Jack Kim', image:jack},
+  { name: 'Daniel Li', image:danielLi},
+  { name: 'Natalie Kang', image: natalieKang}
+]
+
+const NewbiesTeam = [
+  { name: 'Brian Wang', image:piplup},
+  { name: 'Izza Virani', image:piplup},
+  { name: 'Kenny Ku', image:piplup},
+  { name: 'Josh Zhang', image:piplup}
+]
+
+const AbroadTeam = [
+  { name: 'Stephen Park', position:'South Korean Army', image:steph},
+  { name: 'Lina Gallo', position:'NYU Madrid', image:lina},
+  { name: 'Tiffany Lee', position: 'Yonsei University', image:tiffany}
+]
+
+const presidentsDescription = "Our two presidents lead and oversee all the operations of the organization.";
+
+
 const IndexPage = () => (
   <Layout fullMenu>
     <section id="wrapper">
       <header>
         <div className="inner">
           <h2>Meet the E-Board</h2>
-          <p>
-            Come see us at our next event!
-          </p>
+          <p>Come see us at our next event!</p>
         </div>
       </header>
+
       <div className="wrapper team-page">
         <div className="inner">
-          {/* President Section for Website */}
-          <h2 className='section-header'>Presidents</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={grace} alt="Grace Tan" />
-              <h4 className='leader'>Grace Tan</h4>
-              <p className='position'>Co-President</p>
-            </article>
-            <article className="grid-item">
-              <img src={jake} alt="Jake Tran" />
-              <h4 className='leader'>Jake Tran</h4>
-              <p className='position'>Co-President</p>
-            </article>
-          </section>
-
-
-          {/* Events Team */}
-          <h2 className='section-header'>Events</h2>
-          <section className='grid-section'>
-            <article className='grid-item'>
-                <img src={tyler} alt="" />
-                <h4 className='leader'>Tyler Shang</h4>
-                <p className='position'>Co-VP of Events</p>
-            </article>
-
-            <article className='grid-item'>
-                <img src={amanda} alt="" />
-                <h4 className='leader'>Amanda Foekri</h4>
-                <p className='position'>Co-VP of Events</p>
-            </article>
-
-            <article className='grid-item'>
-                <img src={haruto} alt="" />
-                <h4>Haruto Uesugi</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={evan} alt="" />
-                <h4>Evan Chan</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={jamesShin} alt="" />
-                <h4>James Shin</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={matthew} alt="" />
-                <h4>Matthew Cheng</h4>
-            </article>
-          </section>
-
-          {/* Marketing Team */}
-          <h2 className='section-header'>Marketing</h2>
-          <section className='grid-section'>
-            <article className='grid-item'>
-                <img src={phoebeLai} alt="" />
-                <h4 className='leader'>Phoebe Lai</h4>
-                <p className='position'>VP of Marketing</p>
-            </article>
-
-            <article className='grid-item'>
-                <img src={alex} alt="" />
-                <h4>Alex Xie</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={jaclynWong} alt="" />
-                <h4>Jaclyn Wong</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={avery} alt="" />
-                <h4>Avery Teano</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={sophia} alt="" />
-                <h4>Sophia Liang</h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={annika} alt="" />
-                <h4> Annika Vallabhanath </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={phoebe} alt="" />
-                <h4> Phoebe Huang </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={elaina} alt="" />
-                <h4> Elaina Feng </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={saundra} alt="" />
-                <h4> Saundra Tun </h4>
-            </article>
-          </section>
-
-          {/* PR Team */}
-          <h2 className='section-header'>Public Relations</h2>
-          <section className='grid-section'>
-            <article className='grid-item'>
-                <img src={elise} alt="" />
-                <h4 className='leader'> Elise Schweng</h4>
-                <p className='position'>PR Chair</p>
-            </article>
-
-            <article className='grid-item'>
-                <img src={patrick} alt="" />
-                <h4 className='leader'>Patrick Wu</h4>
-                <p className='position'>Treasurer</p>
-            </article>
-            
-            <article className='grid-item'>
-                <img src={brian} alt="" />
-                <h4> Brian Lin </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={kyle} alt="" />
-                <h4> Kyle Park </h4>
-            </article>
-          </section>
-
-          {/* RS Team */}
-          <h2 className='section-header'>Recruitment and Social</h2>
-          <section className='grid-section'>
-            <article className='grid-item'>
-                <img src={matthewHo} alt="" />
-                <h4 className='leader'>Matthew Ho</h4>
-                <p className='position'>Recruitment and Social Chair</p>
-            </article>
-
-            <article className='grid-item'>
-                <img src={jack} alt="" />
-                <h4> Jack Kim </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={danielLi} alt="" />
-                <h4> Daniel Li </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={natalieKang} alt="" />
-                <h4> Natalie Kang </h4>
-            </article>
-          </section>
-
-          {/* Newbies */}
-          <h2 className='section-header'>Class of Fall 2024 Newbies</h2>
-          <section className='grid-section'>
-            <article className='grid-item'>
-                <img src={piplup} alt="" />
-                <h4> Kenny Ku </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={piplup} alt="" />
-                <h4> Izza Virani </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={piplup} alt="" />
-                <h4> Brian Wang </h4>
-            </article>
-
-            <article className='grid-item'>
-                <img src={piplup} alt="" />
-                <h4> Josh Zhang </h4>
-            </article>
-          </section>
-
-          {/* Abroad Section */}
-          <h2 className='section-header'>Who's Abroad?</h2>
-          <section className='grid-section'>
-            <article className='grid-item'>
-                <img src={steph} alt="" />
-                <h4 className='leader'>Stephen Park</h4>
-                <p className='position'>South Korean Army</p>
-            </article>
-
-            <article className='grid-item'>
-                <img src={lina} alt="" />
-                <h4 className='leader'>Lina Gallo</h4>
-                <p className='position'>NYU Madrid</p>
-            </article>
-          </section>
+          <TeamSection teamName="Presidents" teamDescription={presidentsDescription} members={presidents} />
+          <TeamSection teamName="Events" members={eventsTeam} />
+          <TeamSection teamName="Marketing" members={marketingTeam} />
+          <TeamSection teamName="Public Relations" members={PRTeam} />
+          <TeamSection teamName="Recruitment and Social" members={RSTeam} />
+          <TeamSection teamName="Newbies" members={NewbiesTeam} />
+          <TeamSection teamName="Abroad" members={AbroadTeam} />
         </div>
       </div>
     </section>
@@ -244,3 +114,4 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
