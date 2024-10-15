@@ -33,7 +33,7 @@ import natalieKang from '../assets/images/e-board/NatalieKang.jpg';
 import piplup from '../assets/images/e-board/piplup.png';
 
 const presidents = [
-  { name: 'Grace Tan', position: 'Co-President', image: grace },
+  { name: 'Grace Tan', position: 'Co-President', image: grace, description:'Grace is grace' },
   { name: 'Jake Tran', position: 'Co-President', image: jake }
 ];
 
