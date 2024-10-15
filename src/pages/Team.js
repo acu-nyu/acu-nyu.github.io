@@ -78,22 +78,22 @@ const IndexPage = () => (
 
             <article className='grid-item'>
                 <img src={haruto} alt="" />
-                <h4>Haruto Uesugi</h4>
+                <h4 className='member'>Haruto Uesugi</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={evan} alt="" />
-                <h4>Evan Chan</h4>
+                <h4 className='member'>Evan Chan</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={jamesShin} alt="" />
-                <h4>James Shin</h4>
+                <h4 className='member'>James Shin</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={matthew} alt="" />
-                <h4>Matthew Cheng</h4>
+                <h4 className='member'>Matthew Cheng</h4>
             </article>
           </section>
 
@@ -108,42 +108,42 @@ const IndexPage = () => (
 
             <article className='grid-item'>
                 <img src={alex} alt="" />
-                <h4>Alex Xie</h4>
+                <h4 className='member'>Alex Xie</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={jaclynWong} alt="" />
-                <h4>Jaclyn Wong</h4>
+                <h4 className='member'>Jaclyn Wong</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={avery} alt="" />
-                <h4>Avery Teano</h4>
+                <h4 className='member'>Avery Teano</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={sophia} alt="" />
-                <h4>Sophia Liang</h4>
+                <h4 className='member'>Sophia Liang</h4>
             </article>
 
             <article className='grid-item'>
                 <img src={annika} alt="" />
-                <h4> Annika Vallabhanath </h4>
+                <h4 className='member'> Annika Vallabhanath </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={phoebe} alt="" />
-                <h4> Phoebe Huang </h4>
+                <h4 className='member'> Phoebe Huang </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={elaina} alt="" />
-                <h4> Elaina Feng </h4>
+                <h4 className='member'> Elaina Feng </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={saundra} alt="" />
-                <h4> Saundra Tun </h4>
+                <h4 className='member'> Saundra Tun </h4>
             </article>
           </section>
 
@@ -164,12 +164,12 @@ const IndexPage = () => (
             
             <article className='grid-item'>
                 <img src={brian} alt="" />
-                <h4> Brian Lin </h4>
+                <h4 className='member'> Brian Lin </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={kyle} alt="" />
-                <h4> Kyle Park </h4>
+                <h4 className='member'> Kyle Park </h4>
             </article>
           </section>
 
@@ -184,17 +184,17 @@ const IndexPage = () => (
 
             <article className='grid-item'>
                 <img src={jack} alt="" />
-                <h4> Jack Kim </h4>
+                <h4 className='member'> Jack Kim </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={danielLi} alt="" />
-                <h4> Daniel Li </h4>
+                <h4 className='member'> Daniel Li </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={natalieKang} alt="" />
-                <h4> Natalie Kang </h4>
+                <h4 className='member'> Natalie Kang </h4>
             </article>
           </section>
 
@@ -203,22 +203,22 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <img src={piplup} alt="" />
-                <h4> Kenny Ku </h4>
+                <h4 className='member'> Kenny Ku </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={piplup} alt="" />
-                <h4> Izza Virani </h4>
+                <h4 className='member'> Izza Virani </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={piplup} alt="" />
-                <h4> Brian Wang </h4>
+                <h4 className='member'> Brian Wang </h4>
             </article>
 
             <article className='grid-item'>
                 <img src={piplup} alt="" />
-                <h4> Josh Zhang </h4>
+                <h4 className='member'> Josh Zhang </h4>
             </article>
           </section>
 
@@ -235,6 +235,12 @@ const IndexPage = () => (
                 <img src={lina} alt="" />
                 <h4 className='leader'>Lina Gallo</h4>
                 <p className='position'>NYU Madrid</p>
+            </article>
+
+            <article className='grid-item'>
+                <img src={tiffany} alt="" />
+                <h4 className='leader'>Tiffany Lee</h4>
+                <p className='position'>Yonsei University</p>
             </article>
           </section>
         </div>
