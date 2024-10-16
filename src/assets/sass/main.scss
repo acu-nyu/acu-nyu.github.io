@@ -176,12 +176,9 @@
     }
   }
 
-  .leader {
-    margin-bottom: 1px;
-  }
-
-  .member {
+  .position {
     font-size: 14px;
+    color: rgb(214, 214, 214);
 
     @include breakpoint(medium) {
       font-size: 12px;
@@ -192,5 +189,3 @@
     }
   }
 }
-
-
