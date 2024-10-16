@@ -111,7 +111,7 @@ const IndexPage = () => (
               ACU is an all-inclusive organization that welcomes members of all
               backgrounds. ACU was founded upon and continues to operate under
               the precepts of racial and social tolerance, indiscrimination, and
-              equality. Look out for Spring 2024 apps in the future!
+              equality.
             </p>
           </div>
         </div>

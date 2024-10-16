@@ -48,7 +48,10 @@ const IndexPage = () => (
             <article className="grid-item">
               <div className='image-container'>
                 <img src={grace} alt="Grace Tan" />
-                <p className='hover-description'>Grace is studying MCC and enjoys being mildly bisexual</p>
+                <p className='hover-description'>
+                  Grace is studying MCC and enjoys being mildly bisexual. She likes being quirky and relishes the feeling
+                  of being the black little duckling in the crowd of white. On the inside, shes a freak.
+                </p>
               </div>
               <h4 className='leader'>Grace Tan</h4>
               <p className='position'>Co-President</p>
