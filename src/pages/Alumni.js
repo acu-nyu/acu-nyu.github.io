@@ -46,7 +46,7 @@ const IndexPage = () => (
         <div className="inner">
           {/* Class of 2024 */}
           <h2 className="section-header">Class of 2024</h2>
-          <section className="grid-section">
+          <section className="grid-section alumni">
             <article className="grid-item">
               <img src={eric} alt="Eric Lai" />
               <h3 className="leader">Eric Lai</h3>

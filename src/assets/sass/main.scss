@@ -221,21 +221,15 @@
     opacity: 0.3;
     transform: scale(1.05);
   }
-  /**
-  @media screen and (max-width: 768px) {
-    .hover-description {
-      opacity: 1;
-      visibility: visible;
-      background: rgba(0, 0, 0, 0.8);
-    }
 
-    .image-container img {
-      opacity: 0.3;
-    }
-
-    .grid-item {
-      cursor: pointer;
-    }
+  /* Disable hover for alum */
+  .grid-section.alumni .grid-item:hover .hover-description {
+    opacity: 0;
+    visibility: hidden;
   }
-  */
+  
+  .grid-section.alumni .grid-item:hover img {
+    opacity: 1;
+    transform: none;
+  }
 }
