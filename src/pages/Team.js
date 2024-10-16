@@ -195,7 +195,7 @@ const IndexPage = () => (
           </section>
 
           {/* Newbies */}
-          <h2 className="section-header">Class of Fall 2024 Newbies</h2>
+          <h2 className="section-header">Class of 2024 - Fall Newbies</h2>
           <section className="grid-section">
             <article className="grid-item">
               <img src={piplup} alt="" />
