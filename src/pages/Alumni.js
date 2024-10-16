@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
 import youli from '../assets/images/alumni/youli.jpg';
@@ -43,218 +42,177 @@ const IndexPage = () => (
         </div>
       </header>
 
-      <div className="wrapper">
+      <div className="wrapper team-page">
         <div className="inner">
-          <section className="features">
-            <article>
-              <div className="image">
-                <img src={eric} alt="" />
-              </div>
-              <h3 className="major">Eric Lai | S24</h3>
+          {/* Class of 2024 */}
+          <h2 className="section-header">Class of 2024</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <img src={eric} alt="Eric Lai" />
+              <h3 className="leader">Eric Lai</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={irene} alt="" />
-              </div>
-              <h3 className="major">Irene Park | S24</h3>
+            <article className="grid-item">
+              <img src={irene} alt="Irene Park" />
+              <h3 className="leader">Irene Park</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={jocelyn} alt="" />
-              </div>
-              <h3 className="major">Jocelyn Xu | S24</h3>
+            <article className="grid-item">
+              <img src={jocelyn} alt="Jocelyn Xu" />
+              <h3 className="leader">Jocelyn Xu</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={andy} alt="" />
-              </div>
-              <h3 className="major">Andy Cabindol | S24</h3>
+            <article className="grid-item">
+              <img src={doyeon} alt="Doyeon Kim" />
+              <h3 className="leader">Doyeon Kim</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={yujin} alt="" />
-              </div>
-              <h3 className="major">Yujin Hong | S24</h3>
+            <article className="grid-item">
+              <img src={phoebus} alt="Phoebus Yip" />
+              <h3 className="leader">Phoebus Yip</h3>
+              <p className="position">Mascot</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={doyeon} alt="" />
-              </div>
-              <h3 className="major">Doyeon Kim | F23</h3>
+            <article className="grid-item">
+              <img src={yujin} alt="Yujin Hong" />
+              <h3 className="leader">Yujin Hong</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={phoebus} alt="" />
-              </div>
-              <h3 className="major">Phoebus Yip | F23</h3>
+            <article className="grid-item">
+              <img src={andy} alt="Andy Cabindol" />
+              <h3 className="leader">Andy Cabindol</h3>
+              <p className="position">Class of 2026</p>
+            </article>
+          </section>
+
+          {/* Class of 2023 */}
+          <h2 className="section-header">Class of 2023</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <img src={chan} alt="Matthew Chan" />
+              <h3 className="leader">Matthew Chan</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={chan} alt="" />
-              </div>
-              <h3 className="major">Matthew Chan | S23</h3>
+            <article className="grid-item">
+              <img src={coco} alt="Coco Xu" />
+              <h3 className="leader">Coco Xu</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={sugin} alt="" />
-              </div>
-              <h3 className="major">Sugin Li | S23</h3>
+            <article className="grid-item">
+              <img src={matthew} alt="Matthew Apuya" />
+              <h3 className="leader">Matthew Apuya</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={gaurav} alt="" />
-              </div>
-              <h3 className="major">Gaurav Kulkarni | S23</h3>
+            <article className="grid-item">
+              <img src={sugin} alt="Sugin Li" />
+              <h3 className="leader">Sugin Li</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={matthew} alt="" />
-              </div>
-              <h3 className="major">Matthew Apuya | S23</h3>
+            <article className="grid-item">
+              <img src={gaurav} alt="Gaurav Kulkarni" />
+              <h3 className="leader">Gaurav Kulkarni</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={lauren} alt="" />
-              </div>
-              <h3 className="major">Lauren Guo | S23</h3>
+            <article className="grid-item">
+              <img src={elim} alt="Elim Wu" />
+              <h3 className="leader">Elim Wu</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={caroline} alt="" />
-              </div>
-              <h3 className="major">Caroline Tian | S23</h3>
+            <article className="grid-item">
+              <img src={catherine} alt="Catherine Ngyuen" />
+              <h3 className="leader">Catherine Ngyuen</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={candice} alt="" />
-              </div>
-              <h3 className="major">Candice Huang | S23</h3>
+            <article className="grid-item">
+              <img src={lucy} alt="Lucy Lee" />
+              <h3 className="leader">Lucy Lee</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={coco} alt="" />
-              </div>
-              <h3 className="major">Coco Xu | S23</h3>
+            <article className="grid-item">
+              <img src={sam} alt="Sam Ye" />
+              <h3 className="leader">Sam Ye</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={elim} alt="" />
-              </div>
-              <h3 className="major">Elim Wu | S23</h3>
+            <article className="grid-item">
+              <img src={lauren} alt="Lauren Guo" />
+              <h3 className="leader">Lauren Guo</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={catherine} alt="" />
-              </div>
-              <h3 className="major">Catherine Ngyuen | S23</h3>
+            <article className="grid-item">
+              <img src={caroline} alt="Caroline Tian" />
+              <h3 className="leader">Caroline Tian</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={lucy} alt="" />
-              </div>
-              <h3 className="major">Lucy Lee | S23</h3>
+            <article className="grid-item">
+              <img src={candice} alt="Candice Huang" />
+              <h3 className="leader">Candice Huang</h3>
+            </article>
+          </section>
+
+          {/* Class of 2022 */}
+          <h2 className="section-header">Class of 2022</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <img src={cassidy} alt="Cassidy Syao" />
+              <h3 className="leader">Cassidy Syao</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={sam} alt="" />
-              </div>
-              <h3 className="major">Sam Ye | S23</h3>
+            <article className="grid-item">
+              <img src={kathleen} alt="Kathleen Shao" />
+              <h3 className="leader">Kathleen Shao</h3>
+              <p className="position">Co-President</p>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={cassidy} alt="" />
-              </div>
-              <h3 className="major">Cassidy Syao | S22</h3>
+            <article className="grid-item">
+              <img src={deborah} alt="Deborah Wei" />
+              <h3 className="leader">Deborah Wei</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={kathleen} alt="" />
-              </div>
-              <h3 className="major">Kathleen Shao | S22</h3>
+            <article className="grid-item">
+              <img src={crystal} alt="Crystal Gao" />
+              <h3 className="leader">Crystal Gao</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={deborah} alt="" />
-              </div>
-              <h3 className="major">Deborah Wei | S22</h3>
+            <article className="grid-item">
+              <img src={dorothy} alt="Dorothy Rong" />
+              <h3 className="leader">Dorothy Rong</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={crystal} alt="" />
-              </div>
-              <h3 className="major">Crystal Gao | S22</h3>
+            <article className="grid-item">
+              <img src={scarlett} alt="Scarlett Jiang" />
+              <h3 className="leader">Scarlett Jiang</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={dorothy} alt="" />
-              </div>
-              <h3 className="major">Dorothy Rong | S22</h3>
+            <article className="grid-item">
+              <img src={elton} alt="Elton Zhu" />
+              <h3 className="leader">Elton Zhu</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={scarlett} alt="" />
-              </div>
-              <h3 className="major">Scarlett Jiang | S22</h3>
+            <article className="grid-item">
+              <img src={vincent} alt="Vincent Yu" />
+              <h3 className="leader">Vincent Yu</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={elton} alt="" />
-              </div>
-              <h3 className="major">Elton Zhu | S22</h3>
+            <article className="grid-item">
+              <img src={jonah} alt="Jonah Sun" />
+              <h3 className="leader">Jonah Sun</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={vincent} alt="" />
-              </div>
-              <h3 className="major">Vincent Yu | S22</h3>
+            <article className="grid-item">
+              <img src={youli} alt="Youli Yao" />
+              <h3 className="leader">Youli Yao</h3>
             </article>
 
-            <article>
-              <div className="image">
-                <img src={jonah} alt="" />
-              </div>
-              <h3 className="major">Jonah Sun | F22</h3>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={youli} alt="" />
-              </div>
-              <h3 className="major">Youli Yao | F21</h3>
-              <p>{/* VP of Events */}</p>
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={bobby} alt="" />
-              </div>
-              <h3 className="major">Bobby Luo | F21</h3>
+            <article className="grid-item">
+              <img src={bobby} alt="Bobby Luo" />
+              <h3 className="leader">Bobby Luo</h3>
+              <p className="position">Class of 2021</p>
             </article>
           </section>
         </div>
