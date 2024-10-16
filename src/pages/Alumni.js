@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
 import youli from '../assets/images/alumni/youli.jpg';
