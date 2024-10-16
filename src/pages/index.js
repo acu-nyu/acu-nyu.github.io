@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Event from '../components/Event'
 
 import logo from '../assets/images/logo.png';
 
@@ -120,240 +121,104 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
-            <article>
-                  <div className="image">
-                    <img src={event_s24_springfest} alt="" />
-                  </div>
-                  <h3 className="major">ACU Spring Festival</h3>
-                  <p>
-                    Come join us for the carnival/festival celebration of the spring season with free food, games, and activities. 
-                    We will be holding raffles for prizes as well, so come and have fun with ACU to close out the semester!
-                  </p>
-                  {/* <a href="/#" className="special">
-                      Learn more
-                    </a> */}
-            </article>
-            
-            <article>
-                <div className="image">
-                  <img src={event_s24_inferno} alt="" />
-                </div>
-                <h3 className="major">ACU Inferno</h3>
-                <p>
-                  Inspired by the hit show Single's Inferno, come meet our lovely E-Board members that will be raffled off for suitors.
-                  ACU is also excited to host YouTuber Kelly Wakasa as a special guest for this event! Come out for a chance to hear him speak and for a Q&A panel!
-                </p>
-                {/* <a href="/#" className="special">
-                    Learn more
-                  </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_f23_muji} alt="" />
-              </div>
-              <h3 className="major">ACU MUJI-CAL</h3>
-              <p>
-                Come join us at Kimmel E&L for your favorite Japanese goodies!
-                We'll be handing out free Muji notebooks and stationaries, as
-                well as providing boba from our partners, so be sure to stop by!
-              </p>
-              {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_f23_nom} alt="" />
-              </div>
-              <h3 className="major">ACU NOM</h3>
-              <p>
-                Each year, we host our annual food festival! Join us for free
-                food from places like Saigon Shack and drinks from our partner
-                Whistle and Fizz at Kimmel. Make sure you stay to challenge some
-                of our e-board members at games like arm wrestling and the
-                Buldak Challenge!
-              </p>
-              {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_f23_retirement} alt="" />
-              </div>
-              <h3 className="major">ACU Retirement Home</h3>
-              <p>
-                Give your old souls a break from midterms and come join us for a
-                night of games, snacks, and prizes! Play games like gingo,
-                mahjong, and gonggi to win prizes such as the Miffy Humidifier,
-                a crochet set, and more!
-              </p>
-              {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_s23_spring} alt="" />
-              </div>
-              <h3 className="major">ACU x JCA Spring Festival</h3>
-              <p>
-                Our final and biggest event of the semester is here! Come join
+            <Event
+              image={event_s24_springfest}
+              title="ACU Spring Festival"
+              description="Come join us for the carnival/festival celebration of the spring season with free food, games, and activities. We will be holding raffles for prizes as well, so come and have fun with ACU to close out the semester!"
+            />
+            <Event
+              image={event_s24_inferno}
+              title="ACU Inferno"
+              description="Inspired by the hit show Single's Inferno, come meet our lovely E-Board members that will be raffled off for suitors. ACU is also excited to host YouTuber Kelly Wakasa as a special guest for this event!"
+            />
+            <Event
+              image={event_f23_muji}
+              title="ACU MUJI-CAL"
+              description="Come join us at Kimmel E&L for your favorite Japanese goodies! We'll be handing out free Muji notebooks and stationaries, as well as providing boba from our partners."
+            />
+            <Event
+              image={event_f23_nom}
+              title="ACU NOM"
+              description="Each year, we host our annual food festival! Join us for free food from places like Saigon Shack and drinks from our partner Whistle and Fizz at Kimmel."
+            />
+            <Event
+              image={event_f23_retirement}
+              title="ACU Retirement Home"
+              description="Give your old souls a break from midterms and come join us for a night of games, snacks, and prizes! Play games like gingo, mahjong, and gonggi to win prizes."
+            />
+            <Event
+              image={event_s23_spring}
+              title="ACU x JCA Spring Festival"
+              description="Our final and biggest event of the semester is here! Come join
                 us at Kimmel for the ACU x JCA Spring Festival! There will be
                 plenty of food as well as Asian games and prizes from student
                 vendors. We also heard that Twice and Blackpink will be
-                performing at the event so don't miss out!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_s23_palentines} alt="" />
-              </div>
-              <h3 className="major">ACU Palentines</h3>
-              <p>
-                Valentine's day may be over but you can still make it to our
+                performing at the event so don't miss out!"
+            />
+            <Event
+              image={event_s23_palentines}
+              title="ACU Palentines"
+              description="Valentine's day may be over but you can still make it to our
                 Palentines day event! Come out and join us to decorate Insomnia
-                cookies and try winning a date with one of our e-board members!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_f22_idol} alt="" />
-              </div>
-              <h3 className="major">ACU Idol</h3>
-              <p>
-                Every year, we hold a singing competition for talented
+                cookies and try winning a date with one of our e-board members!"
+            />
+            <Event
+              image={event_f22_idol}
+              title="ACU Idol"
+              description="Every year, we hold a singing competition for talented individuals to compete for the title of ACU Idol! Come hang out with us for food and fun!"
+            />
+            <Event 
+              image={event_f22_idol}
+              title="ACU Idol"
+              description="Every year, we hold a singing competition for talented
                 individuals to compete for the title of ACU Idol! As one of
                 biggest events of the semester, there'll be a ton of food so
-                come hang out with us in our last event of the semester!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-
-            <article>
-              <div className="image">
-                <img src={event_f22_game_night} alt="" />
-              </div>
-              <h3 className="major">Game Night</h3>
-              <p>
-                Join us for another night in Kimmel to play some fun games such
+                come hang out with us in our last event of the semester!"
+            />
+            <Event
+              image={event_f22_game_night}
+              title="Game Night"
+              description="Join us for another night in Kimmel to play some fun games such
                 as Mahjong, Gonggi, Sushi Go, and more! Did we mention there
-                will be some amazing prizes too?
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_f22_sips} alt="" />
-              </div>
-              <h3 className="major">Sips n' Crafts!</h3>
-              <p>
-                ACU is back! Come out to our first event of the year in Kimmel
+                will be some amazing prizes too?"
+            />
+            <Event 
+              image={event_f22_sips}
+              title="Sips n' Craft"
+              description="ACU is back! Come out to our first event of the year in Kimmel
                 E&L (Floor 4 Auditorium) to decorate tote bags and notebooks all
-                while drinking delicious boba! See you there 😉
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_s22_utopia} alt="" />
-              </div>
-              <h3 className="major">Asian Cartoon Utopia</h3>
-              <p>
-                Come hang out with us and your favorite cartoon/anime characters
-                at Kimmel Rosenthal!
-                <br></br>
-                🎉 We'll have games, arts and crafts, and of course... prizes!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_s22_crafts} alt="" />
-              </div>
-              <h3 className="major">Arts and Crafts Night</h3>
-              <p>
-                Our first in-person event of the S22 semester - Arts and Crafts
-                Night 🎉!
-                <br></br>
-                Join us for tote bag painting, felting, beading, origami, and
-                other fun arts and crafts at Kimmel Rosenthal 🥰
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_f21_midterm_destress} alt="" />
-              </div>
-              <h3 className="major">Midterm Destress</h3>
-              <p>
-                Midterm season is here, so take a break at Kimmel and pick up
+                while drinking delicious boba! See you there 😉"
+            />
+            <Event 
+              image={event_s22_utopia}
+              title="Asian Cartoon Utopia"
+              description="Come hang out with us and your favorite cartoon/anime characters
+              at Kimmel Rosenthal!🎉 We'll have games, arts and crafts, and of course... prizes!"
+            />
+            <Event
+              image={event_ghibli}
+              title="Ghibli Getaway"
+              description="Play carnival games to win Ghibli-themed prizes and bottle your own soot sprites to take home! Connect with other Ghibli fans over free food!"
+            />
+            <Event
+              image={event_smash}
+              title="Super Smash Bros Ultimate Tournament"
+              description="Come out to our Super Smash Bros Ultimate Tournament for a FREE-to-enter tournament with CASH prizes and free food!"
+            />
+            <Event 
+              image={event_s22_crafts}
+              title="Arts and Crafts Night"
+              description="Our first in-person event of the S22 semester - Arts and Crafts
+                Night 🎉!Join us for tote bag painting, felting, beading, origami, and
+                other fun arts and crafts at Kimmel Rosenthal 🥰"
+            />
+            <Event 
+              image={event_f21_midterm_destress}
+              title="Midterm Destress"
+              description="Midterm season is here, so take a break at Kimmel and pick up
                 some free Muji stationary and pens! Supplies are limited, be
-                sure to snag yours before we run out!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_ghibli} alt="" />
-              </div>
-              <h3 className="major">Ghibli Getaway</h3>
-              <p>
-                Play carnival games like Pin The Face On No Face, Totoro Relay,
-                Cat Bus Scramble, and more to win Ghibli-themed prizes and
-                bottle your own soot sprites to take home! Connect with other
-                Ghibli fans over free food and film soundtracks! It will be a
-                TOTORO-ly fun night!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            <article>
-              <div className="image">
-                <img src={event_smash} alt="" />
-              </div>
-              <h3 className="major">Super Smash Bros Ultimate Tournament</h3>
-              <p>
-                Stop BOWS(ER)-ing social media and come out to our Super Smash
-                Bros Ultimate Tournament hosted with the EAS department for a
-                FREE-to-enter tournament with CASH prizes and free food!
-              </p>
-              {/* <a href="/#" className="special">
-                Learn more
-              </a> */}
-            </article>
-            {/* <ul className="actions">
-            <li>
-              <a href="/#" className="button">
-                Browse All
-              </a>
-            </li>
-          </ul> */}
+                sure to snag yours before we run out!"
+            />
           </section>
         </div>
       </section>
