@@ -46,197 +46,293 @@ const IndexPage = () => (
           <h2 className="section-header">Presidents</h2>
           <section className="grid-section">
             <article className="grid-item">
-              <img src={grace} alt="Grace Tan" />
-              <h4 className="leader">Grace Tan</h4>
-              <p className="position">Co-President</p>
+              <div className='image-container'>
+                <img src={grace} alt="Grace Tan" />
+                <p className='hover-description'>Grace is studying MCC and enjoys being mildly bisexual</p>
+              </div>
+              <h4 className='leader'>Grace Tan</h4>
+              <p className='position'>Co-President</p>
             </article>
             <article className="grid-item">
-              <img src={jake} alt="Jake Tran" />
-              <h4 className="leader">Jake Tran</h4>
-              <p className="position">Co-President</p>
+              <div className='image-container'>
+                <img src={jake} alt="Jake Tran" />
+                <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+              </div>
+              <h4 className='leader'>Jake Tran</h4>
+              <p className='position'>Co-President</p>
             </article>
           </section>
 
           {/* Events Team */}
-          <h2 className="section-header">Events</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={tyler} alt="" />
-              <h4 className="leader">Tyler Shang</h4>
-              <p className="position">Co-VP of Events</p>
+          <h2 className='section-header'>Events</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={tyler} alt="Tyler Shang" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Tyler Shang</h4>
+                <p className='position'>Co-VP of Events</p>
             </article>
 
-            <article className="grid-item">
-              <img src={amanda} alt="" />
-              <h4 className="leader">Amanda Foekri</h4>
-              <p className="position">Co-VP of Events</p>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={amanda} alt="Amanda Foekri" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Amanda Foekri</h4>
+                <p className='position'>Co-VP of Events</p>
             </article>
 
-            <article className="grid-item">
-              <img src={haruto} alt="" />
-              <h4 className="member">Haruto Uesugi</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={haruto} alt="Haruto Uesugi" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Haruto Uesugi</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={evan} alt="" />
-              <h4 className="member">Evan Chan</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={evan} alt="Evan Chan" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Evan Chan</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={jamesShin} alt="" />
-              <h4 className="member">James Shin</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={jamesShin} alt="James Shin" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>James Shin</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={matthew} alt="" />
-              <h4 className="member">Matthew Cheng</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={matthew} alt="Matthew Cheng" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Matthew Cheng</h4>
             </article>
           </section>
 
           {/* Marketing Team */}
-          <h2 className="section-header">Marketing</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={phoebeLai} alt="" />
-              <h4 className="leader">Phoebe Lai</h4>
-              <p className="position">VP of Marketing</p>
+          <h2 className='section-header'>Marketing</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={phoebeLai} alt="Phoebe Lai" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Phoebe Lai</h4>
+                <p className='position'>VP of Marketing</p>
             </article>
 
-            <article className="grid-item">
-              <img src={alex} alt="" />
-              <h4 className="member">Alex Xie</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={alex} alt="Alex Xie" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Alex Xie</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={jaclynWong} alt="" />
-              <h4 className="member">Jaclyn Wong</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={jaclynWong} alt="Jaclyn Wong" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Jaclyn Wong</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={avery} alt="" />
-              <h4 className="member">Avery Teano</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={avery} alt="Avery Teano" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Avery Teano</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={sophia} alt="" />
-              <h4 className="member">Sophia Liang</h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={sophia} alt="Sophia Liang" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'>Sophia Liang</h4>
             </article>
 
-            <article className="grid-item">
-              <img src={annika} alt="" />
-              <h4 className="member"> Annika Vallabhanath </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={annika} alt="Annika Vallabhanath" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Annika Vallabhanath </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={phoebe} alt="" />
-              <h4 className="member"> Phoebe Huang </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={phoebe} alt="Phoebe Huang" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Phoebe Huang </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={elaina} alt="" />
-              <h4 className="member"> Elaina Feng </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={elaina} alt="Elaina Feng" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Elaina Feng </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={saundra} alt="" />
-              <h4 className="member"> Saundra Tun </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={saundra} alt="Saundra Tun" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Saundra Tun </h4>
             </article>
           </section>
 
           {/* PR Team */}
-          <h2 className="section-header">Public Relations</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={elise} alt="" />
-              <h4 className="leader"> Elise Schweng</h4>
-              <p className="position">PR Chair</p>
+          <h2 className='section-header'>Public Relations</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={elise} alt="Elise Schweng" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'> Elise Schweng</h4>
+                <p className='position'>PR Chair</p>
             </article>
 
-            <article className="grid-item">
-              <img src={patrick} alt="" />
-              <h4 className="leader">Patrick Wu</h4>
-              <p className="position">Treasurer</p>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={patrick} alt="Patrick Wu" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Patrick Wu</h4>
+                <p className='position'>Treasurer</p>
+            </article>
+            
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={brian} alt="Brian Lin" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Brian Lin </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={brian} alt="" />
-              <h4 className="member"> Brian Lin </h4>
-            </article>
-
-            <article className="grid-item">
-              <img src={kyle} alt="" />
-              <h4 className="member"> Kyle Park </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={kyle} alt="Kyle Park" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Kyle Park </h4>
             </article>
           </section>
 
           {/* RS Team */}
-          <h2 className="section-header">Recruitment and Social</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={matthewHo} alt="" />
-              <h4 className="leader">Matthew Ho</h4>
-              <p className="position">Recruitment and Social Chair</p>
+          <h2 className='section-header'>Recruitment and Social</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={matthewHo} alt="Matthew Ho" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Matthew Ho</h4>
+                <p className='position'>Recruitment and Social Chair</p>
             </article>
 
-            <article className="grid-item">
-              <img src={jack} alt="" />
-              <h4 className="member"> Jack Kim </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={jack} alt="Jack Kim" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Jack Kim </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={danielLi} alt="" />
-              <h4 className="member"> Daniel Li </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={danielLi} alt="Daniel Li" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Daniel Li </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={natalieKang} alt="" />
-              <h4 className="member"> Natalie Kang </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={natalieKang} alt="Natalie Kang" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Natalie Kang </h4>
             </article>
           </section>
 
           {/* Newbies */}
-          <h2 className="section-header">Class of 2024 - Fall Newbies</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={piplup} alt="" />
-              <h4 className="member"> Kenny Ku </h4>
+          <h2 className='section-header'>Class of Fall 2024 Newbies</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={piplup} alt="Kenny Ku" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Kenny Ku </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={piplup} alt="" />
-              <h4 className="member"> Izza Virani </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={piplup} alt="Izza Virani" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Izza Virani </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={piplup} alt="" />
-              <h4 className="member"> Brian Wang </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={piplup} alt="Brian Wang" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Brian Wang </h4>
             </article>
 
-            <article className="grid-item">
-              <img src={piplup} alt="" />
-              <h4 className="member"> Josh Zhang </h4>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={piplup} alt="Josh Zhang" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='member'> Josh Zhang </h4>
             </article>
           </section>
 
           {/* Abroad Section */}
-          <h2 className="section-header">Who's Abroad?</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <img src={steph} alt="" />
-              <h4 className="leader">Stephen Park</h4>
-              <p className="position">South Korean Army</p>
+          <h2 className='section-header'>Who's Abroad?</h2>
+          <section className='grid-section'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={steph} alt="Stephen Park" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Stephen Park</h4>
+                <p className='position'>South Korean Army</p>
             </article>
 
-            <article className="grid-item">
-              <img src={lina} alt="" />
-              <h4 className="leader">Lina Gallo</h4>
-              <p className="position">NYU Madrid</p>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={lina} alt="Lina Gallo" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Lina Gallo</h4>
+                <p className='position'>NYU Madrid</p>
             </article>
 
-            <article className="grid-item">
-              <img src={tiffany} alt="" />
-              <h4 className="leader">Tiffany Lee</h4>
-              <p className="position">Yonsei University</p>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={tiffany} alt="Tiffany Lee" />
+                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                </div>
+                <h4 className='leader'>Tiffany Lee</h4>
+                <p className='position'>Yonsei University</p>
             </article>
           </section>
         </div>
