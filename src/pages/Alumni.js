@@ -83,7 +83,7 @@ const IndexPage = () => (
             <article className="grid-item">
               <img src={andy} alt="Andy Cabindol" />
               <h3 className="leader">Andy Cabindol</h3>
-              <p className="position">Class of 2026</p>
+              {/* <p className="position">Class of 2026</p> */}
             </article>
           </section>
 
