@@ -1,5 +1,5 @@
 import React from 'react';
-
+/* this is a test */
 const Event = ({ image, title, description }) => {
   return (
     <article>
