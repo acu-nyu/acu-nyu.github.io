@@ -182,7 +182,7 @@ const IndexPage = () => (
             <article className='grid-item'>
                 <div className='image-container'>
                   <img src={avery} alt="Avery Teano" />
-                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                  <p className='hover-description'>Avery Teano is a junior at Gallatin</p>
                 </div>
                 <h4 className='member'>Avery Teano</h4>
             </article>
@@ -202,7 +202,7 @@ const IndexPage = () => (
             <article className='grid-item'>
                 <div className='image-container'>
                   <img src={annika} alt="Annika Vallabhanath" />
-                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                  <p className='hover-description'>Annika is a junior at SPS</p>
                 </div>
                 <h4 className='member'> Annika Vallabhanath </h4>
             </article>
@@ -232,7 +232,10 @@ const IndexPage = () => (
             <article className='grid-item'>
                 <div className='image-container'>
                   <img src={saundra} alt="Saundra Tun" />
-                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                  <p className='hover-description'>
+                    Saundra is a pre-health psychology major whose hobbies consist of discovering new music and collecting nonfunctional trifles. 
+                    Her hobbies include kiki-ing with close friends, collecting plants and exercising when in an existential crisis. 
+                  </p>
                 </div>
                 <h4 className='member'> Saundra Tun </h4>
             </article>
@@ -270,7 +273,7 @@ const IndexPage = () => (
             <article className='grid-item'>
                 <div className='image-container'>
                   <img src={brian} alt="Brian Lin" />
-                  <p className='hover-description'>Jake jake jake jake jake jake jake jake </p>
+                  <p className='hover-description'>Brian Lin is a junior pursuing nursing</p>
                 </div>
                 <h4 className='member'> Brian Lin </h4>
             </article>
