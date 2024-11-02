@@ -25,12 +25,12 @@ import chan from '../assets/images/alumni/chan.jpg';
 import sugin from '../assets/images/alumni/sugin.jpg';
 import gaurav from '../assets/images/alumni/gaurav.jpg';
 import phoebus from '../assets/images/alumni/phoebus.jpg';
-import yujin from '../assets/images/e-board/yujin.jpg';
-import doyeon from '../assets/images/e-board/doyeon.jpg';
-import irene from '../assets/images/e-board/irene.jpg';
-import eric from '../assets/images/e-board/eric.jpg';
-import jocelyn from '../assets/images/e-board/jocelyn.jpg';
-import andy from '../assets/images/e-board/andy.jpg';
+import yujin from '../assets/images/alumni/yujin.jpg';
+import doyeon from '../assets/images/alumni/doyeon.jpg';
+import irene from '../assets/images/alumni/irene.jpg';
+import eric from '../assets/images/alumni/eric.jpg';
+import jocelyn from '../assets/images/alumni/jocelyn.jpg';
+import andy from '../assets/images/alumni/andy.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -89,7 +89,7 @@ const IndexPage = () => (
 
           {/* Class of 2023 */}
           <h2 className="section-header">Class of 2023</h2>
-          <section className="grid-section">
+          <section className="grid-section alumni">
             <article className="grid-item">
               <img src={chan} alt="Matthew Chan" />
               <h3 className="leader">Matthew Chan</h3>
@@ -156,7 +156,7 @@ const IndexPage = () => (
 
           {/* Class of 2022 */}
           <h2 className="section-header">Class of 2022</h2>
-          <section className="grid-section">
+          <section className="grid-section alumni">
             <article className="grid-item">
               <img src={cassidy} alt="Cassidy Syao" />
               <h3 className="leader">Cassidy Syao</h3>

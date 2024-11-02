@@ -29,7 +29,12 @@ import danielLi from '../assets/images/e-board/daniel.jpg';
 import jaclynWong from '../assets/images/e-board/JaclynWong.jpg';
 import jamesShin from '../assets/images/e-board/JamesShin.jpg';
 import natalieKang from '../assets/images/e-board/NatalieKang.jpg';
-import piplup from '../assets/images/e-board/piplup.png';
+import joshua from '../assets/images/e-board/joshua.jpg';
+import brianWang from '../assets/images/e-board/brianWang.jpg';
+import izza from '../assets/images/e-board/izza.jpg';
+import KennyKu from '../assets/images/e-board/KennyKu.jpg';
+// import piplup from '../assets/images/e-board/piplup.png';
+
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -344,7 +349,7 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <div className='image-container'>
-                  <img src={piplup} alt="Kenny Ku" />
+                  <img src={KennyKu} alt="Kenny Ku" />
                   <p className='hover-description'>
                     Kenny is in Gallatin and really likes watching chinese dramas, listening to mandopop, and drinking matcha.
                   </p>
@@ -354,7 +359,7 @@ const IndexPage = () => (
 
             <article className='grid-item'>
                 <div className='image-container'>
-                  <img src={piplup} alt="Izza Virani" />
+                  <img src={izza} alt="Izza Virani" />
                   <p className='hover-description'>
                   Izza is from Chicago, Illinois, studying media culture and communication on the pre law track. 
                   Her interests include music, food, pop culture, and coffee. 
@@ -367,7 +372,7 @@ const IndexPage = () => (
 
             <article className='grid-item'>
                 <div className='image-container'>
-                  <img src={piplup} alt="Brian Wang" />
+                  <img src={brianWang} alt="Brian Wang" />
                   <p className='hover-description'>
                     Brian Wang is from Palos Verdes, California and is majoring in Media, 
                     Culture and Communication at NYU Steinhardt. 
@@ -379,7 +384,7 @@ const IndexPage = () => (
 
             <article className='grid-item'>
                 <div className='image-container'>
-                  <img src={piplup} alt="Josh Zhang" />
+                  <img src={joshua} alt="Josh Zhang" />
                   <p className='hover-description'>
                     Josh is studying Business Administrations and enjoys drinking milk, watching the 76ers, 
                     thrifting, and listening to new artists.
