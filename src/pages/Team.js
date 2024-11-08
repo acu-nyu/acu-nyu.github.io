@@ -207,7 +207,10 @@ const IndexPage = () => (
             <article className='grid-item'>
                 <div className='image-container'>
                   <img src={annika} alt="Annika Vallabhanath" />
-                  <p className='hover-description'>Annika is a junior at SPS</p>
+                  <p className='hover-description'>
+                    Annika Vallabhanath is a junior majoring in Real Estate Finance and minoring in Economics and French. 
+                    She was born and raised in Portland, Oregon. She loves listening to classical music and attending the ballet.
+                  </p>
                 </div>
                 <h4 className='member'> Annika Vallabhanath </h4>
             </article>
