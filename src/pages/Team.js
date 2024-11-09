@@ -55,7 +55,7 @@ const IndexPage = () => (
                 <img src={grace} alt="Grace Tan" />
                 <p className='hover-description'>
                 Grace Tan is a senior majoring in Media, Culture, and Communication. 
-                She enjoys indie concerts, overpriced vintage, and traveling.
+                She enjoys indie concerts, overpriced vintage, traveling, and getting matcha.
                 </p>
               </div>
               <h4 className='leader'>Grace Tan</h4>
@@ -354,7 +354,7 @@ const IndexPage = () => (
                 <div className='image-container'>
                   <img src={KennyKu} alt="Kenny Ku" />
                   <p className='hover-description'>
-                    Kenny is in Gallatin and really likes watching chinese dramas, listening to mandopop, and drinking matcha.
+                    Kenny is in Gallatin and really likes watching Chinese dramas, listening to mandopop, and drinking matcha.
                   </p>
                 </div>
                 <h4 className='member'> Kenny Ku </h4>
