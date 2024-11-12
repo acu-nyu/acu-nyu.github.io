@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import icon1 from '../assets/images/icon1.jpg';
 import icon2 from '../assets/images/icon2.jpg';
 import icon3 from '../assets/images/icon3.jpg';
-import f22team from '../assets/images/f22-team.jpg';
+import s24team from '../assets/images/s24-team.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -76,7 +76,7 @@ const IndexPage = () => (
       <section id="four" className="wrapper alt spotlight style5">
         <div className="inner">
           <div className="image">
-            <img src={f22team} alt="" />
+            <img src={s24team} alt="" />
           </div>
           <div className="content">
             <h2 className="major">Who can join?</h2>
