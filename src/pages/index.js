@@ -129,7 +129,7 @@ const IndexPage = () => (
             <Event
               image={event_s24_inferno}
               title="ACU Inferno"
-              description="Inspired by the hit show Single's Inferno, come meet our lovely E-Board members that will be raffled off for suitors. ACU is also excited to host YouTuber Kelly Wakasa as a special guest for this event!"
+              description="Inspired by the hit show Single's Inferno, ACU is excited to bring you ACU Inferno! Come meet our lovely E-Board members that will be raffled off for suitors. ACU is also excited to host YouTuber Kelly Wakasa as a special guest for this event!"
             />
             <Event
               image={event_f23_muji}
