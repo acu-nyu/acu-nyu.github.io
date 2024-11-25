@@ -46,7 +46,7 @@ const IndexPage = () => (
       <section id="one" className="wrapper spotlight style1">
         <div className="inner">
           <div className="image">
-            <img src={icon1} alt="" />
+            <img src={s24team} alt="" />
           </div>
           <div className="content">
             <h2 className="major">Who are we?</h2>
@@ -104,7 +104,7 @@ const IndexPage = () => (
       <section id="four" className="wrapper alt spotlight style5">
         <div className="inner">
           <div className="image">
-            <img src={s24team} alt="" />
+            <img src={icon1} alt="" />
           </div>
           <div className="content">
             <h2 className="major">Who can join?</h2>
