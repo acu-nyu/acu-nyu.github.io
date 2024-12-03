@@ -29,6 +29,11 @@ import event_f23_muji from '../assets/images/events/event_f23_muji.png';
 import event_s24_inferno from '../assets/images/events/event_s24_inferno.jpg';
 import event_s24_springfest from '../assets/images/events/event_s24_springfest.png';
 
+// FALL 2024 EVENTS
+import event_f24_fall from '../assets/images/events/event_f24_fall.png';
+import event_f24_fright from '../assets/images/events/event_f24_fright.png';
+import event_f24_NOM from '../assets/images/events/event_f24_NOM.png';
+
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -121,6 +126,21 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
+            <Event
+              image={event_f24_NOM}
+              title="ACU NOM"
+              description="Calling all food lovers! ACU's annual NOM is back for a mouthwatering celebration of delicious cuisines. Indulge in an array of dishes, explore exciting flavors, and connect with friends over your favorite bites. Come hungry and leave happy!"
+            />
+            <Event
+              image={event_f24_fright}
+              title="ACU FRIGHT NIGHT"
+              description="Get ready for a spooky and thrilling evening at ACU Fright Night! Come enjoy Halloween-themed games, activities, and free treats that will send shivers down your spine. Don’t forget to dress up for a chance to win prizes in our costume contest. Join us for a night of chills and fun you won’t want to miss! "
+            />
+            <Event
+              image={event_f24_fall}
+              title="ACU FALL FESTIVAL"
+              description="Celebrate the cozy vibes of fall with ACU at our Fall Festival! Enjoy free food, exciting games, and fun activities to embrace the autumn season. Don’t miss out on the chance to win awesome prizes in our raffles. Join us for an unforgettable evening of festivities"
+            />
             <Event
               image={event_s24_springfest}
               title="ACU Spring Festival"
