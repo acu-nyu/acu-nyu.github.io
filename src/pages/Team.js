@@ -7,7 +7,6 @@ import kyle from '../assets/images/e-board/kyle.jpg';
 import jake from '../assets/images/e-board/jake.jpg';
 import avery from '../assets/images/e-board/avery.jpg';
 import phoebe from '../assets/images/e-board/phoebe.jpg';
-import tiffany from '../assets/images/e-board/tiffany.jpg';
 import lina from '../assets/images/e-board/lina.jpg';
 import steph from '../assets/images/e-board/Steph.jpg';
 import sophia from '../assets/images/e-board/Sophia.jpg';
@@ -135,16 +134,6 @@ const IndexPage = () => (
                 </div>
                 <h4 className='member'>James Shin</h4>
             </article>
-
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={matthew} alt="Matthew Cheng" />
-                  <p className='hover-description'>
-                    Matthew is a CS + DS major from Princeton NJ who enjoys trying new restaurants and reading. 
-                  </p>
-                </div>
-                <h4 className='member'>Matthew Cheng</h4>
-            </article>
           </section>
 
           {/* Marketing Team */}
@@ -247,24 +236,22 @@ const IndexPage = () => (
                 </div>
                 <h4 className='member'> Saundra Tun </h4>
             </article>
+
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={lina} alt="Lina Gallo" />
+                  <p className='hover-description'>
+                    Lina is a junior studying Public Policy and Data Science.
+                  </p>
+                </div>
+                <h4 className='member'>Lina Gallo</h4>
+            </article>
           </section>
 
           {/* PR Team */}
           <h2 className='section-header'>Public Relations</h2>
           <section className='grid-section'>
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={elise} alt="Elise Schweng" />
-                  <p className='hover-description'>
-                    Elise is from Oakland, California. She is studying Media, Culture, and Communications 
-                    with a minor in Business, Entertainment, Media, and Technology. 
-                    In her free time she enjoys thrifting, playing volleyball, and getting matcha. 
-                  </p>
-                </div>
-                <h4 className='leader'> Elise Schweng</h4>
-                <p className='position'>PR Chair</p>
-            </article>
-
+          
             <article className='grid-item'>
                 <div className='image-container'>
                   <img src={patrick} alt="Patrick Wu" />
@@ -284,18 +271,6 @@ const IndexPage = () => (
                   <p className='hover-description'>Brian Lin is a junior pursuing nursing</p>
                 </div>
                 <h4 className='member'> Brian Lin </h4>
-            </article>
-
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={kyle} alt="Kyle Park" />
-                  <p className='hover-description'>
-                    Kyle is a junior from South Korea studying Business with minor in history. 
-                    He enjoys exploring new cafes and reading in his free time. 
-                    His favorite season is Fall! 
-                  </p>
-                </div>
-                <h4 className='member'> Kyle Park </h4>
             </article>
           </section>
 
@@ -333,17 +308,6 @@ const IndexPage = () => (
                   </p>
                 </div>
                 <h4 className='member'> Daniel Li </h4>
-            </article>
-
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={natalieKang} alt="Natalie Kang" />
-                  <p className='hover-description'>
-                    Natalie is from Pleasanton, California, studying Hospitality with a Marketing concentration and is interested in fashion. 
-                    She enjoys spending time with friends and family, traveling to new places, and trying new cafes and restaurants in the city.
-                  </p>
-                </div>
-                <h4 className='member'> Natalie Kang </h4>
             </article>
           </section>
 
@@ -402,6 +366,55 @@ const IndexPage = () => (
           <section className='grid-section'>
             <article className='grid-item'>
                 <div className='image-container'>
+                  <img src={elise} alt="Elise Schweng" />
+                  <p className='hover-description'>
+                    Elise is from Oakland, California. She is studying Media, Culture, and Communications 
+                    with a minor in Business, Entertainment, Media, and Technology. 
+                    In her free time she enjoys thrifting, playing volleyball, and getting matcha. 
+                  </p>
+                </div>
+                <h4 className='leader'>Elise Schweng</h4>
+                <p className='position'>NYU Paris</p>
+            </article>
+
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={natalieKang} alt="Natalie Kang" />
+                  <p className='hover-description'>
+                    Natalie is from Pleasanton, California, studying Hospitality with a Marketing concentration and is interested in fashion. 
+                    She enjoys spending time with friends and family, traveling to new places, and trying new cafes and restaurants in the city.
+                  </p>
+                </div>
+                <h4 className='leader'> Natalie Kang </h4>
+                <p className='position'>NYU Florence</p>
+            </article>
+
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={matthew} alt="Matthew Cheng" />
+                  <p className='hover-description'>
+                    Matthew is a CS + DS major from Princeton NJ who enjoys trying new restaurants and reading. 
+                  </p>
+                </div>
+                <h4 className='leader'>Matthew Cheng</h4>
+                <p className='position'>NYU London</p>
+            </article>
+
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={kyle} alt="Kyle Park" />
+                  <p className='hover-description'>
+                    Kyle is a junior from South Korea studying Business with minor in history. 
+                    He enjoys exploring new cafes and reading in his free time. 
+                    His favorite season is Fall! 
+                  </p>
+                </div>
+                <h4 className='leader'> Kyle Park </h4>
+                <p className='position'>NYU Florence</p>
+            </article>
+
+            <article className='grid-item'>
+                <div className='image-container'>
                   <img src={steph} alt="Stephen Park" />
                   <p className='hover-description'>
                     Have fun in the army Steph!
@@ -409,28 +422,6 @@ const IndexPage = () => (
                 </div>
                 <h4 className='leader'>Stephen Park</h4>
                 <p className='position'>South Korean Army</p>
-            </article>
-
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={lina} alt="Lina Gallo" />
-                  <p className='hover-description'>
-                    Have fun in Madrid Lina!
-                  </p>
-                </div>
-                <h4 className='leader'>Lina Gallo</h4>
-                <p className='position'>NYU Madrid</p>
-            </article>
-
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={tiffany} alt="Tiffany Lee" />
-                  <p className='hover-description'>
-                    Have fun at Yonsei Tiffany!
-                  </p>
-                </div>
-                <h4 className='leader'>Tiffany Lee</h4>
-                <p className='position'>Yonsei University</p>
             </article>
           </section>
         </div>

@@ -31,6 +31,7 @@ import irene from '../assets/images/alumni/irene.jpg';
 import eric from '../assets/images/alumni/eric.jpg';
 import jocelyn from '../assets/images/alumni/jocelyn.jpg';
 import andy from '../assets/images/alumni/andy.jpg';
+import tiffany from '../assets/images/e-board/tiffany.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -44,6 +45,16 @@ const IndexPage = () => (
 
       <div className="wrapper team-page">
         <div className="inner">
+          {/* Class of 2025 */}
+          <h2 className='section-header'>Class of 2025</h2>
+          <section className='grid-section alumni'>
+            <article className='grid-item'>
+                <div className='image-container'>
+                  <img src={tiffany} alt="Tiffany Lee" />
+                </div>
+                <h4 className='leader'>Tiffany Lee</h4>
+            </article>
+          </section>
           {/* Class of 2024 */}
           <h2 className="section-header">Class of 2024</h2>
           <section className="grid-section alumni">
