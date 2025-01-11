@@ -241,7 +241,8 @@ const IndexPage = () => (
                 <div className='image-container'>
                   <img src={lina} alt="Lina Gallo" />
                   <p className='hover-description'>
-                    Lina is a junior studying Public Policy and Data Science.
+                    Lina is a junior majoring in Data Science and Public Policy.
+                    In her free time she likes to crotchet, play mobile games, and nap.
                   </p>
                 </div>
                 <h4 className='member'>Lina Gallo</h4>
