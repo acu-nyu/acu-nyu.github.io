@@ -1,7 +1,6 @@
 import React from 'react';
 import config from '../../config';
 import '../assets/sass/components/module.headersection.scss'
-import '../assets/sass/components/module.teamheader.scss'
 
 const TeamHeader = () => {
   return (
