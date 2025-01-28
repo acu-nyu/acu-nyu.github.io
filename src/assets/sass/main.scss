@@ -242,7 +242,10 @@ body {
   }
   
   .apply-button {
-    background-color: #a31a2a;
+    background-color: #6a181e; 
     border: none;
+  }
+  .apply-button:hover {
+    background-color: #7b1c23; 
   }
 }

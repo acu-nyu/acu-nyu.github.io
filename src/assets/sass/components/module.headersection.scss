@@ -1,0 +1,49 @@
+.header-section {
+    padding: 50px 20px;
+    text-align: left;
+    color: white;
+  
+    .main-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    
+    .sub {
+        font-size: 1.5rem;
+    }
+
+    .divider {
+        width: 100%; 
+        margin: auto; 
+        border: none;
+        height: 5px;
+        background: rgb(164, 164, 164); 
+      }
+  
+    .sub-heading {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  
+    .apply-button {
+      display: inline-block;
+      background: #6a181e; 
+      color: white;
+      padding: 12px 100px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease-in-out;
+  
+      &:hover {
+        background: #7b1c23; 
+      }
+    }
+  }
+  

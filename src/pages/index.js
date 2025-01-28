@@ -35,6 +35,8 @@ import event_f24_fright from '../assets/images/events/event_f24_fright.png';
 import event_f24_NOM from '../assets/images/events/event_f24_NOM.png';
 
 import config from '../../config';
+import HeaderSection from '../components/HeaderSection';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -42,8 +44,9 @@ const IndexPage = () => (
         <div className="logo">
           <img className="icon" src={logo} alt="" height="100" width="100" />
         </div>
-        <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        <HeaderSection></HeaderSection>
+        {/* <h2>{config.heading}</h2>
+        <p>{config.subHeading}</p> */}
       </div>
     </section>
 

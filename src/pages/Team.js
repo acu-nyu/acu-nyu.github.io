@@ -20,7 +20,6 @@ import haruto from '../assets/images/e-board/haruto.jpg';
 import tyler from '../assets/images/e-board/tyler.jpg';
 import evan from '../assets/images/e-board/evan.jpg';
 import amanda from '../assets/images/e-board/amanda.jpg';
-import jack from '../assets/images/e-board/jack.jpg';
 import elise from '../assets/images/e-board/elise.jpg';
 import matthewHo from '../assets/images/e-board/MatthewHo.jpg';
 import phoebeLai from '../assets/images/e-board/PhoebeLai.jpg';
@@ -32,10 +31,11 @@ import joshua from '../assets/images/e-board/joshua.jpg';
 import brianWang from '../assets/images/e-board/brianWang.jpg';
 import izza from '../assets/images/e-board/izza.jpg';
 import KennyKu from '../assets/images/e-board/KennyKu.jpg';
+// import jack from '../assets/images/e-board/jack.jpg';
 // import piplup from '../assets/images/e-board/piplup.png';
 
-import '../assets/sass/main.scss'; /* Your styles should be last */
-
+import '../assets/sass/main.scss'; 
+import TeamHeader from '../components/TeamHeader';
 
 
 const IndexPage = () => (
@@ -43,8 +43,7 @@ const IndexPage = () => (
     <section id="wrapper">
       <header>
         <div className="inner">
-          <h2>Meet the E-Board</h2>
-          <p>Come see us at our next event!</p>
+          <TeamHeader></TeamHeader>
         </div>
       </header>
       <div className="wrapper team-page">
@@ -369,14 +368,7 @@ const IndexPage = () => (
           </section>
 
           {/* Newbies */}
-          <h2 className="section-header">Spring 2025 Newbies</h2>
-          <p>Applications are now open to freshmen and sophmores! We'll be accepting applications until Feburary 7th so get your applications in!</p>
-            <a href="https://youtube.com" 
-              className="btn btn-secondary btn-lg d-block mx-auto mt-3 apply-button" 
-              target="_blank" 
-              rel="noopener noreferrer">
-              Apply Now
-            </a>
+          
           {/* <section className="grid-section">
             
           </section> */}
