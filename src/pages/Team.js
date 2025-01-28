@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -32,6 +33,9 @@ import brianWang from '../assets/images/e-board/brianWang.jpg';
 import izza from '../assets/images/e-board/izza.jpg';
 import KennyKu from '../assets/images/e-board/KennyKu.jpg';
 // import piplup from '../assets/images/e-board/piplup.png';
+
+import '../assets/sass/main.scss'; /* Your styles should be last */
+
 
 
 const IndexPage = () => (
@@ -128,18 +132,6 @@ const IndexPage = () => (
               </div>
               <h4 className="member">Evan Chan</h4>
             </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={jamesShin} alt="James Shin" />
-                <p className="hover-description">
-                  James is a sophomore from Queens, New York studying Business
-                  and Computer Science who likes playing instruments, listening
-                  to music, going to cafes, and dancing
-                </p>
-              </div>
-              <h4 className="member">James Shin</h4>
-            </article>
           </section>
 
           {/* Marketing Team */}
@@ -173,14 +165,13 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={alex} alt="Alex Xie" />
+                <img src={avery} alt="Avery Teano" />
                 <p className="hover-description">
-                  Alex is a junior studying Computer Science and Data Science at
-                  CAS. In his free time, he enjoys playing various sports and
-                  going to cafes.
+                  Avery Teano is a junior at Gallatin
                 </p>
               </div>
-              <h4 className="member">Alex Xie</h4>
+              <h4 className="leader">Avery Teano</h4>
+              <p className="position">Historian</p>
             </article>
 
             <article className="grid-item">
@@ -194,16 +185,6 @@ const IndexPage = () => (
                 </p>
               </div>
               <h4 className="member">Jaclyn Wong</h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={avery} alt="Avery Teano" />
-                <p className="hover-description">
-                  Avery Teano is a junior at Gallatin
-                </p>
-              </div>
-              <h4 className="member">Avery Teano</h4>
             </article>
 
             <article className="grid-item">
@@ -258,14 +239,26 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={lina} alt="Lina Gallo" />
+                <img src={jamesShin} alt="James Shin" />
                 <p className="hover-description">
-                  Lina is a junior majoring in Data Science and Public Policy.
-                  In her free time she likes to crotchet, play mobile games, and
-                  nap.
+                  James is a sophomore from Queens, New York studying Business
+                  and Computer Science who likes playing instruments, listening
+                  to music, going to cafes, and dancing
                 </p>
               </div>
-              <h4 className="member">Lina Gallo</h4>
+              <h4 className="member">James Shin</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={brianWang} alt="Brian Wang" />
+                <p className="hover-description">
+                  Brian Wang is from Palos Verdes, California and is majoring in
+                  Media, Culture and Communication at NYU Steinhardt. He enjoys
+                  driving around aimlessly and late-night ocean swimming.
+                </p>
+              </div>
+              <h4 className="member"> Brian Wang </h4>
             </article>
           </section>
 
@@ -297,48 +290,7 @@ const IndexPage = () => (
               <h4 className="leader">Patrick Wu</h4>
               <p className="position">Treasurer</p>
             </article>
-          </section>
 
-          {/* RS Team */}
-          <h2 className="section-header">Recruitment and Social</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={matthewHo} alt="Matthew Ho" />
-                <p className="hover-description">Matthew loves to learn 🤓</p>
-              </div>
-              <h4 className="leader">Matthew Ho</h4>
-              <p className="position">Recruitment and Social Chair</p>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={jack} alt="Jack Kim" />
-                <p className="hover-description">
-                  Jack is majoring in CS and enjoys playing poker and watching
-                  sports.
-                </p>
-              </div>
-              <h4 className="member"> Jack Kim </h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={danielLi} alt="Daniel Li" />
-                <p className="hover-description">
-                  Daniel is a second-year studying computer science and math at
-                  CAS. In his free time, he likes to play the piano, cook, and
-                  get lost in his daydreams. He hopes that someday, he can crack
-                  eggs properly.
-                </p>
-              </div>
-              <h4 className="member"> Daniel Li </h4>
-            </article>
-          </section>
-
-          {/* Newbies */}
-          <h2 className="section-header">Class of Fall 2024 Newbies</h2>
-          <section className="grid-section">
             <article className="grid-item">
               <div className="image-container">
                 <img src={izza} alt="Izza Virani" />
@@ -355,18 +307,6 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={brianWang} alt="Brian Wang" />
-                <p className="hover-description">
-                  Brian Wang is from Palos Verdes, California and is majoring in
-                  Media, Culture and Communication at NYU Steinhardt. He enjoys
-                  driving around aimlessly and late-night ocean swimming.
-                </p>
-              </div>
-              <h4 className="member"> Brian Wang </h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
                 <img src={joshua} alt="Josh Zhang" />
                 <p className="hover-description">
                   Josh is studying Business Administrations and enjoys drinking
@@ -377,6 +317,69 @@ const IndexPage = () => (
               <h4 className="member"> Joshua Zhang </h4>
             </article>
           </section>
+
+          {/* RS Team */}
+          <h2 className="section-header">Recruitment and Social</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={matthewHo} alt="Matthew Ho" />
+                <p className="hover-description">Matthew loves to learn 🤓</p>
+              </div>
+              <h4 className="leader">Matthew Ho</h4>
+              <p className="position">Recruitment and Social Chair</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={alex} alt="Alex Xie" />
+                <p className="hover-description">
+                  Alex is a junior studying Computer Science and Data Science at
+                  CAS. In his free time, he enjoys playing various sports and
+                  going to cafes.
+                </p>
+              </div>
+              <h4 className="member">Alex Xie</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={danielLi} alt="Daniel Li" />
+                <p className="hover-description">
+                  Daniel is a second-year studying computer science and math at
+                  CAS. In his free time, he likes to play the piano, cook, and
+                  get lost in his daydreams. He hopes that someday, he can crack
+                  eggs properly.
+                </p>
+              </div>
+              <h4 className="member"> Daniel Li </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={lina} alt="Lina Gallo" />
+                <p className="hover-description">
+                  Lina is a junior majoring in Data Science and Public Policy.
+                  In her free time she likes to crotchet, play mobile games, and
+                  nap.
+                </p>
+              </div>
+              <h4 className="member">Lina Gallo</h4>
+            </article>
+          </section>
+
+          {/* Newbies */}
+          <h2 className="section-header">Spring 2025 Newbies</h2>
+          <p>Applications are now open to freshmen and sophmores! We'll be accepting applications until Feburary 7th so get your applications in!</p>
+            <a href="https://youtube.com" 
+              className="btn btn-secondary btn-lg d-block mx-auto mt-3 apply-button" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              Apply Now
+            </a>
+          {/* <section className="grid-section">
+            
+          </section> */}
 
           {/* Abroad Section */}
           <h2 className="section-header">Who's Abroad?</h2>
