@@ -1,7 +1,5 @@
 import React from 'react';
-import config from '../../config';
 import '../assets/sass/components/module.headersection.scss'
-import '../assets/sass/components/module.teamheader.scss'
 
 const TeamHeader = () => {
   return (
@@ -15,7 +13,7 @@ const TeamHeader = () => {
           <br />
           <em>Freshmen and Sophomores only</em>
         </p>
-        <a href="https://bit.ly/acuspring25" className="apply-button" target="_blank">
+        <a href="https://bit.ly/acuspring25" className="apply-button" target="_blank" rel="noreferrer">
           Apply Now
         </a>
       </div>

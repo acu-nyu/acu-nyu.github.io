@@ -34,7 +34,7 @@ import event_f24_fall from '../assets/images/events/event_f24_fall.png';
 import event_f24_fright from '../assets/images/events/event_f24_fright.png';
 import event_f24_NOM from '../assets/images/events/event_f24_NOM.png';
 
-import config from '../../config';
+// import config from '../../config';
 import HeaderSection from '../components/HeaderSection';
 
 const IndexPage = () => (

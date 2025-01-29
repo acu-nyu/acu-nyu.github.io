@@ -175,6 +175,20 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
+                <img src={patrick} alt="Patrick Wu" />
+                <p className="hover-description">
+                  Patrick is a curious and driven individual who thrives on
+                  solving complex problems. He’s adaptable, creative, and
+                  passionate about learning, bringing energy and dedication to
+                  every project he takes on.
+                </p>
+              </div>
+              <h4 className="leader">Patrick Wu</h4>
+              <p className="position">Treasurer</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
                 <img src={jaclynWong} alt="Jaclyn Wong" />
                 <p className="hover-description">
                   Jaclyn is from Hong Kong/Shanghai, and she is studying Applied
@@ -274,20 +288,6 @@ const IndexPage = () => (
               </div>
               <h4 className="leader"> Kenny Ku </h4>
               <p className="position">VP of Public Relations</p>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={patrick} alt="Patrick Wu" />
-                <p className="hover-description">
-                  Patrick is a curious and driven individual who thrives on
-                  solving complex problems. He’s adaptable, creative, and
-                  passionate about learning, bringing energy and dedication to
-                  every project he takes on.
-                </p>
-              </div>
-              <h4 className="leader">Patrick Wu</h4>
-              <p className="position">Treasurer</p>
             </article>
 
             <article className="grid-item">
