@@ -110,6 +110,18 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
+                <img src={evan} alt="Evan Chan" />
+                <p className="hover-description">
+                  Evan is majoring in Business and Technology Management and he
+                  loves soccer and big-backing.
+                </p>
+              </div>
+              <h4 className="leader">Evan Chan</h4>
+              <p className='position'>Historian</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
                 <img src={haruto} alt="Haruto Uesugi" />
                 <p className="hover-description">
                   Haruto is a sophomore from San Francisco studying Data Science
@@ -120,17 +132,6 @@ const IndexPage = () => (
               </div>
               <h4 className="member">Haruto Uesugi</h4>
             </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={evan} alt="Evan Chan" />
-                <p className="hover-description">
-                  Evan is majoring in Business and Technology Management and he
-                  loves soccer and big-backing.
-                </p>
-              </div>
-              <h4 className="member">Evan Chan</h4>
-            </article>
           </section>
 
           {/* Marketing Team */}
@@ -140,8 +141,9 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={phoebeLai} alt="Phoebe Lai" />
                 <p className="hover-description">
-                  Phoebe is a design major at tandon and she enjoys music and
-                  going to concerts.
+                  Phoebe is a senior at Tandon studying Integrated Design & Media! 
+                  She enjoys curating spotify playlists, going to concerts, and 
+                  collecting blind boxes during her free time.
                 </p>
               </div>
               <h4 className="leader">Phoebe Lai</h4>
@@ -160,17 +162,6 @@ const IndexPage = () => (
               </div>
               <h4 className="leader">Sophia Liang</h4>
               <p className="position">Co-VP of Marketing</p>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={avery} alt="Avery Teano" />
-                <p className="hover-description">
-                  Avery Teano is a junior at Gallatin
-                </p>
-              </div>
-              <h4 className="leader">Avery Teano</h4>
-              <p className="position">Historian</p>
             </article>
 
             <article className="grid-item">
@@ -223,6 +214,17 @@ const IndexPage = () => (
                 </p>
               </div>
               <h4 className="member"> Phoebe Huang </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={avery} alt="Avery Teano" />
+                <p className="hover-description">
+                  Avery is a Gallatin student who loves to eat, read, watch, listen, take 
+                  photos, play games, shop, design, and explore :D
+                </p>
+              </div>
+              <h4 className="member">Avery Teano</h4>
             </article>
 
             <article className="grid-item">

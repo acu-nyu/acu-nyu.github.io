@@ -9,13 +9,13 @@ const TeamHeader = () => {
         {/* <h3 className="sub">Come see us at our next event!</h3> */}
         {/* <hr className="divider" /> */}
         <p className="sub-heading">
-          <strong>Our Spring 2025 Eboard applications are now open till February 8th!</strong>
+          <strong>Our Spring 2025 Eboard applications are closed right now. Check back next semester when applications go live!</strong>
           <br />
           <em>Freshmen and Sophomores only</em>
         </p>
-        <a href="https://bit.ly/acuspring25" className="apply-button" target="_blank" rel="noreferrer">
+        {/* <a href="https://bit.ly/acuspring25" className="apply-button" target="_blank" rel="noreferrer">
           Apply Now
-        </a>
+        </a> */}
       </div>
     </section>
   );

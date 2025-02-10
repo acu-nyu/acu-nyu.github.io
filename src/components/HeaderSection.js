@@ -9,16 +9,16 @@ const HeaderSection = () => {
         <h1 className="main-heading">{config.heading}</h1>
         <h3 className="sub">{config.subHeading}</h3>
         <hr className="divider" />
-        <p className="sub-heading">
-          
+        
+        {/* <p className="sub-heading">
           <br />
-          <strong>Our Spring 2025 Eboard applications are now open till February 8th!</strong>
+          <strong>Our Spring 2025 Eboard applications are closed right now. Check back next semester to apply!</strong>
           <br />
           <em>Freshmen and Sophomores only</em>
         </p>
-        <a href="https://bit.ly/acuspring25" className="apply-button" target="_blank">
+        <a href="https://bit.ly/acuspring25" className="apply-button"  target="_blank" rel="noreferrer">
           Apply Now
-        </a>
+        </a> */}
       </div>
     </section>
   );
