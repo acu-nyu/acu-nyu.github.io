@@ -31,8 +31,12 @@ import joshua from '../assets/images/e-board/joshua.jpg';
 import brianWang from '../assets/images/e-board/brianWang.jpg';
 import izza from '../assets/images/e-board/izza.jpg';
 import KennyKu from '../assets/images/e-board/KennyKu.jpg';
+import TaeKim from '../assets/images/e-board/Tae_kim.jpg';
+import AndreaLu from '../assets/images/e-board/Andrea_lu.jpg';
+import PeterYe from '../assets/images/e-board/Peter_ye.jpg';
+import IsisKim from '../assets/images/e-board/Isis_kim.jpg';
 // import jack from '../assets/images/e-board/jack.jpg';
-// import piplup from '../assets/images/e-board/piplup.png';
+import piplup from '../assets/images/e-board/piplup.png';
 
 import '../assets/sass/main.scss'; 
 import TeamHeader from '../components/TeamHeader';
@@ -370,11 +374,63 @@ const IndexPage = () => (
           </section>
 
           {/* Newbies */}
-          
-          {/* <section className="grid-section">
-            
-          </section> */}
+          <h2 className='section-header'>Newbies Class of Spring 2025</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={TaeKim} alt="Tae Kim" />
+                <p className="hover-description">
+                Tae is a sophomore in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, 
+                cooking (although he isn't good), and snowball fights.
+                </p>
+              </div>
+              <h4 className="member">Tae Kim</h4>
+            </article>
 
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={AndreaLu} alt="Andrea Lu" />
+                <p className="hover-description">
+                  Andrea is from Princeton, New Jersey and studies Economics and Public Policy at CAS. 
+                  In her free time, she enjoys sewing, watching docuseries, and exploring NYC! 
+                </p>
+              </div>
+              <h4 className="member">Andrea Lu</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={PeterYe} alt="Peter Ye" />
+                <p className="hover-description">
+                  Peter is a freshman from Atlanta studying Real Estate Finance. 
+                  He likes to play soccer and pickleball, try new restaurants, and watch superhero films. 
+                </p>
+              </div>
+              <h4 className="member">Peter Ye</h4>
+            </article>
+            
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={IsisKim} alt="Isis Kim" />
+                <p className="hover-description">
+                  Isis is a freshman majoring in Biology at CAS. She's from L.A, California 
+                  and likes to go cafe hopping, play block blast, and take naps. 
+                </p>
+              </div>
+              <h4 className="member">Isis Kim</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={piplup} alt="Safia Lee" />
+                <p className="hover-description">
+                  Safia is a freshman who joined ACU in Spring 2025!
+                </p>
+              </div>
+              <h4 className="member">Safia Lee</h4>
+            </article>
+          </section>
+      
           {/* Abroad Section */}
           <h2 className="section-header">Who's Abroad?</h2>
           <section className="grid-section">
