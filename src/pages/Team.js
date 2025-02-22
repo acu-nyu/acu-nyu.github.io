@@ -186,8 +186,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={jaclynWong} alt="Jaclyn Wong" />
                 <p className="hover-description">
-                  Jaclyn is from Hong Kong/Shanghai, and she is studying Applied
-                  Psychology and Global Public Health at Steinhardt. In her free
+                  Jaclyn is from Hong Kong/Shanghai, and is majoring in nursing at Rory Meyers. In her free
                   time, she enjoys grabbing matchas with her friends, study at
                   cafes, doing ballet, and karaoke at home.
                 </p>
