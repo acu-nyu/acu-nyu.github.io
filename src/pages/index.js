@@ -15,13 +15,11 @@ import event_smash from '../assets/images/events/event_smash.jpg';
 import event_ghibli from '../assets/images/events/event_ghibli.jpg';
 import event_f21_midterm_destress from '../assets/images/events/event_f21_midterm_destress.jpg';
 import event_s22_crafts from '../assets/images/events/event_s22_crafts.jpg';
-// import event_s22_NOM from '../assets/images/events/event_s22_NOM.jpg';
 import event_s22_utopia from '../assets/images/events/event_s22_utopia.jpg';
 import event_f22_sips from '../assets/images/events/event_f22_sips.jpg';
 import event_f22_game_night from '../assets/images/events/event_f22_game_night.jpg';
 import event_f22_idol from '../assets/images/events/event_f22_idol.jpg';
 import event_s23_spring from '../assets/images/events/event_spring_festival_s23.png';
-// import event_s23_nom from '../assets/images/events/event_s23_nom.png';
 import event_s23_palentines from '../assets/images/events/event_s23_palentines.png';
 import event_f23_nom from '../assets/images/events/event_f23_nom.png';
 import event_f23_retirement from '../assets/images/events/event_f23_retirement.png';
@@ -33,6 +31,9 @@ import event_s24_springfest from '../assets/images/events/event_s24_springfest.p
 import event_f24_fall from '../assets/images/events/event_f24_fall.png';
 import event_f24_fright from '../assets/images/events/event_f24_fright.png';
 import event_f24_NOM from '../assets/images/events/event_f24_NOM.png';
+
+// SPRING 2025 EVENTS
+import event_s25_swoon from '../assets/images/events/event_s25_swoon.png'
 
 // import config from '../../config';
 import HeaderSection from '../components/HeaderSection';
@@ -130,6 +131,11 @@ const IndexPage = () => (
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
             <Event
+              image={event_s25_swoon}
+              title="ACU Swoon"
+              description="Get ready for a romantic and enchanting evening at ACU Swoon! Come enjoy Valentine's-themed games, activities, and sweet treats that will make your heart flutter. Join us for a night of love and fun you won't want to miss!"
+            />
+            <Event
               image={event_f24_NOM}
               title="ACU NOM"
               description="Calling all food lovers! ACU's annual NOM is back for a mouthwatering celebration of delicious cuisines. Indulge in an array of dishes, explore exciting flavors, and connect with friends over your favorite bites. Come hungry and leave happy!"
@@ -137,12 +143,12 @@ const IndexPage = () => (
             <Event
               image={event_f24_fright}
               title="ACU FRIGHT NIGHT"
-              description="Get ready for a spooky and thrilling evening at ACU Fright Night! Come enjoy Halloween-themed games, activities, and free treats that will send shivers down your spine. Don’t forget to dress up for a chance to win prizes in our costume contest. Join us for a night of chills and fun you won’t want to miss! "
+              description="Get ready for a spooky and thrilling evening at ACU Fright Night! Come enjoy Halloween-themed games, activities, and free treats that will send shivers down your spine. Don't forget to dress up for a chance to win prizes in our costume contest. Join us for a night of chills and fun you won’t want to miss! "
             />
             <Event
               image={event_f24_fall}
               title="ACU FALL FESTIVAL"
-              description="Celebrate the cozy vibes of fall with ACU at our Fall Festival! Enjoy free food, exciting games, and fun activities to embrace the autumn season. Don’t miss out on the chance to win awesome prizes in our raffles. Join us for an unforgettable evening of festivities"
+              description="Celebrate the cozy vibes of fall with ACU at our Fall Festival! Enjoy free food, exciting games, and fun activities to embrace the autumn season. Don't miss out on the chance to win awesome prizes in our raffles. Join us for an unforgettable evening of festivities"
             />
             <Event
               image={event_s24_springfest}
