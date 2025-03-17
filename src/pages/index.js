@@ -34,6 +34,7 @@ import event_f24_NOM from '../assets/images/events/event_f24_NOM.png';
 
 // SPRING 2025 EVENTS
 import event_s25_swoon from '../assets/images/events/event_s25_swoon.png'
+import event_s25_zen from '../assets/images/events/event_s25_zen.png'
 
 // import config from '../../config';
 import HeaderSection from '../components/HeaderSection';
@@ -130,6 +131,12 @@ const IndexPage = () => (
         <div className="inner">
           <h2 className="major">Recent and Past Events</h2>
           <section className="features">
+            <Event
+              image={event_s25_zen}
+              title = "ACU Zen"
+              description="Take a break from midterms and find your inner calm at ACU Zen! Join us for a relaxing evening filled with soothing vibes, free Muji notebooks,
+              and delicious snacks to help you recharge. Whether you're looking to unwind or just enjoy a peaceful escape, this is the perfect way to de-stress."
+            />
             <Event
               image={event_s25_swoon}
               title="ACU Swoon"
