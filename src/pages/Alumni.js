@@ -46,13 +46,13 @@ const IndexPage = () => (
       <div className="wrapper team-page">
         <div className="inner">
           {/* Class of 2025 */}
-          <h2 className='section-header'>Class of 2025</h2>
-          <section className='grid-section alumni'>
-            <article className='grid-item'>
-                <div className='image-container'>
-                  <img src={tiffany} alt="Tiffany Lee" />
-                </div>
-                <h4 className='leader'>Tiffany Lee</h4>
+          <h2 className="section-header">Class of 2025</h2>
+          <section className="grid-section alumni">
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={tiffany} alt="Tiffany Lee" />
+              </div>
+              <h4 className="leader">Tiffany Lee</h4>
             </article>
           </section>
           {/* Class of 2024 */}
@@ -221,7 +221,8 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <img src={bobby} alt="Bobby Luo" />
-              <h3 className="leader">Bobby Luo</h3>            </article>
+              <h3 className="leader">Bobby Luo</h3>{' '}
+            </article>
           </section>
         </div>
       </div>
