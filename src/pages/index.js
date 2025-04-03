@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Event from '../components/Event'
+import Event from '../components/Event';
 
 import logo from '../assets/images/logo.png';
 
@@ -33,8 +33,8 @@ import event_f24_fright from '../assets/images/events/event_f24_fright.png';
 import event_f24_NOM from '../assets/images/events/event_f24_NOM.png';
 
 // SPRING 2025 EVENTS
-import event_s25_swoon from '../assets/images/events/event_s25_swoon.png'
-import event_s25_zen from '../assets/images/events/event_s25_zen.png'
+import event_s25_swoon from '../assets/images/events/event_s25_swoon.png';
+import event_s25_zen from '../assets/images/events/event_s25_zen.png';
 
 // import config from '../../config';
 import HeaderSection from '../components/HeaderSection';
@@ -133,7 +133,7 @@ const IndexPage = () => (
           <section className="features">
             <Event
               image={event_s25_zen}
-              title = "ACU Zen"
+              title="ACU Zen"
               description="Take a break from midterms and find your inner calm at ACU Zen! Join us for a relaxing evening filled with soothing vibes, free Muji notebooks,
               and delicious snacks to help you recharge. Whether you're looking to unwind or just enjoy a peaceful escape, this is the perfect way to de-stress."
             />
@@ -201,15 +201,8 @@ const IndexPage = () => (
             <Event
               image={event_f22_idol}
               title="ACU Idol"
-              description="Every year, we hold a singing competition for talented individuals to compete for the title of ACU Idol! Come hang out with us for food and fun!"
-            />
-            <Event 
-              image={event_f22_idol}
-              title="ACU Idol"
-              description="Every year, we hold a singing competition for talented
-                individuals to compete for the title of ACU Idol! As one of
-                biggest events of the semester, there'll be a ton of food so
-                come hang out with us in our last event of the semester!"
+              description="Every year, we hold a singing competition for talented individuals 
+              to compete for the title of ACU Idol! Come hang out with us for food and fun!"
             />
             <Event
               image={event_f22_game_night}
@@ -218,18 +211,25 @@ const IndexPage = () => (
                 as Mahjong, Gonggi, Sushi Go, and more! Did we mention there
                 will be some amazing prizes too?"
             />
-            <Event 
+            <Event
               image={event_f22_sips}
               title="Sips n' Craft"
               description="ACU is back! Come out to our first event of the year in Kimmel
                 E&L (Floor 4 Auditorium) to decorate tote bags and notebooks all
                 while drinking delicious boba! See you there 😉"
             />
-            <Event 
+            <Event
               image={event_s22_utopia}
               title="Asian Cartoon Utopia"
               description="Come hang out with us and your favorite cartoon/anime characters
               at Kimmel Rosenthal!🎉 We'll have games, arts and crafts, and of course... prizes!"
+            />
+            <Event
+              image={event_s22_crafts}
+              title="Arts and Crafts Night"
+              description="Our first in-person event of the S22 semester - Arts and Crafts
+                Night 🎉!Join us for tote bag painting, felting, beading, origami, and
+                other fun arts and crafts at Kimmel Rosenthal 🥰"
             />
             <Event
               image={event_ghibli}
@@ -241,14 +241,7 @@ const IndexPage = () => (
               title="Super Smash Bros Ultimate Tournament"
               description="Come out to our Super Smash Bros Ultimate Tournament for a FREE-to-enter tournament with CASH prizes and free food!"
             />
-            <Event 
-              image={event_s22_crafts}
-              title="Arts and Crafts Night"
-              description="Our first in-person event of the S22 semester - Arts and Crafts
-                Night 🎉!Join us for tote bag painting, felting, beading, origami, and
-                other fun arts and crafts at Kimmel Rosenthal 🥰"
-            />
-            <Event 
+            <Event
               image={event_f21_midterm_destress}
               title="Midterm Destress"
               description="Midterm season is here, so take a break at Kimmel and pick up
