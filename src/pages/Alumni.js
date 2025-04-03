@@ -30,7 +30,7 @@ import doyeon from '../assets/images/alumni/doyeon.jpg';
 import irene from '../assets/images/alumni/irene.jpg';
 import eric from '../assets/images/alumni/eric.jpg';
 import jocelyn from '../assets/images/alumni/jocelyn.jpg';
-import andy from '../assets/images/alumni/andy.jpg';
+// import andy from '../assets/images/alumni/andy.jpg';
 import tiffany from '../assets/images/e-board/tiffany.jpg';
 
 const IndexPage = () => (
@@ -91,11 +91,10 @@ const IndexPage = () => (
               <h3 className="leader">Yujin Hong</h3>
             </article>
 
-            <article className="grid-item">
+            {/* <article className="grid-item">
               <img src={andy} alt="Andy Cabindol" />
               <h3 className="leader">Andy Cabindol</h3>
-              <p className="position">Class of 2026</p>
-            </article>
+            </article> */}
           </section>
 
           {/* Class of 2023 */}
@@ -222,9 +221,7 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <img src={bobby} alt="Bobby Luo" />
-              <h3 className="leader">Bobby Luo</h3>
-              <p className="position">Class of 2021</p>
-            </article>
+              <h3 className="leader">Bobby Luo</h3>            </article>
           </section>
         </div>
       </div>
