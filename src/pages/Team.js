@@ -36,6 +36,8 @@ import AndreaLu from '../assets/images/e-board/Andrea_lu.jpg';
 import PeterYe from '../assets/images/e-board/Peter_ye.jpg';
 import IsisKim from '../assets/images/e-board/Isis_kim.jpg';
 // import jack from '../assets/images/e-board/jack.jpg';
+import SafiaLee from '../assets/images/e-board/SafiaLee.jpg';
+
 import piplup from '../assets/images/e-board/piplup.png';
 
 import '../assets/sass/main.scss'; 
@@ -421,9 +423,10 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={piplup} alt="Safia Lee" />
+                <img src={SafiaLee} alt="Safia Lee" />
                 <p className="hover-description">
-                  Safia is a freshman who joined ACU in Spring 2025!
+                  Safia is a freshman from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and
+                  exploring the city.
                 </p>
               </div>
               <h4 className="member">Safia Lee</h4>
