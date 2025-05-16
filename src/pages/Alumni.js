@@ -32,6 +32,13 @@ import eric from '../assets/images/alumni/eric.jpg';
 import jocelyn from '../assets/images/alumni/jocelyn.jpg';
 // import andy from '../assets/images/alumni/andy.jpg';
 import tiffany from '../assets/images/e-board/tiffany.jpg';
+import elaina from '../assets/images/e-board/elaina.jpg';
+import grace from '../assets/images/e-board/grace.jpg';
+import jake from '../assets/images/e-board/jake.jpg';
+import phoebeLai from '../assets/images/e-board/PhoebeLai.jpg';
+import matthewHo from '../assets/images/e-board/MatthewHo.jpg';
+import patrick from '../assets/images/e-board/Patrick.jpg';
+import saundra from '../assets/images/e-board/saundra.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -49,10 +56,45 @@ const IndexPage = () => (
           <h2 className="section-header">Class of 2025</h2>
           <section className="grid-section alumni">
             <article className="grid-item">
-              <div className="image-container">
-                <img src={tiffany} alt="Tiffany Lee" />
-              </div>
-              <h4 className="leader">Tiffany Lee</h4>
+              <img src={grace} alt="Grace Tan" />
+              <h3 className="leader">Grace Tan</h3>
+              <p className="position">Co-President</p>
+            </article>
+
+            <article className="grid-item">
+              <img src={jake} alt="Jake Tran" />
+              <h3 className="leader">Jake Tran</h3>
+              <p className="position">Co-President</p>
+            </article>
+
+            <article className="grid-item">
+              <img src={phoebeLai} alt="Phoebe Lai" />
+              <h3 className="leader">Phoebe Lai</h3>
+            </article>
+
+            <article className="grid-item">
+              <img src={matthewHo} alt="Matthew Ho" />
+              <h3 className="leader">Matthew Ho</h3>
+            </article>
+
+            <article className="grid-item">
+              <img src={patrick} alt="Patrick Wu" />
+              <h3 className="leader">Patrick Wu</h3>
+            </article>
+
+            <article className="grid-item">
+              <img src={saundra} alt="Saundra" />
+              <h3 className="leader">Saundra Tun</h3>
+            </article>
+
+            <article className="grid-item">
+              <img src={elaina} alt="Elaina Feng" />
+              <h3 className="leader">Elaina Feng</h3>
+            </article>
+
+            <article className="grid-item">
+              <img src={tiffany} alt="Tiffany Lee" />
+              <h3 className="leader">Tiffany Lee</h3>
             </article>
           </section>
           {/* Class of 2024 */}
