@@ -31,7 +31,7 @@ import IsisKim from '../assets/images/e-board/Isis_kim.jpg';
 // import jack from '../assets/images/e-board/jack.jpg';
 import SafiaLee from '../assets/images/e-board/SafiaLee.jpg';
 
-import piplup from '../assets/images/e-board/piplup.png';
+// import piplup from '../assets/images/e-board/piplup.png';
 
 import '../assets/sass/main.scss'; 
 import TeamHeader from '../components/TeamHeader';
@@ -84,17 +84,27 @@ const IndexPage = () => (
           <section className="grid-section">
             <article className="grid-item">
               <div className="image-container">
-                <img src={tyler} alt="Tyler Shang" />
+                <img src={evan} alt="Evan Chan" />
                 <p className="hover-description">
-                  Tyler is a very dedicated, hard working individual who puts
-                  others needs as his main priority. As a third year student at
-                  NYU studying Economics, he strives to do his best in planning
-                  fun events for the club for students at the school to have an
-                  amazing time!
+                  Evan is majoring in Business and Technology Management and he
+                  loves soccer and big-backing.
                 </p>
               </div>
-              <h4 className="leader">Tyler Shang</h4>
-              <p className="position">Co-VP of Events</p>
+              <h4 className="leader">Evan Chan</h4>
+              <p className='position'>Co-VP of Events</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={jamesShin} alt="James Shin" />
+                <p className="hover-description">
+                  James is a sophomore from Queens, New York studying Business
+                  and Computer Science who likes playing instruments, listening
+                  to music, going to cafes, and dancing
+                </p>
+              </div>
+              <h4 className="leader">James Shin</h4>
+              <p className='position'>Co-VP of Events</p>
             </article>
 
             <article className="grid-item">
@@ -107,19 +117,7 @@ const IndexPage = () => (
                   reading, and dancing!
                 </p>
               </div>
-              <h4 className="leader">Amanda Foekri</h4>
-              <p className="position">Co-VP of Events</p>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={evan} alt="Evan Chan" />
-                <p className="hover-description">
-                  Evan is majoring in Business and Technology Management and he
-                  loves soccer and big-backing.
-                </p>
-              </div>
-              <h4 className="member">Evan Chan</h4>
+              <h4 className="member">Amanda Foekri</h4>
             </article>
 
             <article className="grid-item">
@@ -226,18 +224,6 @@ const IndexPage = () => (
                 </p>
               </div>
               <h4 className="member"> Annika Vallabhanath </h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={jamesShin} alt="James Shin" />
-                <p className="hover-description">
-                  James is a sophomore from Queens, New York studying Business
-                  and Computer Science who likes playing instruments, listening
-                  to music, going to cafes, and dancing
-                </p>
-              </div>
-              <h4 className="member">James Shin</h4>
             </article>
 
             <article className="grid-item">
