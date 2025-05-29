@@ -55,7 +55,7 @@ const IndexPage = () => (
                 <img src={tyler} alt="Tyler Shang" />
                 <p className="hover-description">
                   Tyler is a very dedicated, hard working individual who puts
-                  others needs as his main priority. As a third year student at
+                  others needs as his main priority. As a fourth year student at
                   NYU studying Economics, he strives to do his best in planning
                   fun events for the club for students at the school to have an
                   amazing time!
@@ -69,7 +69,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={lina} alt="Lina Gallo" />
                 <p className="hover-description">
-                  Lina is a junior majoring in Data Science and Public Policy.
+                  Lina is a senior majoring in Data Science and Public Policy.
                   In her free time she likes to crotchet, play mobile games, and
                   nap.
                 </p>
@@ -98,7 +98,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={jamesShin} alt="James Shin" />
                 <p className="hover-description">
-                  James is a sophomore from Queens, New York studying Business
+                  James is a junior from Queens, New York studying Business
                   and Computer Science who likes playing instruments, listening
                   to music, going to cafes, and dancing
                 </p>
@@ -124,7 +124,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={haruto} alt="Haruto Uesugi" />
                 <p className="hover-description">
-                  Haruto is a sophomore from San Francisco studying Data Science
+                  Haruto is a junior from San Francisco studying Data Science
                   and Biology. In his free time, he enjoys running, playing
                   soccer, and reading. His favorite soccer teams are Barcelona
                   and Brighton.
@@ -137,7 +137,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={kyle} alt="Kyle Park" />
                 <p className="hover-description">
-                  Kyle is a junior from South Korea studying Business with minor
+                  Kyle is a senior from South Korea studying Business with minor
                   in history. He enjoys exploring new cafes and reading in his
                   free time. His favorite season is Fall!
                 </p>
@@ -164,7 +164,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={sophia} alt="Sophia Liang" />
                 <p className="hover-description">
-                  Sophia Liang is a Junior in Gallatin concentrating in
+                  Sophia Liang is a senior in Gallatin concentrating in
                   sustainable fashion. Born and raised in Seattle, Washington,
                   she is always excited to explore new places. Besides fashion,
                   Sophia is loves dancing, thrifting, and going to museums!
@@ -179,7 +179,7 @@ const IndexPage = () => (
                 <img src={phoebe} alt="Phoebe Huang" />
                 <p className="hover-description">
                   Phoebe Huang is from San Jose, CA and Taiwan, and she is a
-                  Junior studying CS+DS at CAS. Phoebe loves to online shop and
+                  senior studying CS+DS at CAS. Phoebe loves to online shop and
                   rot in bed💤
                 </p>
               </div>
@@ -217,7 +217,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={annika} alt="Annika Vallabhanath" />
                 <p className="hover-description">
-                  Annika Vallabhanath is a junior majoring in Real Estate
+                  Annika Vallabhanath is a senior majoring in Real Estate
                   Finance and minoring in Economics and French. She was born and
                   raised in Portland, Oregon. She loves listening to classical
                   music and attending the ballet.
@@ -315,7 +315,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={alex} alt="Alex Xie" />
                 <p className="hover-description">
-                  Alex is a junior studying Computer Science and Data Science at
+                  Alex is a senior studying Computer Science and Data Science at
                   CAS. In his free time, he enjoys playing various sports and
                   going to cafes.
                 </p>
@@ -327,7 +327,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={danielLi} alt="Daniel Li" />
                 <p className="hover-description">
-                  Daniel is a second-year studying computer science and math at
+                  Daniel is a third-year studying computer science and math at
                   CAS. In his free time, he likes to play the piano, cook, and
                   get lost in his daydreams. He hopes that someday, he can crack
                   eggs properly.
@@ -340,7 +340,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={steph} alt="Stephen Park" />
                 <p className="hover-description">
-                  Stephan is a Sophomore from South Korea studying Econ. 
+                  Stephan is a sophomore from South Korea studying Econ. 
                   He recently finished serving in the South Korean Army and is excited to be back!
                 </p>
               </div>
@@ -355,7 +355,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={TaeKim} alt="Tae Kim" />
                 <p className="hover-description">
-                Tae is a sophomore in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, 
+                Tae is a junior in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, 
                 cooking (although he isn't good), and snowball fights.
                 </p>
               </div>
@@ -377,7 +377,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={PeterYe} alt="Peter Ye" />
                 <p className="hover-description">
-                  Peter is a freshman from Atlanta studying Real Estate Finance. 
+                  Peter is a sophomore from Atlanta studying Real Estate Finance. 
                   He likes to play soccer and pickleball, try new restaurants, and watch superhero films. 
                 </p>
               </div>
@@ -388,7 +388,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={IsisKim} alt="Isis Kim" />
                 <p className="hover-description">
-                  Isis is a freshman majoring in Biology at CAS. She's from L.A, California 
+                  Isis is a sophomore majoring in Biology at CAS. She's from L.A, California 
                   and likes to go cafe hopping, play block blast, and take naps. 
                 </p>
               </div>
@@ -399,7 +399,7 @@ const IndexPage = () => (
               <div className="image-container">
                 <img src={SafiaLee} alt="Safia Lee" />
                 <p className="hover-description">
-                  Safia is a freshman from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and
+                  Safia is a sophomore from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and
                   exploring the city.
                 </p>
               </div>
