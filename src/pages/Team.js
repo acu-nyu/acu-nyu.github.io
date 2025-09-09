@@ -375,20 +375,6 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={izza} alt="Izza Virani" />
-                <p className="hover-description">
-                  Izza is from Chicago, Illinois, studying media culture and
-                  communication on the pre law track. Her interests include
-                  music, food, pop culture, and coffee. You can often find her
-                  collecting way too many stickers for her laptop or talking
-                  about any new pop culture updates she has read on Twitter (X).
-                </p>
-              </div>
-              <h4 className="member"> Izza Virani </h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
                 <img src={joshua} alt="Josh Zhang" />
                 <p className="hover-description">
                   Josh is studying Business Administrations and enjoys drinking
@@ -420,6 +406,21 @@ const IndexPage = () => (
               </div>
               <h4 className="leader"> Annika Vallabhanath </h4>
               <p className="position">NYU Paris</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={izza} alt="Izza Virani" />
+                <p className="hover-description">
+                  Izza is from Chicago, Illinois, studying media culture and
+                  communication on the pre law track. Her interests include
+                  music, food, pop culture, and coffee. You can often find her
+                  collecting way too many stickers for her laptop or talking
+                  about any new pop culture updates she has read on Twitter (X).
+                </p>
+              </div>
+              <h4 className="leader"> Izza Virani </h4>
+              <p className='position'>NYU Abroad</p>
             </article>
           </section>
         </div>
