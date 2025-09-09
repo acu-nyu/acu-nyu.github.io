@@ -28,7 +28,7 @@ import TaeKim from '../assets/images/e-board/Tae_kim.jpg';
 import AndreaLu from '../assets/images/e-board/Andrea_lu.jpg';
 import PeterYe from '../assets/images/e-board/Peter_ye.jpg';
 import IsisKim from '../assets/images/e-board/Isis_kim.jpg';
-// import jack from '../assets/images/e-board/jack.jpg';
+import jack from '../assets/images/e-board/jack.jpg';
 import SafiaLee from '../assets/images/e-board/SafiaLee.jpg';
 
 // import piplup from '../assets/images/e-board/piplup.png';
@@ -109,6 +109,19 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
+                <img src={alex} alt="Alex Xie" />
+                <p className="hover-description">
+                  Alex is a senior studying Computer Science and Data Science at
+                  CAS. In his free time, he enjoys playing various sports and
+                  going to cafes.
+                </p>
+              </div>
+              <h4 className="leader">Alex Xie</h4>
+              <p className="position">Website Master</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
                 <img src={amanda} alt="Amanda Foekri" />
                 <p className="hover-description">
                   Amanda was born and raised in Jakarta, Indonesia! She is
@@ -122,6 +135,39 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
+                <img src={steph} alt="Stephen Park" />
+                <p className="hover-description">
+                  Stephan is a sophomore from South Korea studying Econ. 
+                  He recently finished serving in the South Korean Army and is excited to be back!
+                </p>
+              </div>
+              <h4 className="member">Stephan Park</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={SafiaLee} alt="Safia Lee" />
+                <p className="hover-description">
+                  Safia is a sophomore from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and
+                  exploring the city.
+                </p>
+              </div>
+              <h4 className="member">Safia Lee</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={PeterYe} alt="Peter Ye" />
+                <p className="hover-description">
+                  Peter is a sophomore from Atlanta studying Real Estate Finance. 
+                  He likes to play soccer and pickleball, try new restaurants, and watch superhero films. 
+                </p>
+              </div>
+              <h4 className="member">Peter Ye</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
                 <img src={haruto} alt="Haruto Uesugi" />
                 <p className="hover-description">
                   Haruto is a junior from San Francisco studying Data Science
@@ -131,29 +177,6 @@ const IndexPage = () => (
                 </p>
               </div>
               <h4 className="member">Haruto Uesugi</h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={kyle} alt="Kyle Park" />
-                <p className="hover-description">
-                  Kyle is a senior from South Korea studying Business with minor
-                  in history. He enjoys exploring new cafes and reading in his
-                  free time. His favorite season is Fall!
-                </p>
-              </div>
-              <h4 className="member"> Kyle Park </h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={matthew} alt="Matthew Cheng" />
-                <p className="hover-description">
-                  Matthew is a CS + DS major from Princeton NJ who enjoys trying
-                  new restaurants and reading.
-                </p>
-              </div>
-              <h4 className="member">Matthew Cheng</h4>
             </article>
           </section>
 
@@ -189,6 +212,18 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
+                <img src={avery} alt="Avery Teano" />
+                <p className="hover-description">
+                  Avery is a Gallatin student who loves to eat, read, watch, listen, take 
+                  photos, play games, shop, design, and explore :D
+                </p>
+              </div>
+              <h4 className="leader">Avery Teano</h4>
+              <p className='position'>Historian</p>
+            </article>  
+
+            <article className="grid-item">
+              <div className="image-container">
                 <img src={jaclynWong} alt="Jaclyn Wong" />
                 <p className="hover-description">
                   Jaclyn is from Hong Kong/Shanghai, and is majoring in nursing at Rory Meyers. In her free
@@ -202,28 +237,26 @@ const IndexPage = () => (
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={avery} alt="Avery Teano" />
+                <img src={matthew} alt="Matthew Cheng" />
                 <p className="hover-description">
-                  Avery is a Gallatin student who loves to eat, read, watch, listen, take 
-                  photos, play games, shop, design, and explore :D
+                  Matthew is a CS + DS major from Princeton NJ who enjoys trying
+                  new restaurants and reading.
                 </p>
               </div>
-              <h4 className="leader">Avery Teano</h4>
-              <p className='position'>Historian</p>
-            </article>  
-
+              <h4 className="member">Matthew Cheng</h4>
+            </article>
 
             <article className="grid-item">
               <div className="image-container">
-                <img src={annika} alt="Annika Vallabhanath" />
+                <img src={elise} alt="Elise Schweng" />
                 <p className="hover-description">
-                  Annika Vallabhanath is a senior majoring in Real Estate
-                  Finance and minoring in Economics and French. She was born and
-                  raised in Portland, Oregon. She loves listening to classical
-                  music and attending the ballet.
+                  Elise is from Oakland, California. She is studying Media,
+                  Culture, and Communications with a minor in Business,
+                  Entertainment, Media, and Technology. In her free time she
+                  enjoys thrifting, playing volleyball, and getting matcha.
                 </p>
               </div>
-              <h4 className="member"> Annika Vallabhanath </h4>
+              <h4 className="member">Elise Schweng</h4>
             </article>
 
             <article className="grid-item">
@@ -236,6 +269,17 @@ const IndexPage = () => (
                 </p>
               </div>
               <h4 className="member"> Brian Wang </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={IsisKim} alt="Isis Kim" />
+                <p className="hover-description">
+                  Isis is a sophomore majoring in Biology at CAS. She's from L.A, California 
+                  and likes to go cafe hopping, play block blast, and take naps. 
+                </p>
+              </div>
+              <h4 className="member">Isis Kim</h4>
             </article>
           </section>
 
@@ -252,6 +296,81 @@ const IndexPage = () => (
               </div>
               <h4 className="leader"> Kenny Ku </h4>
               <p className="position">VP of Public Relations</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={kyle} alt="Kyle Park" />
+                <p className="hover-description">
+                  Kyle is a senior from South Korea studying Business with minor
+                  in history. He enjoys exploring new cafes and reading in his
+                  free time. His favorite season is Fall!
+                </p>
+              </div>
+              <h4 className="member"> Kyle Park </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={jack} alt="Jack Kim" />
+                <p className="hover-description">
+                  Jack is a Senior
+                </p>
+              </div>
+              <h4 className="member"> Jack Kim </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={TaeKim} alt="Tae Kim" />
+                <p className="hover-description">
+                Tae is a junior in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, 
+                cooking (although he isn't good), and snowball fights.
+                </p>
+              </div>
+              <h4 className="member">Tae Kim</h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={AndreaLu} alt="Andrea Lu" />
+                <p className="hover-description">
+                  Andrea is from Princeton, New Jersey and studies Economics and Public Policy at CAS. 
+                  In her free time, she enjoys sewing, watching docuseries, and exploring NYC! 
+                </p>
+              </div>
+              <h4 className="member">Andrea Lu</h4>
+            </article>
+          </section>
+
+          {/* RS Team */}
+          <h2 className="section-header">Recruitment and Social</h2>
+          <section className="grid-section">
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={natalieKang} alt="Natalie Kang" />
+                <p className="hover-description">
+                  Natalie is from Pleasanton, California, studying Hospitality
+                  with a Marketing concentration and is interested in fashion.
+                  She enjoys spending time with friends and family, traveling to
+                  new places, and trying new cafes and restaurants in the city.
+                </p>
+              </div>
+              <h4 className="leader"> Natalie Kang </h4>
+              <p className="position">R/S Chair</p>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={danielLi} alt="Daniel Li" />
+                <p className="hover-description">
+                  Daniel is a third-year studying computer science and math at
+                  CAS. In his free time, he likes to play the piano, cook, and
+                  get lost in his daydreams. He hopes that someday, he can crack
+                  eggs properly.
+                </p>
+              </div>
+              <h4 className="member"> Daniel Li </h4>
             </article>
 
             <article className="grid-item">
@@ -279,138 +398,30 @@ const IndexPage = () => (
               </div>
               <h4 className="member"> Joshua Zhang </h4>
             </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={elise} alt="Elise Schweng" />
-                <p className="hover-description">
-                  Elise is from Oakland, California. She is studying Media,
-                  Culture, and Communications with a minor in Business,
-                  Entertainment, Media, and Technology. In her free time she
-                  enjoys thrifting, playing volleyball, and getting matcha.
-                </p>
-              </div>
-              <h4 className="member">Elise Schweng</h4>
-            </article>
-          </section>
-
-          {/* RS Team */}
-          <h2 className="section-header">Recruitment and Social</h2>
-          <section className="grid-section">
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={natalieKang} alt="Natalie Kang" />
-                <p className="hover-description">
-                  Natalie is from Pleasanton, California, studying Hospitality
-                  with a Marketing concentration and is interested in fashion.
-                  She enjoys spending time with friends and family, traveling to
-                  new places, and trying new cafes and restaurants in the city.
-                </p>
-              </div>
-              <h4 className="leader"> Natalie Kang </h4>
-              <p className="position">R/S Chair</p>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={alex} alt="Alex Xie" />
-                <p className="hover-description">
-                  Alex is a senior studying Computer Science and Data Science at
-                  CAS. In his free time, he enjoys playing various sports and
-                  going to cafes.
-                </p>
-              </div>
-              <h4 className="member">Alex Xie</h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={danielLi} alt="Daniel Li" />
-                <p className="hover-description">
-                  Daniel is a third-year studying computer science and math at
-                  CAS. In his free time, he likes to play the piano, cook, and
-                  get lost in his daydreams. He hopes that someday, he can crack
-                  eggs properly.
-                </p>
-              </div>
-              <h4 className="member"> Daniel Li </h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={steph} alt="Stephen Park" />
-                <p className="hover-description">
-                  Stephan is a sophomore from South Korea studying Econ. 
-                  He recently finished serving in the South Korean Army and is excited to be back!
-                </p>
-              </div>
-              <h4 className="member">Stephan Park</h4>
-            </article>
           </section>
 
           {/* Newbies */}
           <h2 className='section-header'>Newbies Class of Spring 2025</h2>
           <section className="grid-section">
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={TaeKim} alt="Tae Kim" />
-                <p className="hover-description">
-                Tae is a junior in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, 
-                cooking (although he isn't good), and snowball fights.
-                </p>
-              </div>
-              <h4 className="member">Tae Kim</h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={AndreaLu} alt="Andrea Lu" />
-                <p className="hover-description">
-                  Andrea is from Princeton, New Jersey and studies Economics and Public Policy at CAS. 
-                  In her free time, she enjoys sewing, watching docuseries, and exploring NYC! 
-                </p>
-              </div>
-              <h4 className="member">Andrea Lu</h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={PeterYe} alt="Peter Ye" />
-                <p className="hover-description">
-                  Peter is a sophomore from Atlanta studying Real Estate Finance. 
-                  He likes to play soccer and pickleball, try new restaurants, and watch superhero films. 
-                </p>
-              </div>
-              <h4 className="member">Peter Ye</h4>
-            </article>
-            
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={IsisKim} alt="Isis Kim" />
-                <p className="hover-description">
-                  Isis is a sophomore majoring in Biology at CAS. She's from L.A, California 
-                  and likes to go cafe hopping, play block blast, and take naps. 
-                </p>
-              </div>
-              <h4 className="member">Isis Kim</h4>
-            </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={SafiaLee} alt="Safia Lee" />
-                <p className="hover-description">
-                  Safia is a sophomore from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and
-                  exploring the city.
-                </p>
-              </div>
-              <h4 className="member">Safia Lee</h4>
-            </article>
+            <p>None</p>
           </section>
-      
-          {/* Abroad Section
+
           <h2 className="section-header">Who's Abroad?</h2>
           <section className="grid-section">
-          </section> */}
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={annika} alt="Annika Vallabhanath" />
+                <p className="hover-description">
+                  Annika Vallabhanath is a senior majoring in Real Estate
+                  Finance and minoring in Economics and French. She was born and
+                  raised in Portland, Oregon. She loves listening to classical
+                  music and attending the ballet.
+                </p>
+              </div>
+              <h4 className="leader"> Annika Vallabhanath </h4>
+              <p className="position">NYU Paris</p>
+            </article>
+          </section>
         </div>
       </div>
     </section>

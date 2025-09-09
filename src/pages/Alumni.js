@@ -30,7 +30,6 @@ import doyeon from '../assets/images/alumni/doyeon.jpg';
 import irene from '../assets/images/alumni/irene.jpg';
 import eric from '../assets/images/alumni/eric.jpg';
 import jocelyn from '../assets/images/alumni/jocelyn.jpg';
-// import andy from '../assets/images/alumni/andy.jpg';
 import tiffany from '../assets/images/e-board/tiffany.jpg';
 import elaina from '../assets/images/e-board/elaina.jpg';
 import grace from '../assets/images/e-board/grace.jpg';
