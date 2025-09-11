@@ -165,19 +165,6 @@ const IndexPage = () => (
               </div>
               <h4 className="member">Peter Ye</h4>
             </article>
-
-            <article className="grid-item">
-              <div className="image-container">
-                <img src={haruto} alt="Haruto Uesugi" />
-                <p className="hover-description">
-                  Haruto is a junior from San Francisco studying Data Science
-                  and Biology. In his free time, he enjoys running, playing
-                  soccer, and reading. His favorite soccer teams are Barcelona
-                  and Brighton.
-                </p>
-              </div>
-              <h4 className="member">Haruto Uesugi</h4>
-            </article>
           </section>
 
           {/* Marketing Team */}
@@ -384,6 +371,19 @@ const IndexPage = () => (
               </div>
               <h4 className="member"> Joshua Zhang </h4>
             </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={haruto} alt="Haruto Uesugi" />
+                <p className="hover-description">
+                  Haruto is a junior from San Francisco studying Data Science
+                  and Biology. In his free time, he enjoys running, playing
+                  soccer, and reading. His favorite soccer teams are Barcelona
+                  and Brighton.
+                </p>
+              </div>
+              <h4 className="member">Haruto Uesugi</h4>
+            </article>
           </section>
 
           {/* Newbies */}
@@ -420,7 +420,7 @@ const IndexPage = () => (
                 </p>
               </div>
               <h4 className="leader"> Izza Virani </h4>
-              <p className='position'>NYU Abroad</p>
+              <p className='position'>NYU Shanghai</p>
             </article>
           </section>
         </div>
