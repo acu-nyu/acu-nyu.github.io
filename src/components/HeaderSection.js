@@ -12,7 +12,7 @@ const HeaderSection = () => {
         
         {/* <p className="sub-heading">
           <br />
-          <strong>Our Spring 2025 Eboard applications are closed right now. Check back next semester to apply!</strong>
+          <strong>Our Fall 2025 Eboard applications are closed right now. Check back next semester to apply!</strong>
           <br />
           <em>Freshmen and Sophomores only</em>
         </p>

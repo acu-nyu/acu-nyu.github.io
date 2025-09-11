@@ -386,11 +386,11 @@ const IndexPage = () => (
             </article>
           </section>
 
-          {/* Newbies */}
+          {/* Newbies
           <h2 className='section-header'>Newbies Class of Spring 2025</h2>
           <section className="grid-section">
-            <p>None</p>
-          </section>
+            <p>Eboard Applications are now open!</p>
+          </section> */}
 
           <h2 className="section-header">Who's Abroad?</h2>
           <section className="grid-section">
