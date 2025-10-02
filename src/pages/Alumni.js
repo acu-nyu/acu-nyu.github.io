@@ -30,14 +30,14 @@ import doyeon from '../assets/images/alumni/doyeon.jpg';
 import irene from '../assets/images/alumni/irene.jpg';
 import eric from '../assets/images/alumni/eric.jpg';
 import jocelyn from '../assets/images/alumni/jocelyn.jpg';
-import tiffany from '../assets/images/e-board/tiffany.jpg';
-import elaina from '../assets/images/e-board/elaina.jpg';
-import grace from '../assets/images/e-board/grace.jpg';
-import jake from '../assets/images/e-board/jake.jpg';
-import phoebeLai from '../assets/images/e-board/PhoebeLai.jpg';
-import matthewHo from '../assets/images/e-board/MatthewHo.jpg';
-import patrick from '../assets/images/e-board/Patrick.jpg';
-import saundra from '../assets/images/e-board/saundra.jpg';
+import tiffany from '../assets/images/alumni/tiffany.jpg';
+import elaina from '../assets/images/alumni/elaina.jpg';
+import grace from '../assets/images/alumni/grace.jpg';
+import jake from '../assets/images/alumni/jake.jpg';
+import phoebeLai from '../assets/images/alumni/PhoebeLai.jpg';
+import matthewHo from '../assets/images/alumni/MatthewHo.jpg';
+import patrick from '../assets/images/alumni/patrick.jpg';
+import saundra from '../assets/images/alumni/saundra.jpg';
 
 const IndexPage = () => (
   <Layout fullMenu>
