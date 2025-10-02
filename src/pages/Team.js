@@ -30,6 +30,11 @@ import PeterYe from '../assets/images/e-board/Peter_ye.jpg';
 import IsisKim from '../assets/images/e-board/Isis_kim.jpg';
 import jack from '../assets/images/e-board/jack.jpg';
 import SafiaLee from '../assets/images/e-board/SafiaLee.jpg';
+import Noah from '../assets/images/e-board/Noah.jpg';
+import Ashley from '../assets/images/e-board/Ashley.jpg';
+import Callie from '../assets/images/e-board/Callie.jpg';
+import Leo from '../assets/images/e-board/Leo.jpg';
+import Lily from '../assets/images/e-board/Lily.jpg';
 
 // import piplup from '../assets/images/e-board/piplup.png';
 
@@ -386,11 +391,65 @@ const IndexPage = () => (
             </article>
           </section>
 
-          {/* Newbies
-          <h2 className='section-header'>Newbies Class of Spring 2025</h2>
+          {/* Newbies */}
+          <h2 className='section-header'>Newbies Class of Fall 2025</h2>
           <section className="grid-section">
-            <p>Eboard Applications are now open!</p>
-          </section> */}
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={Noah} alt="Noah Jacinto" />
+                <p className="hover-description">
+                  Noah Jacinto is a secony year undergraduate student in Chemical Engineering.
+                  He is proud to be Filipino and from the city of Chicago.
+                </p>
+              </div>
+              <h4 className="member"> Noah Jacinto </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={Lily} alt="Lily Le" />
+                <p className="hover-description">
+                  Lily is a sophomore in Steinhardt from California. 
+                  She really loves making friends, eating out at restaurants, and online personality quizzes.
+                  She can't wait to meet everyone!
+                </p>
+              </div>
+              <h4 className="member"> Lily Le </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={Leo} alt="Leo Shi" />
+                <p className="hover-description">
+                  Leo is a freshman from Downingtown, PA studying business. 
+                  In his free time, he likes playing tennis, rock climbing, and snowboarding.
+                </p>
+              </div>
+              <h4 className="member"> Leo Shi </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={Ashley} alt="Ashley Kikuta" />
+                <p className="hover-description">
+                  Ashley is a sophomore studying Business Marketing and Management from Tustin, California. 
+                  In her free time, she likes trying new matcha cafes, bouldering, and going to concerts! 
+                </p>
+              </div>
+              <h4 className="member"> Ashley Kikuta </h4>
+            </article>
+
+            <article className="grid-item">
+              <div className="image-container">
+                <img src={Callie} alt="Callie Bao" />
+                <p className="hover-description">
+                  Callie is a freshman from Maryland in the Liberal Studies Core program. 
+                  In her free time, she likes trying new coffee shops and visiting art museums. 
+                </p>
+              </div>
+              <h4 className="member"> Callie Bao </h4>
+            </article>
+          </section>
 
           <h2 className="section-header">Who's Abroad?</h2>
           <section className="grid-section">
