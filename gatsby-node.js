@@ -4,4 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+// Suppress gatsby-plugin-react-helmet warning
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    ignoreWarnings: [
+      {
+        module: /gatsby-plugin-react-helmet/,
+      },
+    ],
+  });
+};
