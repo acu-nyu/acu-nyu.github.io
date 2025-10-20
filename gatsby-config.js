@@ -19,7 +19,14 @@ module.exports = {
         icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api', 'import', 'global-builtin', 'color-functions'],
+        },
+      },
+    },
     'gatsby-plugin-offline',
   ],
 };

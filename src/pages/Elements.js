@@ -270,7 +270,7 @@ const IndexPage = () => (
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td colSpan="2"></td>
+                    <td colSpan="2" aria-label="Total label"></td>
                     <td>100.00</td>
                   </tr>
                 </tfoot>
@@ -316,7 +316,7 @@ const IndexPage = () => (
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td colSpan="2"></td>
+                    <td colSpan="2" aria-label="Total label"></td>
                     <td>100.00</td>
                   </tr>
                 </tfoot>
@@ -494,7 +494,7 @@ const IndexPage = () => (
                       />
                     </li>
                     <li>
-                      <input type="reset" value="Reset" />
+                      <input type="reset" value="Reset" aria-label="Reset form" />
                     </li>
                   </ul>
                 </div>
