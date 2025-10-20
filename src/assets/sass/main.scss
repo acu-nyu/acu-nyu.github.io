@@ -169,6 +169,7 @@ body {
   .position {
     font-size: 14px;
     color: rgb(214, 214, 214);
+    margin: 0;
 
     @include breakpoint(medium) {
       font-size: 12px;
