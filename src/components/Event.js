@@ -3,11 +3,19 @@ import React from 'react';
 const Event = ({ image, title, description }) => {
   return (
     <article>
-      <div className="image">
-        <img src={image} alt={title} />
+      <div className="image flip-container">
+        <div className="flipper">
+          <div className="front">
+            <img src={image} alt={title} />
+          </div>
+          <div className="back">
+            <div className="back-content">
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
       </div>
       <h3 className="major">{title}</h3>
-      <p>{description}</p>
     </article>
   );
 };
