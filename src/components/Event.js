@@ -1,8 +1,14 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const Event = ({ image, title, description }) => {
+const Event = ({ image, title, description, delay = 0 }) => {
   return (
-    <article>
+    <motion.article
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay: delay }}
+    >
       <div className="image flip-container">
         <div className="flipper">
           <div className="front">
@@ -16,7 +22,7 @@ const Event = ({ image, title, description }) => {
         </div>
       </div>
       <h3 className="major">{title}</h3>
-    </article>
+    </motion.article>
   );
 };
 
