@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 
+      Background: White -> HSL(0, 0%, 100%)
+      Foreground: Slate 900 -> HSL(222, 47%, 11%)
+    */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    /* Card bg slightly off-white/gray for separation */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 11%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 17% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 17% 30%;
+    --muted-foreground: 230 10% 70%;
+
+    --accent: 349 52% 22%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 17% 30%;
+    --input: 230 17% 30%;
+    --ring: 0 0% 100%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Since the site is dark by default, .dark can mirror :root or be even darker */
+    --background: 230 17% 22%;
+    --foreground: 0 0% 100%;
+
+    --card: 230 17% 25%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 230 17% 22%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 230 17% 22%;
+
+    --secondary: 230 17% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 17% 30%;
+    --muted-foreground: 230 10% 70%;
+
+    --accent: 349 52% 22%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 17% 30%;
+    --input: 230 17% 30%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

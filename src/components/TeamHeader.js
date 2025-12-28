@@ -1,25 +1,22 @@
 import React from 'react';
-import '../assets/sass/components/module.headersection.scss'
 
 const TeamHeader = () => {
   return (
-    <section className="header-section">
-      <div className="container">
-        <h2 className="main-heading">Meet the E-Board</h2>
-        {/* <h3 className="sub">Come see us at our next event!</h3> */}
-        {/* <hr className="divider" /> */}
-        {/* <p className="sub-heading">
-          <strong>Our Fall 2025 Eboard applications are now open to freshmen and sophomores! Applications are due by 9/20</strong>
-          <br />
-          <em>Freshmen, Sophomores, and Juniors only</em>
-        </p>
-        <a href="https://l.instagram.com/?u=https%3A%2F%2Fforms.gle%2FhzXTBSJbDWwRmhwLA%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAafe3jfxEzurSFIiOrYpDIJGl_k6ZIU7CI5tcrMTPydMOGBCW7H0vO29A5_ExA_aem_PCttHs8erbjdB7QLyPK3OA&e=AT0wqOUVR3HiNe2CmyBs2cZnbLsh3exkWgXE5NrxhMC8Pm2WtE8VwszwGBAMA5XT7UYKHGjtIOlw8_Y8_85tuefOYzWZBh0-QbnDaHDqfQ" className="apply-button" target="_blank" rel="noreferrer">
-          Apply Now
-        </a> */}
-        <p className='sub-heading'>
-          Eboard Applications are currently closed. Check back in Janurary/Feburar 2026 for Spring Eboard Applications!
+    <section className="py-20 px-4 text-center relative overflow-hidden">
+      <div className="container mx-auto max-w-4xl relative z-10">
+        <div className="inline-block relative mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight uppercase relative z-10">
+            Meet the E-Board
+          </h2>
+          <div className="absolute -bottom-2 left-0 w-full h-1 bg-red-600 rounded-full transform scale-x-75"></div>
+        </div>
+
+        <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          Eboard Applications are currently closed. Check back in January/February 2026 for Spring Eboard Applications!
         </p>
       </div>
+
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-red-900/20 blur-[100px] rounded-full pointer-events-none -z-0"></div>
     </section>
   );
 };
