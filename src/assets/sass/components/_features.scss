@@ -15,6 +15,7 @@
     @include padding(1.75em, 1.75em);
     background-color: desaturate(lighten(_palette(bg), 3), 1.5);
     border-radius: _size(border-radius);
+    border: solid 2px _palette(border);
     margin: (_size(section-spacing, large) * 0.5) _size(section-spacing, large) (_size(section-spacing, large) * 0.5) 0;
     width: calc(50% - #{_size(section-spacing, large) * 0.5});
 
