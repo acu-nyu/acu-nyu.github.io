@@ -12,5 +12,10 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         module: /gatsby-plugin-react-helmet/,
       },
     ],
+    resolve: {
+      alias: {
+        '@': require('path').resolve(__dirname, 'src'),
+      },
+    },
   });
 };
