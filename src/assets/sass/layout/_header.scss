@@ -68,6 +68,8 @@
         color: _palette(fg-bold) !important;
         border-radius: _size(border-radius);
         padding: 0 1.35em;
+        border: 1px solid #000000 !important;
+        box-shadow: none !important;
 
         &:before {
           content: '\f0c9';
@@ -104,6 +106,8 @@
         &[href='#menu'] {
           color: _palette(fg-bold) !important;
           background-color: #ffffff;
+          border: 1px solid #000000 !important;
+          box-shadow: none !important;
 
           &:before {
             color: _palette(fg-bold) !important;
