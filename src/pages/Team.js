@@ -26,7 +26,7 @@ const IndexPage = () => (
             return (
               <div key={index} className="mb-24">
                 <div className={`flex items-center gap-6 mb-12 ${isPresidents ? 'justify-center' : ''}`}>
-                  <h2 className="section-header text-3xl md:text-5xl font-black text-white tracking-tight uppercase m-0 drop-shadow-lg text-center">
+                  <h2 className="section-header text-3xl md:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-lg text-center">
                     {section.section}
                     <div className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto md:mx-0 shadow-[0_0_10px_rgba(220,38,38,0.5)]" />
                   </h2>

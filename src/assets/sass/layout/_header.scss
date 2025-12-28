@@ -7,14 +7,11 @@
 /* Header */
 
 #header {
-  @include vendor(
-    'transition',
+  @include vendor('transition',
     'background-color #{_duration(transition)} ease-in-out'
   );
-  background-color: transparentize(
-    desaturate(lighten(_palette(bg), 3), 1.5),
-    0.05
-  );
+  background-color: #ffffff;
+  color: _palette(fg-bold);
   height: 3.5em;
   left: 0;
   line-height: 3.5em;
@@ -25,13 +22,10 @@
   z-index: _misc(z-index-base);
 
   h1 {
-    @include vendor(
-      'transition',
-      (
-        'opacity #{_duration(transition)} ease-in-out',
+    @include vendor('transition',
+      ('opacity #{_duration(transition)} ease-in-out',
         'visibility #{_duration(transition)}'
-      )
-    );
+      ));
     border-bottom: 0;
     font-size: 0.8em;
     margin-bottom: 0;
@@ -67,8 +61,7 @@
 
       &[href='#menu'] {
         @include icon;
-        @include vendor(
-          'transition',
+        @include vendor('transition',
           'background-color #{_duration(transition)} ease-in-out'
         );
         border-radius: _size(border-radius);
@@ -96,6 +89,16 @@
     h1 {
       opacity: 0;
       visibility: hidden;
+    }
+
+    nav {
+      a {
+        color: #ffffff !important;
+
+        &:before {
+          color: #ffffff !important;
+        }
+      }
     }
   }
 

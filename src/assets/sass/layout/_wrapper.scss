@@ -9,10 +9,10 @@
 /// Sets the colors of the wrapper's top/bottom edges.
 /// @param {string} $color Color.
 @mixin wrapper-edges-color($color: black) {
+
   &:before,
   &:after {
-    background-image: svg-url(
-      '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" style="fill:#{$color};" /></svg>'
+    background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" style="fill:#{$color};" /></svg>'
     );
   }
 
@@ -26,12 +26,10 @@
 }
 
 #wrapper {
-  > header {
-    @include padding(
-      7.5em,
+  >header {
+    @include padding(7.5em,
       0,
-      (3.5em, 0, _size(wrapper-edges, large) * -0.5, 0)
-    );
+      (3.5em, 0, _size(wrapper-edges, large) * -0.5, 0));
 
     .inner {
       margin: 0 auto;
@@ -56,16 +54,14 @@
   }
 
   @include breakpoint('<=large') {
-    > header {
+    >header {
       @include padding(5em, 0, (4em, 0, _size(wrapper-edges, large) * 0.5, 0));
 
       background-color: _palette(bg);
 
-      background-image: linear-gradient(
-          to top,
+      background-image: linear-gradient(to top,
           transparentize(_palette(bg), 0.2),
-          transparentize(_palette(bg), 0.2)
-        ),
+          transparentize(_palette(bg), 0.2)),
         url('../images/spring-wsp.jpg');
 
       background-size: auto, cover;
@@ -77,12 +73,10 @@
   }
 
   @include breakpoint('<=medium') {
-    > header {
-      @include padding(
-        7em,
+    >header {
+      @include padding(7em,
         3em,
-        (4em, 0, _size(wrapper-edges, medium) * 0.5, 0)
-      );
+        (4em, 0, _size(wrapper-edges, medium) * 0.5, 0));
 
       background-size: auto, cover;
 
@@ -97,12 +91,10 @@
   }
 
   @include breakpoint('<=small') {
-    > header {
-      @include padding(
-        3.75em,
+    >header {
+      @include padding(3.75em,
         2em,
-        (2.75em, 0, _size(wrapper-edges, small) * 0.5, 0)
-      );
+        (2.75em, 0, _size(wrapper-edges, small) * 0.5, 0));
 
       background-size: auto, 125%;
 
@@ -176,6 +168,20 @@
   &.spotlight {
     @include wrapper-edges-color(_palette(accent));
     background-color: _palette(accent);
+    color: #ffffff;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
+    }
 
     .inner {
       @include vendor('display', 'flex');
@@ -219,6 +225,16 @@
       &.style#{$i} {
         background-color: $color;
         @include wrapper-edges-color($color);
+        color: #ffffff;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: #ffffff;
+        }
       }
     }
   }
