@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Event = ({ image, title, description, delay = 0 }) => {
   return (
@@ -12,7 +13,7 @@ const Event = ({ image, title, description, delay = 0 }) => {
       <div className="image flip-container">
         <div className="flipper">
           <div className="front">
-            <img src={image} alt={title} />
+            {image && image.images ? <GatsbyImage image={image} alt={title} style={{ height: '100%', width: '100%' }} /> : <img src={image} alt={title} />}
           </div>
           <div className="back">
             <div className="back-content">
