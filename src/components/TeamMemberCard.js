@@ -4,8 +4,8 @@ import { Card } from './ui/card';
 const LinkedInIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
+        width="16"
+        height="16"
         viewBox="0 0 24 24"
         fill="currentColor"
         className="fill-current"
@@ -65,14 +65,14 @@ const TeamMemberCard = ({ name, role, photo, description, isAlumni = false, link
                 <div className={`absolute bottom-0 left-0 right-0 p-4 flex flex-col items-center justify-end transition-all duration-300 transform ${(!isAlumni) ? 'group-hover:opacity-0 group-hover:translate-y-4' : ''
                     } ${showDescription ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
 
-                    <h3 className="w-full text-center font-bold text-xl text-white tracking-tight mb-2 mt-0 drop-shadow-md">
+                    <h3 className="w-full text-center font-bold text-lg text-white tracking-tight mb-0.5 mt-0 drop-shadow-md">
                         {name}
                     </h3>
 
-                    <div className="flex flex-col items-center gap-2 w-full">
+                    <div className="flex flex-col items-center gap-1.5 w-full">
                         {role && (
-                            <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/10 shadow-sm">
-                                <p className="m-0 p-0 text-xs font-medium text-white/90 uppercase tracking-wider leading-none">
+                            <div className="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/10 shadow-sm">
+                                <p className="m-0 p-0 text-[11px] font-medium text-white/90 uppercase tracking-wider leading-none">
                                     {role}
                                 </p>
                             </div>
@@ -83,7 +83,7 @@ const TeamMemberCard = ({ name, role, photo, description, isAlumni = false, link
                                 href={linkedinUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-2 text-white/70 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"
+                                className="text-white/70 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"
                                 onClick={handleLinkedInClick}
                                 aria-label={`${name}'s LinkedIn`}
                             >
