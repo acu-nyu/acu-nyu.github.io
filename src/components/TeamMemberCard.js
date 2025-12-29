@@ -42,11 +42,23 @@ const TeamMemberCard = ({ name, role, photo, description, isAlumni = false, link
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none" />
 
                 {!isAlumni && (
-                    <div className={`absolute inset-0 flex items-center justify-center p-6 transition-opacity duration-300 bg-black/80 backdrop-blur-[2px] text-white text-center ${showDescription ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                    <div className={`absolute inset-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 bg-black/80 backdrop-blur-[2px] text-white text-center ${showDescription ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
                         }`}>
-                        <p className="text-sm font-light leading-relaxed tracking-wide m-0">
+                        <p className="text-sm font-light leading-relaxed tracking-wide m-0 mb-4">
                             {description}
                         </p>
+                        {linkedinUrl && (
+                            <a
+                                href={linkedinUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white/70 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"
+                                onClick={handleLinkedInClick}
+                                aria-label={`${name}'s LinkedIn`}
+                            >
+                                <LinkedInIcon />
+                            </a>
+                        )}
                     </div>
                 )}
 

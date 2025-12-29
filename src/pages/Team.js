@@ -41,6 +41,7 @@ const IndexPage = () => (
                           role={member.role}
                           photo={member.photo}
                           description={member.description}
+                          linkedinUrl={member.linkedinUrl}
                         />
                       </div>
                     ))}
@@ -54,6 +55,7 @@ const IndexPage = () => (
                         role={member.role}
                         photo={member.photo}
                         description={member.description}
+                        linkedinUrl={member.linkedinUrl}
                       />
                     ))}
                   </div>
