@@ -85,41 +85,37 @@ const alumniData = [
   {
     year: "Class of 2022",
     members: [
-      { name: "Cassidy Syao", photo: cassidy, role: "Co-President", linkedinUrl: "" },
-      { name: "Kathleen Shao", photo: kathleen, role: "Co-President", linkedinUrl: "" },
-      { name: "Deborah Wei", photo: deborah, role: "", linkedinUrl: "" },
+      { name: "Cassidy Syao", photo: cassidy, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/cassidy-syao/" },
+      { name: "Kathleen Shao", photo: kathleen, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/kathleen-shao-876b72148/" },
+      { name: "Deborah Wei", photo: deborah, role: "", linkedinUrl: "https://www.linkedin.com/in/deborah-wei/" },
       { name: "Crystal Gao", photo: crystal, role: "", linkedinUrl: "" },
-      { name: "Dorothy Rong", photo: dorothy, role: "", linkedinUrl: "" },
+      { name: "Dorothy Rong", photo: dorothy, role: "", linkedinUrl: "https://www.linkedin.com/in/dorothy-jiayi-rong-37097b156/" },
       { name: "Scarlett Jiang", photo: scarlett, role: "", linkedinUrl: "" },
-      { name: "Elton Zhu", photo: elton, role: "", linkedinUrl: "" },
-      { name: "Vincent Yu", photo: vincent, role: "", linkedinUrl: "" },
-      { name: "Jonah Sun", photo: jonah, role: "", linkedinUrl: "" },
-      { name: "Youli Yao", photo: youli, role: "", linkedinUrl: "" },
-      { name: "Bobby Luo", photo: bobby, role: "", linkedinUrl: "" },
+      { name: "Elton Zhu", photo: elton, role: "", linkedinUrl: "https://www.linkedin.com/in/eltonzhu/" },
+      { name: "Vincent Yu", photo: vincent, role: "", linkedinUrl: "https://www.linkedin.com/in/vincent-haoze-yu/" },
+      { name: "Jonah Sun", photo: jonah, role: "", linkedinUrl: "https://www.linkedin.com/in/jonah-sun-183931162/" },
+      { name: "Youli Yao", photo: youli, role: "", linkedinUrl: "https://www.linkedin.com/in/youli-yao/" },
+      { name: "Bobby Luo", photo: bobby, role: "", linkedinUrl: "https://www.linkedin.com/in/bobby-luo/" },
     ]
   }
 ];
 
 const IndexPage = () => (
   <Layout fullMenu>
-    <section id="wrapper" className="relative min-h-screen overflow-hidden bg-transparent">
-      {/* Reuse the background style from Team.js for consistency */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-slate-950/80 to-slate-950/90 pointer-events-none -z-10" />
-      <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[100%] h-[600px] bg-red-900/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
-
-      <header className="relative z-10 pt-10 text-center text-white mb-12">
+    <section id="wrapper">
+      <header>
         <div className="inner">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Alumni</h2>
-          <p className="text-xl text-white/80">They've gone on to bigger things.</p>
+          <h2>Meet Our Alumni</h2>
+          <p>They've gone on to bigger things.</p>
         </div>
       </header>
 
-      <div className="wrapper team-page px-4 md:px-8 py-12 relative z-10">
+      <div className="wrapper team-page px-4 md:px-8 py-12">
         <div className="inner max-w-7xl mx-auto">
           {alumniData.map((yearBlock, index) => (
             <div key={index} className="mb-24">
               <div className="flex items-center gap-6 mb-12 justify-center">
-                <h2 className="section-header text-3xl md:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-lg text-center text-white">
+                <h2 className="section-header text-3xl md:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-sm text-center text-slate-900">
                   {yearBlock.year}
                   <div className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto shadow-[0_0_10px_rgba(220,38,38,0.5)]" />
                 </h2>
