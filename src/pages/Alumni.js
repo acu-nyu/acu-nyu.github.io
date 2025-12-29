@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import TeamMemberCard from '../components/TeamMemberCard';
 
 import youli from '../assets/images/alumni/youli.jpg';
 import bobby from '../assets/images/alumni/bobby.jpg';
@@ -39,232 +40,105 @@ import matthewHo from '../assets/images/alumni/MatthewHo.jpg';
 import patrick from '../assets/images/alumni/patrick.jpg';
 import saundra from '../assets/images/alumni/saundra.jpg';
 
+const alumniData = [
+  {
+    year: "Class of 2025",
+    members: [
+      { name: "Grace Tan", photo: grace, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/grace-tan-617915255/" },
+      { name: "Jake Tran", photo: jake, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/jaketytran/" },
+      { name: "Phoebe Lai", photo: phoebeLai, role: "", linkedinUrl: "https://www.linkedin.com/in/phoebeklai/" },
+      { name: "Matthew Ho", photo: matthewHo, role: "", linkedinUrl: "https://www.linkedin.com/in/matthew-ho-2988a522b/" },
+      { name: "Patrick Wu", photo: patrick, role: "", linkedinUrl: "https://www.linkedin.com/in/patrick-wu-48141122b/" },
+      { name: "Saundra Tun", photo: saundra, role: "", linkedinUrl: "https://www.linkedin.com/in/saundra-tun-150970397/" },
+      { name: "Elaina Feng", photo: elaina, role: "", linkedinUrl: "https://www.linkedin.com/in/elaina-feng-447766222/" },
+      { name: "Tiffany Lee", photo: tiffany, role: "", linkedinUrl: "https://www.linkedin.com/in/tiffanyleelink/" },
+    ]
+  },
+  {
+    year: "Class of 2024",
+    members: [
+      { name: "Eric Lai", photo: eric, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/eric-lai-a05613253/" },
+      { name: "Irene Park", photo: irene, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/irenepark517/" },
+      { name: "Jocelyn Xu", photo: jocelyn, role: "", linkedinUrl: "https://www.linkedin.com/in/jocelyn-xu-34b504261/" },
+      { name: "Doyeon Kim", photo: doyeon, role: "", linkedinUrl: "https://www.linkedin.com/in/doyeonnkim/" },
+      { name: "Phoebus Yip", photo: phoebus, role: "Mascot", linkedinUrl: "https://www.linkedin.com/in/phoebusyip/" },
+      { name: "Yujin Hong", photo: yujin, role: "", linkedinUrl: "https://www.linkedin.com/in/yujin-hong-6059a826b/" },
+    ]
+  },
+  {
+    year: "Class of 2023",
+    members: [
+      { name: "Matthew Chan", photo: chan, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/matthewjkchan/" },
+      { name: "Coco Xu", photo: coco, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/cocoxuuu/" },
+      { name: "Matthew Apuya", photo: matthew, role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/matthewapuya/" },
+      { name: "Sugin Li", photo: sugin, role: "", linkedinUrl: "https://www.linkedin.com/in/sugin-l-458510206/" },
+      { name: "Gaurav Kulkarni", photo: gaurav, role: "", linkedinUrl: "https://www.linkedin.com/in/gauravkulkarni00/" },
+      { name: "Elim Wu", photo: elim, role: "", linkedinUrl: "https://www.linkedin.com/in/elim-wu/" },
+      { name: "Catherine Ngyuen", photo: catherine, role: "", linkedinUrl: "https://www.linkedin.com/in/ctnfilm/" },
+      { name: "Lucy Lee", photo: lucy, role: "", linkedinUrl: "https://www.linkedin.com/in/lucy-lee-a44bb6198/" },
+      { name: "Sam Ye", photo: sam, role: "", linkedinUrl: "https://www.linkedin.com/in/sam-ye0429/" },
+      { name: "Lauren Guo", photo: lauren, role: "", linkedinUrl: "https://www.linkedin.com/in/lauren-guo/" },
+      { name: "Caroline Tian", photo: caroline, role: "", linkedinUrl: "https://www.linkedin.com/in/caroline-tian/" },
+      { name: "Candice Huang", photo: candice, role: "", linkedinUrl: "https://www.linkedin.com/in/candiceehuang/" },
+    ]
+  },
+  {
+    year: "Class of 2022",
+    members: [
+      { name: "Cassidy Syao", photo: cassidy, role: "Co-President", linkedinUrl: "" },
+      { name: "Kathleen Shao", photo: kathleen, role: "Co-President", linkedinUrl: "" },
+      { name: "Deborah Wei", photo: deborah, role: "", linkedinUrl: "" },
+      { name: "Crystal Gao", photo: crystal, role: "", linkedinUrl: "" },
+      { name: "Dorothy Rong", photo: dorothy, role: "", linkedinUrl: "" },
+      { name: "Scarlett Jiang", photo: scarlett, role: "", linkedinUrl: "" },
+      { name: "Elton Zhu", photo: elton, role: "", linkedinUrl: "" },
+      { name: "Vincent Yu", photo: vincent, role: "", linkedinUrl: "" },
+      { name: "Jonah Sun", photo: jonah, role: "", linkedinUrl: "" },
+      { name: "Youli Yao", photo: youli, role: "", linkedinUrl: "" },
+      { name: "Bobby Luo", photo: bobby, role: "", linkedinUrl: "" },
+    ]
+  }
+];
+
 const IndexPage = () => (
   <Layout fullMenu>
-    <section id="wrapper">
-      <header>
+    <section id="wrapper" className="relative min-h-screen overflow-hidden bg-transparent">
+      {/* Reuse the background style from Team.js for consistency */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-slate-950/80 to-slate-950/90 pointer-events-none -z-10" />
+      <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[100%] h-[600px] bg-red-900/20 blur-[120px] rounded-full pointer-events-none -z-10 mix-blend-screen" />
+
+      <header className="relative z-10 pt-10 text-center text-white mb-12">
         <div className="inner">
-          <h2>Meet Our Alumni</h2>
-          <p>They've gone on to bigger things.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Alumni</h2>
+          <p className="text-xl text-white/80">They've gone on to bigger things.</p>
         </div>
       </header>
 
-      <div className="wrapper team-page">
-        <div className="inner">
-          {/* Class of 2025 */}
-          <h2 className="section-header">Class of 2025</h2>
-          <section className="grid-section alumni">
-            <article className="grid-item">
-              <img src={grace} alt="Grace Tan" />
-              <h3 className="leader">Grace Tan</h3>
-              <p className="position">Co-President</p>
-            </article>
+      <div className="wrapper team-page px-4 md:px-8 py-12 relative z-10">
+        <div className="inner max-w-7xl mx-auto">
+          {alumniData.map((yearBlock, index) => (
+            <div key={index} className="mb-24">
+              <div className="flex items-center gap-6 mb-12 justify-center">
+                <h2 className="section-header text-3xl md:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-lg text-center text-white">
+                  {yearBlock.year}
+                  <div className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto shadow-[0_0_10px_rgba(220,38,38,0.5)]" />
+                </h2>
+              </div>
 
-            <article className="grid-item">
-              <img src={jake} alt="Jake Tran" />
-              <h3 className="leader">Jake Tran</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={phoebeLai} alt="Phoebe Lai" />
-              <h3 className="leader">Phoebe Lai</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={matthewHo} alt="Matthew Ho" />
-              <h3 className="leader">Matthew Ho</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={patrick} alt="Patrick Wu" />
-              <h3 className="leader">Patrick Wu</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={saundra} alt="Saundra" />
-              <h3 className="leader">Saundra Tun</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={elaina} alt="Elaina Feng" />
-              <h3 className="leader">Elaina Feng</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={tiffany} alt="Tiffany Lee" />
-              <h3 className="leader">Tiffany Lee</h3>
-            </article>
-          </section>
-          {/* Class of 2024 */}
-          <h2 className="section-header">Class of 2024</h2>
-          <section className="grid-section alumni">
-            <article className="grid-item">
-              <img src={eric} alt="Eric Lai" />
-              <h3 className="leader">Eric Lai</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={irene} alt="Irene Park" />
-              <h3 className="leader">Irene Park</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={jocelyn} alt="Jocelyn Xu" />
-              <h3 className="leader">Jocelyn Xu</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={doyeon} alt="Doyeon Kim" />
-              <h3 className="leader">Doyeon Kim</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={phoebus} alt="Phoebus Yip" />
-              <h3 className="leader">Phoebus Yip</h3>
-              <p className="position">Mascot</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={yujin} alt="Yujin Hong" />
-              <h3 className="leader">Yujin Hong</h3>
-            </article>
-
-            {/* <article className="grid-item">
-              <img src={andy} alt="Andy Cabindol" />
-              <h3 className="leader">Andy Cabindol</h3>
-            </article> */}
-          </section>
-
-          {/* Class of 2023 */}
-          <h2 className="section-header">Class of 2023</h2>
-          <section className="grid-section alumni">
-            <article className="grid-item">
-              <img src={chan} alt="Matthew Chan" />
-              <h3 className="leader">Matthew Chan</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={coco} alt="Coco Xu" />
-              <h3 className="leader">Coco Xu</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={matthew} alt="Matthew Apuya" />
-              <h3 className="leader">Matthew Apuya</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={sugin} alt="Sugin Li" />
-              <h3 className="leader">Sugin Li</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={gaurav} alt="Gaurav Kulkarni" />
-              <h3 className="leader">Gaurav Kulkarni</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={elim} alt="Elim Wu" />
-              <h3 className="leader">Elim Wu</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={catherine} alt="Catherine Ngyuen" />
-              <h3 className="leader">Catherine Ngyuen</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={lucy} alt="Lucy Lee" />
-              <h3 className="leader">Lucy Lee</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={sam} alt="Sam Ye" />
-              <h3 className="leader">Sam Ye</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={lauren} alt="Lauren Guo" />
-              <h3 className="leader">Lauren Guo</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={caroline} alt="Caroline Tian" />
-              <h3 className="leader">Caroline Tian</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={candice} alt="Candice Huang" />
-              <h3 className="leader">Candice Huang</h3>
-            </article>
-          </section>
-
-          {/* Class of 2022 */}
-          <h2 className="section-header">Class of 2022</h2>
-          <section className="grid-section alumni">
-            <article className="grid-item">
-              <img src={cassidy} alt="Cassidy Syao" />
-              <h3 className="leader">Cassidy Syao</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={kathleen} alt="Kathleen Shao" />
-              <h3 className="leader">Kathleen Shao</h3>
-              <p className="position">Co-President</p>
-            </article>
-
-            <article className="grid-item">
-              <img src={deborah} alt="Deborah Wei" />
-              <h3 className="leader">Deborah Wei</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={crystal} alt="Crystal Gao" />
-              <h3 className="leader">Crystal Gao</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={dorothy} alt="Dorothy Rong" />
-              <h3 className="leader">Dorothy Rong</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={scarlett} alt="Scarlett Jiang" />
-              <h3 className="leader">Scarlett Jiang</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={elton} alt="Elton Zhu" />
-              <h3 className="leader">Elton Zhu</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={vincent} alt="Vincent Yu" />
-              <h3 className="leader">Vincent Yu</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={jonah} alt="Jonah Sun" />
-              <h3 className="leader">Jonah Sun</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={youli} alt="Youli Yao" />
-              <h3 className="leader">Youli Yao</h3>
-            </article>
-
-            <article className="grid-item">
-              <img src={bobby} alt="Bobby Luo" />
-              <h3 className="leader">Bobby Luo</h3>{' '}
-            </article>
-          </section>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {yearBlock.members.map((member, memberIndex) => (
+                  <TeamMemberCard
+                    key={memberIndex}
+                    name={member.name}
+                    role={member.role}
+                    photo={member.photo}
+                    isAlumni={true}
+                    linkedinUrl={member.linkedinUrl}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

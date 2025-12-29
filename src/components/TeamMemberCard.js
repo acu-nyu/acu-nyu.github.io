@@ -1,13 +1,30 @@
 import React, { useState } from 'react';
 import { Card } from './ui/card';
 
-const TeamMemberCard = ({ name, role, photo, description, isAlumni = false }) => {
+const LinkedInIcon = () => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="fill-current"
+    >
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+    </svg>
+);
+
+const TeamMemberCard = ({ name, role, photo, description, isAlumni = false, linkedinUrl }) => {
     const [showDescription, setShowDescription] = useState(false);
 
     const handleInteraction = () => {
         if (!isAlumni) {
             setShowDescription(!showDescription);
         }
+    };
+
+    const handleLinkedInClick = (e) => {
+        e.stopPropagation();
     };
 
     return (
@@ -40,13 +57,28 @@ const TeamMemberCard = ({ name, role, photo, description, isAlumni = false }) =>
                         {name}
                     </h3>
 
-                    {role && (
-                        <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/10 shadow-sm">
-                            <p className="m-0 p-0 text-xs font-medium text-white/90 uppercase tracking-wider leading-none">
-                                {role}
-                            </p>
-                        </div>
-                    )}
+                    <div className="flex flex-col items-center gap-2 w-full">
+                        {role && (
+                            <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/10 shadow-sm">
+                                <p className="m-0 p-0 text-xs font-medium text-white/90 uppercase tracking-wider leading-none">
+                                    {role}
+                                </p>
+                            </div>
+                        )}
+
+                        {linkedinUrl && (
+                            <a
+                                href={linkedinUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-2 text-white/70 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"
+                                onClick={handleLinkedInClick}
+                                aria-label={`${name}'s LinkedIn`}
+                            >
+                                <LinkedInIcon />
+                            </a>
+                        )}
+                    </div>
                 </div>
             </div>
         </Card>
