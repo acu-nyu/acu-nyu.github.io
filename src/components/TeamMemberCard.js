@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card } from './ui/card';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const LinkedInIcon = () => (
     <svg
@@ -14,7 +15,7 @@ const LinkedInIcon = () => (
     </svg>
 );
 
-const TeamMemberCard = ({ name, role, photo, description, isAlumni = false, linkedinUrl }) => {
+const TeamMemberCard = ({ name, role, image, description, isAlumni = false, linkedinUrl }) => {
     const [showDescription, setShowDescription] = useState(false);
 
     const handleInteraction = () => {
@@ -33,12 +34,19 @@ const TeamMemberCard = ({ name, role, photo, description, isAlumni = false, link
             onClick={handleInteraction}
         >
             <div className="relative aspect-[3/4] w-full overflow-hidden">
-                <img
-                    src={photo}
-                    alt={name}
-                    className={`h-full w-full object-cover transition-transform duration-500 will-change-transform ${!isAlumni ? 'group-hover:scale-105' : ''
-                        }`}
-                />
+                {image ? (
+                    <GatsbyImage
+                        image={image}
+                        alt={name}
+                        className={`h-full w-full object-cover transition-transform duration-500 will-change-transform ${!isAlumni ? 'group-hover:scale-105' : ''
+                            }`}
+                        style={{ position: "absolute", width: "100%", height: "100%" }}
+                    />
+                ) : (
+                    <div className="h-full w-full bg-gray-800 flex items-center justify-center text-white/50">
+                        No Image
+                    </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none" />
 
                 {!isAlumni && (
