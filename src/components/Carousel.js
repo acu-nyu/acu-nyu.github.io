@@ -1,57 +1,101 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
 
 const Carousel = ({ children }) => {
-  const [width, setWidth] = useState(0);
-  const carouselRef = useRef();
-  const innerRef = useRef();
+  const scrollRef = useRef(null);
 
-  useEffect(() => {
-    const updateWidth = () => {
-      if (carouselRef.current && innerRef.current) {
-        setWidth(innerRef.current.scrollWidth - carouselRef.current.offsetWidth);
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { current } = scrollRef;
+      const scrollAmount = 350; // Width of one card
+      if (direction === 'left') {
+        current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
       }
-    };
-
-    // Initial update
-    updateWidth();
-
-    // Listen for window resize
-    window.addEventListener('resize', updateWidth);
-
-    // Observer for content changes (e.g. images loading)
-    const observer = new ResizeObserver(updateWidth);
-    if (innerRef.current) {
-      observer.observe(innerRef.current);
     }
-
-    // Checking periodically for a short time to catch image layout shifts if ResizeObserver misses it
-    const timeout = setTimeout(updateWidth, 500);
-
-    return () => {
-      window.removeEventListener('resize', updateWidth);
-      if (innerRef.current) observer.unobserve(innerRef.current);
-      clearTimeout(timeout);
-    };
-  }, [children]);
+  };
 
   return (
-    <motion.div 
-      ref={carouselRef} 
-      className="carousel" 
-      whileTap={{ cursor: 'grabbing' }} 
-      style={{ overflow: 'hidden', padding: '1rem 0' }} // added padding to prevent shadow clipping
-    >
-      <motion.div
-        ref={innerRef}
-        drag="x"
-        dragConstraints={{ right: 0, left: -width }}
-        className="inner-carousel"
-        style={{ display: 'flex', gap: '2rem' }}
+    <div className="carousel-container" style={{ position: 'relative', width: '100%' }}>
+      {/* Scroll Left Button */}
+      <button 
+        onClick={() => scroll('left')} 
+        style={{
+          position: 'absolute',
+          left: '-3rem', // moved further left to avoid overlapping content
+          top: '50%',
+          transform: 'translateY(-50%)',
+          zIndex: 10,
+          background: 'none',
+          border: 'none',
+          boxShadow: 'none', // Override global button shadow
+          cursor: 'pointer',
+          color: 'inherit',
+          fontSize: '2rem',
+          padding: '1rem',
+          height: 'auto', // Override global button height
+          lineHeight: '1', // Override global button line-height
+          minWidth: 'auto', // Override any min-width
+        }}
+        aria-label="Scroll Left"
       >
-        {children}
-      </motion.div>
-    </motion.div>
+        <i className="fa fa-chevron-left" />
+      </button>
+
+      {/* Scroll Container */}
+      <div 
+        ref={scrollRef} 
+        style={{ 
+          display: 'flex', 
+          overflowX: 'auto', 
+          gap: '2rem',
+          padding: '1rem 0',
+          scrollSnapType: 'x mandatory',
+          scrollbarWidth: 'none', // Firefox
+          msOverflowStyle: 'none', // IE/Edge
+          WebkitOverflowScrolling: 'touch',
+          scrollBehavior: 'smooth'
+        }}
+      >
+        {React.Children.map(children, child => (
+          <div style={{ scrollSnapAlign: 'start', flexShrink: 0 }}>
+            {child}
+          </div>
+        ))}
+      </div>
+      
+      {/* Hide Scrollbar for Chrome/Safari */}
+      <style>{`
+        .carousel-container div::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
+
+      {/* Scroll Right Button */}
+      <button 
+        onClick={() => scroll('right')} 
+        style={{
+          position: 'absolute',
+          right: '-3rem', // moved further right
+          top: '50%',
+          transform: 'translateY(-50%)',
+          zIndex: 10,
+          background: 'none',
+          border: 'none',
+          boxShadow: 'none', // Override global button shadow
+          cursor: 'pointer',
+          color: 'inherit',
+          fontSize: '2rem',
+          padding: '1rem',
+          height: 'auto', // Override global button height
+          lineHeight: '1', // Override global button line-height
+          minWidth: 'auto', // Override any min-width
+        }}
+        aria-label="Scroll Right"
+      >
+        <i className="fa fa-chevron-right" />
+      </button>
+    </div>
   );
 };
 
