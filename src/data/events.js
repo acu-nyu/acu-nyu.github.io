@@ -1,6 +1,20 @@
 const events = [
   {
     year: 2025,
+    term: "Fall",
+    title: "ACU Winter Village",
+    image: "events/event_f25_winter.png",
+    description: "ACU Winter Village is a cozy, festive event perfect for warming up and enjoying the holiday season with friends. Join us for a night filled with fun activities and games, exciting prizes, and plenty of Asian food and drinks, all while meeting new people and making connections. Come early if you can and get ready for a relaxed, cheerful evening—we look forward to seeing you there."
+  },
+  {
+    year: 2025,
+    term: "Fall",
+    title: "ACU Squid Game",
+    image: "events/event_f25_squid.png",
+    description: "ACU Squid Game is a social night inspired by the popular series, featuring themed games, prizes, and Asian food and drinks. Whether you’re a fan or just looking to hang out and meet new people, join us in the GCASL Grand Hall (5th floor) on Wednesday, October 8th at 7:00 PM—everyone is welcome."
+  },
+  {
+    year: 2025,
     term: "Spring",
     title: "ACU Zen",
     image: "events/event_s25_zen.png",
