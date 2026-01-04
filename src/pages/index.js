@@ -123,7 +123,16 @@ const IndexPage = ({ data }) => {
                 <h3 className="major">{year}</h3>
                 <Carousel>
                   {eventsByYear[year].map((event, index) => (
-                    <div key={index} style={{ minWidth: '350px', maxWidth: '350px' }}>
+                    <div 
+                      key={index} 
+                      className="features" 
+                      style={{ 
+                        minWidth: '350px', 
+                        maxWidth: '350px',
+                        margin: 0, // Reset margin
+                        display: 'block' // Ensure it behaves as a block
+                      }}
+                    >
                       <Event
                         image={getImageData(event.image)}
                         title={event.title}
