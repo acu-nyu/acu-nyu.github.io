@@ -9,6 +9,7 @@ const Event = ({ image, title, description, delay = 0 }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: delay }}
+      style={{ width: '100%', margin: 0 }}
     >
       <div className="image flip-container">
         <div className="flipper">
