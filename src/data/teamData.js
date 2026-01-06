@@ -38,7 +38,7 @@ export const teamData = [
             {
                 name: "Alex Xie",
                 role: "Website Master",
-                photo: "e-board/alex.jpg",
+                photo: "e-board/Alex.jpg",
                 description: "Alex is a senior studying Computer Science and Data Science at CAS. In his free time, he enjoys playing various sports and going to cafes.",
                 linkedinUrl: "https://www.linkedin.com/in/alexanderxie04/"
             },
@@ -228,7 +228,7 @@ export const teamData = [
                 role: "",
                 photo: "e-board/Leo.jpg",
                 description: "Leo is a freshman from Downingtown, PA studying business. In his free time, he likes playing tennis, rock climbing, and snowboarding.",
-                linkedinUrl: "linkedin.com/in/leo-shin-78567632/"
+                linkedinUrl: "https://www.linkedin.com/in/leo-shin-78567632/"
             },
             {
                 name: "Ashley Kikuta",
