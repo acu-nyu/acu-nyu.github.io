@@ -52,6 +52,8 @@ html {
 
   background-position: center, center;
 
+  background-repeat: no-repeat, no-repeat;
+
   // Stops initial animations until page loads.
   &.is-preload {
     *,

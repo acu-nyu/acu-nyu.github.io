@@ -68,6 +68,8 @@
 
       background-position: center, 0% 30%;
 
+      background-repeat: no-repeat, no-repeat;
+
       margin-bottom: (_size(wrapper-edges, large) * -1);
     }
   }
@@ -96,7 +98,7 @@
         2em,
         (2.75em, 0, _size(wrapper-edges, small) * 0.5, 0));
 
-      background-size: auto, 125%;
+      background-size: auto, cover;
 
       margin-bottom: (_size(wrapper-edges, small) * -1);
 
