@@ -32,10 +32,13 @@ const TeamHeader = () => {
         </motion.p>
       </div>
 
-      {/* Radial gradient background - seamless edges */}
-      <div className="absolute inset-0 pointer-events-none -z-0 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[400px] bg-[radial-gradient(ellipse_at_center,_rgba(127,29,29,0.25)_0%,_transparent_70%)]" />
-      </div>
+      {/* Radial gradient background - seamless soft edges */}
+      <div 
+        className="absolute inset-0 pointer-events-none -z-0"
+        style={{
+          background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(127,29,29,0.2) 0%, rgba(127,29,29,0.1) 30%, rgba(127,29,29,0.03) 50%, transparent 70%)',
+        }}
+      />
     </section>
   );
 };
