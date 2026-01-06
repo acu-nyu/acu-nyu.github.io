@@ -50,9 +50,9 @@ const TeamMemberCard = ({ name, role, image, description, isAlumni = false, link
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none" />
 
                 {!isAlumni && (
-                    <div className={`absolute inset-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 bg-black/80 backdrop-blur-[2px] text-white text-center ${showDescription ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                    <div className={`absolute inset-0 flex flex-col items-center justify-center p-3 sm:p-6 transition-opacity duration-300 bg-black/80 backdrop-blur-[2px] text-white text-center ${showDescription ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
                         }`}>
-                        <p className="text-sm font-light leading-relaxed tracking-wide m-0 mb-4">
+                        <p className="text-[10px] sm:text-sm font-light leading-snug sm:leading-relaxed tracking-wide m-0 mb-2 sm:mb-4 line-clamp-6 sm:line-clamp-none overflow-hidden">
                             {description}
                         </p>
                         {linkedinUrl && (
@@ -70,17 +70,17 @@ const TeamMemberCard = ({ name, role, image, description, isAlumni = false, link
                     </div>
                 )}
 
-                <div className={`absolute bottom-0 left-0 right-0 p-4 flex flex-col items-center justify-end transition-all duration-300 transform ${(!isAlumni) ? 'group-hover:opacity-0 group-hover:translate-y-4' : ''
+                <div className={`absolute bottom-0 left-0 right-0 p-2 sm:p-4 flex flex-col items-center justify-end transition-all duration-300 transform ${(!isAlumni) ? 'group-hover:opacity-0 group-hover:translate-y-4' : ''
                     } ${showDescription ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
 
-                    <h3 className="w-full text-center font-bold text-lg text-white tracking-tight mb-0.5 mt-0 drop-shadow-md">
+                    <h3 className="w-full text-center font-bold text-sm sm:text-lg text-white tracking-tight mb-0.5 mt-0 drop-shadow-md">
                         {name}
                     </h3>
 
-                    <div className="flex flex-col items-center gap-1.5 w-full">
+                    <div className="flex flex-col items-center gap-1 sm:gap-1.5 w-full">
                         {role && (
-                            <div className="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/10 shadow-sm">
-                                <p className="m-0 p-0 text-[11px] font-medium text-white/90 uppercase tracking-wider leading-none">
+                            <div className="inline-flex items-center justify-center px-1.5 sm:px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/10 shadow-sm">
+                                <p className="m-0 p-0 text-[9px] sm:text-[11px] font-medium text-white/90 uppercase tracking-wider leading-none">
                                     {role}
                                 </p>
                             </div>
