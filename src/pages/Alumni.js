@@ -7,6 +7,12 @@ import TeamMemberCard from '../components/TeamMemberCard';
 
 const alumniData = [
   {
+    year: "Class of 2026",
+    members: [
+      { name: "Evan Chan", photo: "alumni/evan.jpg", role: "", linkedinUrl: "https://www.linkedin.com/in/evan-chan8/" },
+    ]
+  },
+  {
     year: "Class of 2025",
     members: [
       { name: "Grace Tan", photo: "alumni/grace.jpg", role: "Co-President", linkedinUrl: "https://www.linkedin.com/in/grace-tan-617915255/" },
