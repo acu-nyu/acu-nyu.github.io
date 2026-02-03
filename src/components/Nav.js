@@ -37,16 +37,34 @@ export default function Nav({ onMenuToggle = () => {} }) {
               Alumni
             </Link>
           </li>
-          {/* <li>
-            <Link
-              onClick={e => {
+          <li>
+            <a
+              href="http://eepurl.com/bc5n6r"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => {
                 onMenuToggle();
               }}
-              to="/Elements"
+              className="button special shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+              style={{
+                marginTop: '1rem',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                color: '#dc2626',
+                borderRadius: '9999px', // Pill shape
+                padding: '0 2.5rem',
+                height: '3rem',
+                lineHeight: '3rem',
+                display: 'inline-block',
+                fontSize: '0.8rem',
+                letterSpacing: '0.1em',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+              }}
             >
-              Elements
-            </Link>
-          </li> */}
+              Join Us
+            </a>
+          </li>
+
         </ul>
         <a
           className="close"
