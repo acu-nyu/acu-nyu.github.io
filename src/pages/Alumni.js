@@ -150,55 +150,73 @@ const IndexPage = ({ data }) => {
         </header>
 
         <div className="wrapper team-page px-4 md:px-8 py-12">
-          <div className="inner max-w-7xl mx-auto">
-            {alumniData.map((yearBlock, index) => (
-              <motion.div 
-                key={index} 
-                className="mb-24"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                variants={sectionVariants}
-              >
-                <div className="flex items-center gap-6 mb-8 md:mb-12 justify-center">
-                  <h2 className="section-header text-xl md:text-3xl lg:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-sm text-center text-slate-900">
-                    {yearBlock.year}
-                    <motion.div 
-                      className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto shadow-[0_0_10px_rgba(220,38,38,0.5)]"
-                      initial={{ scaleX: 0 }}
-                      whileInView={{ scaleX: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    />
-                  </h2>
-                </div>
+          
+          {/* Sticky Filter Bar */}
+          <div className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm mb-12 py-3 px-4 -mx-4 md:-mx-8">
+             <div className="max-w-7xl mx-auto overflow-x-auto no-scrollbar flex gap-3 pb-1 justify-start md:justify-center items-center">
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mr-2 shrink-0 hidden md:block">Jump to:</span>
+                {alumniData.map((data, i) => (
+                  <a 
+                    key={i}
+                    href={`#${data.year.replace(/\s+/g, '-')}`}
+                    className="shrink-0 px-4 py-1.5 rounded-full bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-700 text-xs md:text-sm font-bold uppercase tracking-wide transition-colors duration-200 border-b-0 hover:border-b-0"
+                  >
+                    {data.year}
+                  </a>
+                ))}
+             </div>
+          </div>
 
+          <div className="inner max-w-7xl mx-auto">
+              {alumniData.map((yearBlock, index) => (
                 <motion.div 
-                  className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6"
-                  variants={containerVariants}
+                  key={index} 
+                  id={yearBlock.year.replace(/\s+/g, '-')}
+                  className="mb-24 scroll-mt-32" 
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, margin: "-50px" }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  variants={sectionVariants}
                 >
-                  {yearBlock.members.map((member, memberIndex) => {
-                    const imageNode = imageMap[member.photo];
-                    const imageData = imageNode ? getImage(imageNode) : null;
+                  <div className="flex items-center gap-6 mb-8 md:mb-12 justify-center">
+                    <h2 className="section-header text-xl md:text-3xl lg:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-sm text-center text-slate-900">
+                      {yearBlock.year}
+                      <motion.div 
+                        className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto shadow-[0_0_10px_rgba(220,38,38,0.5)]"
+                        initial={{ scaleX: 0 }}
+                        whileInView={{ scaleX: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+                      />
+                    </h2>
+                  </div>
 
-                    return (
-                      <motion.div key={memberIndex} variants={cardVariants}>
-                        <TeamMemberCard
-                          name={member.name}
-                          role={member.role}
-                          image={imageData}
-                          isAlumni={true}
-                          linkedinUrl={member.linkedinUrl}
-                        />
-                      </motion.div>
-                    );
-                  })}
+                  <motion.div 
+                    className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                  >
+                    {yearBlock.members.map((member, memberIndex) => {
+                      const imageNode = imageMap[member.photo];
+                      const imageData = imageNode ? getImage(imageNode) : null;
+
+                      return (
+                        <motion.div key={memberIndex} variants={cardVariants}>
+                          <TeamMemberCard
+                            name={member.name}
+                            role={member.role}
+                            image={imageData}
+                            isAlumni={true}
+                            linkedinUrl={member.linkedinUrl}
+                          />
+                        </motion.div>
+                      );
+                    })}
+                  </motion.div>
                 </motion.div>
-              </motion.div>
-            ))}
+              ))}
           </div>
         </div>
       </section>
