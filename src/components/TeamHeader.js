@@ -28,8 +28,24 @@ const TeamHeader = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          Eboard Applications are currently closed. Check back in January/February 2026 for Spring Eboard Applications!
+          Eboard Applications are now OPEN! Open to freshmen, sophomores, and juniors. Due Sunday, Feb 15 at 11:59PM.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="mt-8"
+        >
+          <a 
+            href="https://forms.gle/tUa2so3Q3MERkkWh8" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 border-0"
+          >
+            Apply Here
+          </a>
+        </motion.div>
       </div>
 
       {/* Radial gradient background - seamless soft edges */}
