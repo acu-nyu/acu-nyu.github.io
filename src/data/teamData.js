@@ -263,17 +263,4 @@ export const teamData = [
       },
     ],
   },
-  {
-    section: 'Alumni',
-    members: [
-      {
-        name: 'Evan Chan',
-        role: 'Class of 2026',
-        photo: 'e-board/evan.jpg',
-        description:
-          'Evan is majoring in Business and Technology Management and he loves soccer and big-backing.',
-        linkedinUrl: 'https://www.linkedin.com/in/evan-chan8/',
-      },
-    ],
-  },
 ];
