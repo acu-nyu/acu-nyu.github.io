@@ -16,10 +16,13 @@ const Carousel = ({ children }) => {
   };
 
   return (
-    <div className="carousel-container" style={{ position: 'relative', width: '100%' }}>
+    <div
+      className="carousel-container"
+      style={{ position: 'relative', width: '100%' }}
+    >
       {/* Scroll Left Button */}
-      <button 
-        onClick={() => scroll('left')} 
+      <button
+        onClick={() => scroll('left')}
         style={{
           position: 'absolute',
           left: '-3rem', // moved further left to avoid overlapping content
@@ -43,27 +46,25 @@ const Carousel = ({ children }) => {
       </button>
 
       {/* Scroll Container */}
-      <div 
-        ref={scrollRef} 
-        style={{ 
-          display: 'flex', 
-          overflowX: 'auto', 
+      <div
+        ref={scrollRef}
+        style={{
+          display: 'flex',
+          overflowX: 'auto',
           gap: '2rem',
           padding: '1rem 0',
           scrollSnapType: 'x mandatory',
           scrollbarWidth: 'none', // Firefox
           msOverflowStyle: 'none', // IE/Edge
           WebkitOverflowScrolling: 'touch',
-          scrollBehavior: 'smooth'
+          scrollBehavior: 'smooth',
         }}
       >
-        {React.Children.map(children, child => (
-          <div style={{ scrollSnapAlign: 'start', flexShrink: 0 }}>
-            {child}
-          </div>
+        {React.Children.map(children, (child) => (
+          <div style={{ scrollSnapAlign: 'start', flexShrink: 0 }}>{child}</div>
         ))}
       </div>
-      
+
       {/* Hide Scrollbar for Chrome/Safari */}
       <style>{`
         .carousel-container div::-webkit-scrollbar {
@@ -72,8 +73,8 @@ const Carousel = ({ children }) => {
       `}</style>
 
       {/* Scroll Right Button */}
-      <button 
-        onClick={() => scroll('right')} 
+      <button
+        onClick={() => scroll('right')}
         style={{
           position: 'absolute',
           right: '-3rem', // moved further right

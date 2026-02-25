@@ -47,7 +47,8 @@ const IndexPage = () => (
 							deck.shuffle();
 							i++;
 							}`}
-                print 'It took ' + i + ' iterations to sort the deck.';
+                print &apos;It took &apos; + i + &apos; iterations to sort the
+                deck.&apos;;
               </code>
             </pre>
           </section>
@@ -494,7 +495,11 @@ const IndexPage = () => (
                       />
                     </li>
                     <li>
-                      <input type="reset" value="Reset" aria-label="Reset form" />
+                      <input
+                        type="reset"
+                        value="Reset"
+                        aria-label="Reset form"
+                      />
                     </li>
                   </ul>
                 </div>
@@ -622,6 +627,12 @@ const IndexPage = () => (
       </div>
     </section>
   </Layout>
+);
+
+export const Head = () => (
+  <>
+    <title>Elements | ACU at NYU</title>
+  </>
 );
 
 export default IndexPage;

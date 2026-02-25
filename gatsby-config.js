@@ -6,7 +6,6 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -23,7 +22,12 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         sassOptions: {
-          silenceDeprecations: ['legacy-js-api', 'import', 'global-builtin', 'color-functions'],
+          silenceDeprecations: [
+            'legacy-js-api',
+            'import',
+            'global-builtin',
+            'color-functions',
+          ],
         },
       },
     },

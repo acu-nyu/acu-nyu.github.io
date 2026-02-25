@@ -56,8 +56,8 @@ const IndexPage = ({ data }) => {
               <h2 className="major">Who are we?</h2>
               <p>
                 Established in 1972, Asian Cultural Union remains the only Asian
-                umbrella group at NYU and is one of the largest and most prominent
-                organizations in the history of the university.
+                umbrella group at NYU and is one of the largest and most
+                prominent organizations in the history of the university.
               </p>
             </ScrollReveal>
           </div>
@@ -104,10 +104,10 @@ const IndexPage = ({ data }) => {
             <ScrollReveal className="content" delay={0.2}>
               <h2 className="major">Who can join?</h2>
               <p>
-                ACU is an all-inclusive organization that welcomes members of all
-                backgrounds. ACU was founded upon and continues to operate under
-                the precepts of racial and social tolerance, indiscrimination, and
-                equality.
+                ACU is an all-inclusive organization that welcomes members of
+                all backgrounds. ACU was founded upon and continues to operate
+                under the precepts of racial and social tolerance,
+                indiscrimination, and equality.
               </p>
             </ScrollReveal>
           </div>
@@ -117,32 +117,34 @@ const IndexPage = ({ data }) => {
             <ScrollReveal>
               <h2 className="major">Recent and Past Events</h2>
             </ScrollReveal>
-            
-            {Object.keys(eventsByYear).sort((a, b) => b - a).map((year) => (
-              <div key={year} style={{ marginBottom: '4rem' }}>
-                <h3 className="major">{year}</h3>
-                <Carousel>
-                  {eventsByYear[year].map((event, index) => (
-                    <div 
-                      key={index} 
-                      className="features" 
-                      style={{ 
-                        minWidth: '350px', 
-                        maxWidth: '350px',
-                        margin: 0, // Reset margin
-                        display: 'block' // Ensure it behaves as a block
-                      }}
-                    >
-                      <Event
-                        image={getImageData(event.image)}
-                        title={event.title}
-                        description={event.description}
-                      />
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
-            ))}
+
+            {Object.keys(eventsByYear)
+              .sort((a, b) => b - a)
+              .map((year) => (
+                <div key={year} style={{ marginBottom: '4rem' }}>
+                  <h3 className="major">{year}</h3>
+                  <Carousel>
+                    {eventsByYear[year].map((event, index) => (
+                      <div
+                        key={index}
+                        className="features"
+                        style={{
+                          minWidth: '350px',
+                          maxWidth: '350px',
+                          margin: 0, // Reset margin
+                          display: 'block', // Ensure it behaves as a block
+                        }}
+                      >
+                        <Event
+                          image={getImageData(event.image)}
+                          title={event.title}
+                          description={event.description}
+                        />
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              ))}
           </div>
         </section>
       </section>
@@ -152,20 +154,34 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query IndexPageQuery {
-    allFile(filter: { sourceInstanceName: { eq: "images" }, extension: { ne: "svg" } }) {
+    allFile(
+      filter: { sourceInstanceName: { eq: "images" }, extension: { ne: "svg" } }
+    ) {
       edges {
         node {
           relativePath
           childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
     }
   }
 `;
+
+export const Head = () => (
+  <>
+    <title>Home | ACU at NYU</title>
+    <meta
+      name="description"
+      content="Official Website for the Asian Cultural Union at NYU, NYU's largest Asian umbrella organization."
+    />
+    <meta
+      name="google-site-verification"
+      content="UJigPNOUs3R-CEucJRTNmWtSxR8Vnpl4rhDm0p6bxrU"
+    />
+    <html lang="en" />
+  </>
+);
 
 export default IndexPage;
