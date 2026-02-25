@@ -15,4 +15,10 @@ const IndexPage = () => (
   </Layout>
 );
 
+export const Head = () => (
+  <>
+    <title>Page Not Found | ACU at NYU</title>
+  </>
+);
+
 export default IndexPage;

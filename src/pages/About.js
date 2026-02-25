@@ -84,13 +84,24 @@ const IndexPage = () => (
               ACU is an all-inclusive organization that welcomes members of all
               backgrounds. ACU was founded upon and continues to operate under
               the precepts of racial and social tolerance, indiscrimination, and
-              equality. E-board applications for this fall will open soon. Keep an eye out!
+              equality. E-board applications for this fall will open soon. Keep
+              an eye out!
             </p>
           </div>
         </div>
       </section>
     </section>
   </Layout>
+);
+
+export const Head = () => (
+  <>
+    <title>About | ACU at NYU</title>
+    <meta
+      name="description"
+      content="Learn more about the Asian Cultural Union at NYU, established in 1972."
+    />
+  </>
 );
 
 export default IndexPage;

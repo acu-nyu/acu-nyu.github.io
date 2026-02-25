@@ -9,7 +9,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
         <ul className="links">
           <li>
             <Link
-              onClick={(e) => {
+              onClick={() => {
                 onMenuToggle();
               }}
               to="/"
@@ -19,7 +19,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
           </li>
           <li>
             <Link
-              onClick={(e) => {
+              onClick={() => {
                 onMenuToggle();
               }}
               to="/Team"
@@ -29,7 +29,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
           </li>
           <li>
             <Link
-              onClick={(e) => {
+              onClick={() => {
                 onMenuToggle();
               }}
               to="/Alumni"
@@ -58,13 +58,13 @@ export default function Nav({ onMenuToggle = () => {} }) {
                 display: 'inline-block',
                 fontSize: '0.8rem',
                 letterSpacing: '0.1em',
-                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+                boxShadow:
+                  '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
               }}
             >
               Join Us
             </a>
           </li>
-
         </ul>
         <a
           className="close"

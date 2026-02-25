@@ -1,10 +1,23 @@
-# Project dependencies
+# Dependencies
 .cache
 node_modules
-yarn-error.log
+
+# Build output
+/public
+
+# Package manager
 package-lock.json
 yarn.lock
+yarn-error.log
 
-# Build directory
-/public
+# OS
 .DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.local
+.env.*.local
