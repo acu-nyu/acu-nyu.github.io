@@ -25,7 +25,9 @@ export default function Footer() {
               alt="Instagram"
               target="_blank"
               rel="noreferrer"
-            > </a>
+            >
+              {' '}
+            </a>
           </li>
 
           <li>
@@ -35,7 +37,9 @@ export default function Footer() {
               alt="Facebook"
               target="_blank"
               rel="noreferrer"
-            > </a>
+            >
+              {' '}
+            </a>
           </li>
 
           <li>
@@ -45,7 +49,9 @@ export default function Footer() {
               alt="GitHub"
               target="_blank"
               rel="noreferrer"
-            > </a>
+            >
+              {' '}
+            </a>
           </li>
         </ul>
         <p style={{ textAlign: 'center' }}>
