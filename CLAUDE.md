@@ -53,7 +53,8 @@ This is the official website for the Asian Cultural Union (ACU), NYU's largest A
 ## Development Setup
 
 ### Prerequisites
-- Node.js >= 20.0.0 (use nvm: `nvm install lts/jod`)
+
+- Node.js >= 20.0.0 (use nvm: `nvm install 20`)
 - npm
 
 ### Getting Started
@@ -73,15 +74,16 @@ GraphQL playground at `http://localhost:8000/___graphql`
 
 ```bash
 npm run develop    # Start dev server
-npm run build      # Production build
-npm run deploy     # Build and deploy to GitHub Pages
-npm run clean      # Clear cache and public folders
-npm run format     # Format code with Prettier
+npm run build     # Production build (~6s with cache)
+npm run deploy    # Build and deploy to GitHub Pages
+npm run lint      # Run ESLint
+npm run format    # Format code with Prettier
 ```
 
 ## Code Conventions
 
 ### JavaScript/React
+
 - Use functional components with hooks
 - Prefer `const` over `let`, avoid `var`
 - Semicolons required (Prettier config)
@@ -89,6 +91,7 @@ npm run format     # Format code with Prettier
 - Trailing commas in ES5 style
 
 ### Component Structure
+
 ```javascript
 import React from 'react';
 // Third-party imports
@@ -111,17 +114,20 @@ export default ComponentName;
 ```
 
 ### Styling Conventions
+
 - Use Tailwind utility classes for most styling
 - Use SCSS modules for complex component-specific styles
 - Responsive design: mobile-first, `sm:`, `md:`, `lg:` breakpoints
 - Color scheme: Purple theme (#663399) as primary brand color
 
 ### Data Files
+
 - Team member data: [src/data/teamData.js](src/data/teamData.js)
 - Event data: [src/data/events.js](src/data/events.js)
 - Each member object: `name`, `role`, `photo`, `description`, `linkedinUrl`
 
 ### Images
+
 - E-board photos: `src/assets/images/e-board/`
 - Alumni photos: `src/assets/images/alumni/`
 - Use `GatsbyImage` component for optimized images
@@ -129,16 +135,19 @@ export default ComponentName;
 ## Key Features
 
 ### Team Pages
+
 - **Team Page**: Current E-board members with hover descriptions
 - **Alumni Page**: Past members without hover interactions
 - Both use shared `TeamMemberCard` component with `isAlumni` prop
 
 ### Responsive Design
+
 - Mobile-first approach
 - Text scaling: `text-xs` to `text-xl` based on breakpoints
 - Aspect ratios maintained: `aspect-[3/4]` for portrait cards
 
 ### Interactive Elements
+
 - Hover effects on cards (description reveal for current team)
 - LinkedIn links with icon SVG
 - Scroll animations
@@ -155,6 +164,7 @@ export default ComponentName;
 ## Path Aliases
 
 The `@` alias is configured to point to the `src` directory:
+
 ```javascript
 import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
@@ -163,6 +173,7 @@ import { cn } from '@/lib/utils';
 ## Deployment
 
 Deployed via GitHub Pages using `gh-pages` package:
+
 ```bash
 npm run deploy
 ```
@@ -182,7 +193,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 ## Common Tasks
 
 ### Adding a Team Member
+
 Edit [src/data/teamData.js](src/data/teamData.js):
+
 ```javascript
 {
   name: 'Name',
@@ -192,20 +205,24 @@ Edit [src/data/teamData.js](src/data/teamData.js):
   linkedinUrl: 'https://linkedin.com/in/...',
 }
 ```
+
 Place photo in `src/assets/images/e-board/` or `src/assets/images/alumni/`
 
 ### Adding Social Links
+
 Edit the `socialLinks` array in [config.js](config.js).
 
 ### Changing Site Colors
+
 Update the brand color in [config.js](config.js) (`manifestThemeColor`, `manifestBackgroundColor`).
 
 ### Modifying Content Sections
+
 Main pages: [src/pages/index.js](src/pages/index.js), [About.js](src/pages/About.js), [Team.js](src/pages/Team.js), [Alumni.js](src/pages/Alumni.js)
 
 ## Notes
 
-- Suppresses `gatsby-plugin-react-helmet` warnings via webpack config
+- Uses Gatsby Head API for SEO metadata
 - Uses smoothscroll polyfill for older browsers
 - FontAwesome integrated for icons
 - Bootstrap components available via `react-bootstrap`
