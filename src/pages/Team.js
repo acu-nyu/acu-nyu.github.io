@@ -175,7 +175,7 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(
               placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
+              formats: [AUTO, WEBP]
               width: 400
               aspectRatio: 0.75
               transformOptions: { fit: COVER, cropFocus: CENTER }

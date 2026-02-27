@@ -1,5 +1,3 @@
-import { m } from "framer-motion";
-
 export const teamData = [
   {
     section: 'Presidents',
@@ -266,50 +264,77 @@ export const teamData = [
     ],
   },
   {
-    'section': 'Newbies Class of Spring 2026',
-    'members': [
+    section: 'Newbies Class of Spring 2026',
+    members: [
       {
         name: 'David Setiawan',
         role: '',
         photo: 'e-board/David.jpg',
-        description: 'David is a freshman studying Media, Culture, and Communication (MCC). He is from Jakarta, Indonesia, and he enjoys meeting new people, trying new foods, and watching films.',
+        description:
+          'David is a freshman studying Media, Culture, and Communication (MCC). He is from Jakarta, Indonesia, and he enjoys meeting new people, trying new foods, and watching films.',
         linkedinUrl: 'https://www.linkedin.com/in/davidtahirsetiawan/',
       },
       {
         name: 'Natalie Neumann',
         role: '',
         photo: 'e-board/Natalie.jpg',
-        description: 'Natalie is a freshman from the Bay Area (Palo Alto, CA) studying politics & journalism at CAS. She loves sports (basketball), learning guitar, attending concerts, and trying new cafes in the city.',
+        description:
+          'Natalie is a freshman from the Bay Area (Palo Alto, CA) studying politics & journalism at CAS. She loves sports (basketball), learning guitar, attending concerts, and trying new cafes in the city.',
         linkedinUrl: 'https://www.linkedin.com/in/natalieeneumann/',
       },
       {
         name: 'Tiffany Li',
         role: '',
         photo: 'e-board/Tiffany.jpg',
-        description: 'Tiffany is a junior studying Media, Culture & Communications from Los Angeles, California. In her free time she likes to dance, go thrifting, and try new food spots!!',
+        description:
+          'Tiffany is a junior studying Media, Culture & Communications from Los Angeles, California. In her free time she likes to dance, go thrifting, and try new food spots!!',
         linkedinUrl: 'https://www.linkedin.com/in/tiffanyyoungli/',
       },
       {
         name: 'Anant Agarwal',
         role: '',
         photo: 'e-board/Anant.jpg',
-        description: 'Anant is a freshman from South Korea studying business. He enjoys playing basketball, bowling, and trying new cuisines.',
+        description:
+          'Anant is a freshman from South Korea studying business. He enjoys playing basketball, bowling, and trying new cuisines.',
         linkedinUrl: 'https://www.linkedin.com/in/anantvik',
       },
       {
         name: 'Shanya Khanthong',
         role: '',
         photo: 'e-board/Shanya.jpg',
-        description: 'Shanya is a sophomore studying Psychology at CAS and she is from New York City. Love trying new food places and traveling. ',
+        description:
+          'Shanya is a sophomore studying Psychology at CAS and she is from New York City. Love trying new food places and traveling. ',
         linkedinUrl: 'https://www.linkedin.com/in/shanya-khanthong-6140a7384',
       },
       {
         name: 'Colin Chow',
         role: '',
         photo: 'e-board/Colin.jpg',
-        description: 'Colin is a Film and Television major at Tisch from San Jose, California. He enjoys running, playing basketball, and video editing.',
+        description:
+          'Colin is a Film and Television major at Tisch from San Jose, California. He enjoys running, playing basketball, and video editing.',
         linkedinUrl: 'https://www.linkedin.com/in/colin-chow-7a4744281/',
-      }
-    ]
-  }
+      },
+    ],
+  },
+  {
+    section: 'Abroad',
+    members: [
+      {
+        name: 'James Shin',
+        role: '',
+        photo: 'e-board/JamesShin.jpg',
+        description:
+          'James is a junior from Queens, New York studying Business and Computer Science who likes playing instruments, listening to music, going to cafes, and dancing',
+        linkedinUrl: 'https://www.linkedin.com/in/james-shin-nyu/',
+      },
+      {
+        name: 'Safia Lee',
+        role: '',
+        photo: 'e-board/SafiaLee.jpg',
+        description:
+          'Safia is a sophomore from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and exploring the city.',
+        linkedinUrl: 'https://www.linkedin.com/in/safia-lee-366095290/',
+      },
+    ],
+  },
 ];

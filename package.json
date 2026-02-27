@@ -11,16 +11,13 @@
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
-    "ajv": "^8.17.1",
     "bootstrap": "^5.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "cookie": "^1.0.2",
     "framer-motion": "^12.23.26",
     "gatsby": "^5.16.0-next.0",
     "gatsby-plugin-image": "^3.15.0",
     "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-offline": "^6.13.3",
     "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.15.0",
     "gatsby-source-filesystem": "^5.15.0",
@@ -28,21 +25,20 @@
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^18.3.1",
-    "react-images": "^0.6.7",
     "sass": "^1.81.0",
     "smoothscroll-polyfill": "^0.4.4",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7",
-    "workbox-build": "^7.3.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public --no-history",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "lint": "eslint src --ext .js",
     "format": "prettier --write '**/*.js'",
+    "optimize-images": "node scripts/optimize-images.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
