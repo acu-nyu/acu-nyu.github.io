@@ -6,7 +6,6 @@ node_modules
 /public
 
 # Package manager
-package-lock.json
 yarn.lock
 yarn-error.log
 
