@@ -8,7 +8,8 @@ Official Website for the Asian Cultural Union at NYU, NYU's Largest Asian Umbrel
 
 ## Tech Stack
 
-- **Framework**: Gatsby 5 (React-based static site generator)
+- **Framework**: [Gatsby 5.16](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/) (React-based static site generator)
+- **React**: Version 19
 - **Styling**: Tailwind CSS + Sass
 - **UI Components**: Bootstrap + Custom components
 - **Animation**: Framer Motion
@@ -17,18 +18,20 @@ Official Website for the Asian Cultural Union at NYU, NYU's Largest Asian Umbrel
 
 ### Prerequisites
 
-- Node.js >= 20.0.0 (use nvm)
+- Node.js >= 18.0.0 (Node 24 recommended - Active LTS - see [Gatsby v5.16 release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/#nodejs-24))
+- npm (bundled with Node) - use `--legacy-peer-deps` flag to install due to React 19 peer dependency conflicts
 
 ```shell
-# Install Node 20
-nvm install 20
-nvm use 20
+# Install Node 24 (Active LTS)
+nvm install 24
+nvm use 24
 ```
 
 ### Installation
 
 ```shell
-npm install
+# Install dependencies (use --legacy-peer-deps for React 19 compatibility)
+npm install --legacy-peer-deps
 
 # Start development server
 npm run develop
