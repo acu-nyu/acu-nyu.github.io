@@ -7,10 +7,15 @@
     "url": "git+https://github.com/acu-nyu/acu-nyu.github.io.git"
   },
   "dependencies": {
+    "@astrojs/image": "^0.18.0",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.18.0",
     "bootstrap": "^5.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "framer-motion": "^12.23.26",
+    "framer-motion": "^12.35.0",
     "gatsby": "^5.16.1",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-manifest": "^5.16.0",
@@ -27,13 +32,14 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public --no-history",
-    "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "lint": "eslint src --ext .js",
-    "format": "prettier --write '**/*.js'",
+    "develop": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run clean && npm run build && gh-pages -d dist --no-history",
+    "serve": "astro preview",
+    "clean": "rimraf dist .astro",
+    "lint": "eslint src --ext .js,.astro,.ts,.tsx",
+    "format": "prettier --write '**/*.{js,astro,ts,tsx}'",
     "optimize-images": "node scripts/optimize-images.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -49,10 +55,11 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.1"
   },
   "keywords": [
-    "gatsby",
+    "astro",
     "acu",
     "nyu"
   ],

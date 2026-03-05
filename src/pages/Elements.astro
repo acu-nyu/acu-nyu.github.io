@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Load images
+const imageFiles = import.meta.glob('/src/assets/img/**/*.{jpg,jpeg,png,webp,avif,gif}', {
+  eager: true,
+  import: 'default',
+});
+
+const imageMap: Record<string, any> = {};
+Object.entries(imageFiles).forEach(([path, image]) => {
+  const relativePath = path.replace('/src/assets/img/', '');
+  imageMap[relativePath] = image;
+});
+
+const getImage = (path: string) => imageMap[path] || null;
+---
+
+<Layout fullMenu>
+  <section id="wrapper">
+    <header>
+      <div class="inner">
+        <h2>Elements</h2>
+        <p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="inner">
+        <section>
+          <h3 class="major">Text</h3>
+          <p>
+            This is <b>bold</b> and this is <strong>strong</strong>. This is{' '}
+            <i>italic</i> and this is <em>emphasized</em>. This is{' '}
+            <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+            This is <u>underlined</u> and this is code:{' '}
+            <code>for (;;) {`{...}`}</code>. Finally,{' '}
+            <a href="/#">this is a link</a>.
+          </p>
+          <h4>Blockquote</h4>
+          <blockquote>
+            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+            sagittis eget tempus euismod. Vestibulum ante ipsum primis in
+            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+            ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in
+            faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
+          </blockquote>
+          <h4>Preformatted</h4>
+          <pre>
+            <code>
+              i = 0; while (!deck.isInOrder()){' '}
+              {`{
+							print 'Iteration ' + i;
+							deck.shuffle();
+							i++;
+							}`}
+              print &apos;It took &apos; + i + &apos; iterations to sort
+              deck.&apos;;
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3 class="major">Lists</h3>
+          <div class="row">
+            <div class="col-6 col-12-medium">
+              <h4>Unordered</h4>
+              <ul>
+                <li>Dolor pulvinar etiam.</li>
+                <li>Sagittis adipiscing.</li>
+                <li>Felis enim feugiat.</li>
+              </ul>
+              <h4>Alternate</h4>
+              <ul class="alt">
+                <li>Dolor pulvinar etiam.</li>
+                <li>Sagittis adipiscing.</li>
+                <li>Felis enim feugiat.</li>
+              </ul>
+            </div>
+            <div class="col-6 col-12-medium">
+              <h4>Ordered</h4>
+              <ol>
+                <li>Dolor pulvinar etiam.</li>
+                <li>Etiam vel felis viverra.</li>
+                <li>Felis enim feugiat.</li>
+                <li>Dolor pulvinar etiam.</li>
+                <li>Etiam vel felis lorem.</li>
+                <li>Felis enim et feugiat.</li>
+              </ol>
+              <h4>Icons</h4>
+              <ul class="icons">
+                <li>
+                  <a href="/#" class="icon fa-twitter">
+                    <span class="label">Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/#" class="icon fa-facebook">
+                    <span class="label">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/#" class="icon fa-instagram">
+                    <span class="label">Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/#" class="icon fa-github">
+                    <span class="label">Github</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="major">Image</h3>
+          <h4>Fit</h4>
+          <div class="box alt">
+            <div class="row gtr-uniform">
+              <div class="col-12">
+                <span class="image fit">
+                  {getImage('pic08.jpg') && (
+                    <Image src={getImage('pic08.jpg')} alt="" width={1200} height={600} />
+                  )}
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</Layout>

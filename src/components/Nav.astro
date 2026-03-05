@@ -1,0 +1,11 @@
+---
+import NavReact from './NavReact.tsx';
+
+interface Props {
+  onMenuToggle?: () => void;
+}
+
+const { onMenuToggle = () => {} } = Astro.props;
+---
+
+<NavReact onMenuToggle={onMenuToggle} />

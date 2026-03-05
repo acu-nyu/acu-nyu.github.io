@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Load images
+const imageFiles = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,avif,gif}', {
+  eager: true,
+  import: 'default',
+});
+
+const imageMap: Record<string, any> = {};
+Object.entries(imageFiles).forEach(([path, image]) => {
+  const relativePath = path.replace('/src/assets/images/', '');
+  imageMap[relativePath] = image;
+});
+
+const getImage = (path: string) => imageMap[path] || null;
+---
+
+<Layout>
+  <section id="wrapper">
+    <header>
+      <div class="inner">
+        <h2>Gallery</h2>
+      </div>
+    </header>
+
+    <section id="one" class="wrapper spotlight style1">
+      <div class="inner">
+        <div class="image">
+          {getImage('s24-team.jpg') && (
+            <Image
+              src={getImage('s24-team.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </div>
+        <div class="content">
+          <h2 class="major">Who are we?</h2>
+          <p>
+            Established in 1972, Asian Cultural Union remains only Asian
+            umbrella group at NYU and is one of largest and most prominent
+            organizations in history of the university.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="two" class="wrapper alt spotlight style2">
+      <div class="inner">
+        <div class="image">
+          {getImage('icon2.jpg') && (
+            <Image
+              src={getImage('icon2.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </div>
+        <div class="content">
+          <h2 class="major">Our Mission</h2>
+          <p>
+            Our mission is to celebrate and promote Asian cultures through
+            cultural, social, and business-oriented events, as well as
+            community service projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="three" class="wrapper spotlight style3">
+      <div class="inner">
+        <div class="image">
+          {getImage('icon3.jpg') && (
+            <Image
+              src={getImage('icon3.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </div>
+        <div class="content">
+          <h2 class="major">Why ACU?</h2>
+          <p>
+            Because of our diverse membership, ACU seeks to promote the
+            learning and understanding of individual heritages, while
+            simultaneously creating unity among students of all ethnic
+            backgrounds.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="four" class="wrapper alt spotlight style5">
+      <div class="inner">
+        <div class="image">
+          {getImage('icon1.jpg') && (
+            <Image
+              src={getImage('icon1.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </div>
+        <div class="content">
+          <h2 class="major">Who can join?</h2>
+          <p>
+            ACU is an all-inclusive organization that welcomes members of all
+            backgrounds. ACU was founded upon and continues to operate under
+            the precepts of racial and social tolerance, indiscrimination, and
+            equality. E-board applications for this fall will open soon. Keep
+            an eye out!
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+</Layout>

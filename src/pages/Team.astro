@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TeamMemberCard from '../components/TeamMemberCard.tsx';
+import TeamHeader from '../components/TeamHeader.tsx';
+import { teamData } from '../data/teamData.js';
+import { Image } from 'astro:assets';
+
+// Load images
+const imageFiles = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,avif,gif}', {
+  eager: true,
+  import: 'default',
+});
+
+const imageMap: Record<string, any> = {};
+Object.entries(imageFiles).forEach(([path, image]) => {
+  const relativePath = path.replace('/src/assets/images/', '');
+  imageMap[relativePath] = image;
+});
+
+const getImage = (path: string) => imageMap[path] || null;
+---
+
+<Layout fullMenu>
+  <section id="wrapper">
+    <header>
+      <div class="inner">
+        <TeamHeader client:load />
+      </div>
+    </header>
+
+    <div class="wrapper team-page px-4 md:px-8 py-12">
+      <div class="inner max-w-7xl mx-auto">
+        {teamData.map((section, index) => {
+          const isPresidents = section.section === 'Presidents';
+
+          return (
+            <div class="mb-24" key={index}>
+              <div
+                class={`flex items-center gap-6 mb-8 md:mb-12 ${isPresidents ? 'justify-center' : ''}`}
+              >
+                <h2 class="section-header text-xl md:text-3xl lg:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-lg text-center">
+                  {section.section}
+                  <div class="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto md:mx-0 shadow-[0_0_10px_rgba(220,38,38,0.5)]" />
+                </h2>
+              </div>
+
+              {isPresidents ? (
+                <div class="flex flex-row justify-center items-center gap-3 sm:gap-8 md:gap-10 max-w-4xl mx-auto">
+                  {section.members.map((member, memberIndex) => (
+                    <div
+                      key={memberIndex}
+                      class="w-full max-w-[160px] sm:max-w-[280px] aspect-[3/4] transform hover:scale-105 transition-transform duration-300"
+                    >
+                      <TeamMemberCard
+                        name={member.name}
+                        role={member.role}
+                        image={getImage(member.photo)}
+                        description={member.description}
+                        linkedinUrl={member.linkedinUrl}
+                      />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
+                  {section.members.map((member, memberIndex) => (
+                    <div key={memberIndex}>
+                      <TeamMemberCard
+                        name={member.name}
+                        role={member.role}
+                        image={getImage(member.photo)}
+                        description={member.description}
+                        linkedinUrl={member.linkedinUrl}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+</Layout>

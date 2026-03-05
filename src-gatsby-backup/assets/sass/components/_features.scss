@@ -1,0 +1,129 @@
+///
+/// Solid State by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Features */
+
+.features {
+  @include vendor('display', 'flex');
+  @include vendor('flex-wrap', 'wrap');
+  margin: 0 0 _size(element-margin) 0;
+
+  article {
+    @include padding(1.75em, 1.75em);
+    background-color: desaturate(lighten(_palette(bg), 3), 1.5);
+    border-radius: _size(border-radius);
+    border: solid 2px _palette(border);
+    margin: (_size(section-spacing, large) * 0.5) _size(section-spacing, large)
+      (_size(section-spacing, large) * 0.5) 0;
+    width: calc(50% - #{_size(section-spacing, large) * 0.5});
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    .image {
+      border-radius: _size(border-radius) _size(border-radius) 0 0;
+      display: block;
+      margin-bottom: 1.75em;
+      margin-left: -1.75em;
+      margin-top: -1.75em;
+      position: relative;
+      width: calc(100% + #{3.5em});
+      perspective: 1000px;
+      cursor: pointer;
+
+      &:hover .flipper {
+        transform: rotateY(180deg);
+      }
+
+      .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+      }
+
+      .front,
+      .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: _size(border-radius) _size(border-radius) 0 0;
+      }
+
+      .front {
+        z-index: 2;
+        transform: rotateY(0deg);
+        position: relative; // This drives the height of the container
+
+        img {
+          border-radius: _size(border-radius) _size(border-radius) 0 0;
+          width: 100%;
+          display: block; // Ensure no bottom gap
+        }
+      }
+
+      .back {
+        transform: rotateY(180deg);
+        background-color: _palette(accent); // Use accent color (Red)
+        color: #ffffff;
+        padding: 1em;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        .back-content {
+          width: 100%;
+        }
+
+        p {
+          color: #ffffff;
+          font-size: 0.8em;
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @include breakpoint('<=medium') {
+    article {
+      margin: (_size(section-spacing, medium) * 0.5)
+        _size(section-spacing, medium) (_size(section-spacing, medium) * 0.5) 0;
+      width: calc(50% - #{_size(section-spacing, medium) * 0.5});
+    }
+  }
+
+  @include breakpoint('<=small') {
+    article {
+      @include padding(1.5em, 1.5em);
+      margin: (_size(section-spacing, small) * 0.5)
+        _size(section-spacing, small) (_size(section-spacing, small) * 0.5) 0;
+      width: calc(50% - #{_size(section-spacing, small) * 0.5} - 1px);
+
+      .image {
+        margin-bottom: 1.5em;
+        margin-left: -1.5em;
+        margin-top: -1.5em;
+        width: calc(100% + #{3em});
+      }
+    }
+  }
+
+  @include breakpoint('<=xsmall') {
+    display: block;
+
+    article {
+      width: 100%;
+      margin: 0 0 _size(element-margin) 0 !important;
+    }
+  }
+}

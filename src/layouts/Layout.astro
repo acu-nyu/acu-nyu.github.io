@@ -1,0 +1,28 @@
+---
+import '../assets/sass/main.scss';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+
+interface Props {
+  fullMenu?: boolean;
+}
+
+const { fullMenu = false } = Astro.props;
+---
+
+<html lang="en">
+  <body>
+    <div class={`main-body${' is-preload'}`} id:preload class:list={[!fullMenu && 'alt-body']}>
+      <div id="page-wrapper">
+        <Sidebar fullMenu={fullMenu} />
+        <slot />
+        <Footer />
+      </div>
+    </div>
+    <script is:inline>
+      setTimeout(() => {
+        document.body.querySelector('.main-body')?.classList.remove('is-preload');
+      }, 100);
+    </script>
+  </body>
+</html>

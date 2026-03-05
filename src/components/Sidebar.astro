@@ -1,0 +1,11 @@
+---
+import SidebarReact from './SidebarReact.tsx';
+
+interface Props {
+  fullMenu?: boolean;
+}
+
+const { fullMenu = false } = Astro.props;
+---
+
+<SidebarReact fullMenu={fullMenu} client:load />

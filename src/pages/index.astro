@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Event from '../components/Event.tsx';
+import ScrollReveal from '../components/ScrollReveal.tsx';
+import HeaderSection from '../components/HeaderSection.astro';
+import Carousel from '../components/Carousel.tsx';
+import events from '../data/events.js';
+import { Image } from 'astro:assets';
+
+// Load all images from the assets/images directory
+const imageFiles = import.meta.glob('/src/assets/images/**/*.{jpg,jpeg,png,webp,avif,gif}', {
+  eager: true,
+  import: 'default',
+});
+
+// Create a lookup map for images
+const imageMap: Record<string, any> = {};
+Object.entries(imageFiles).forEach(([path, image]) => {
+  const relativePath = path.replace('/src/assets/images/', '');
+  imageMap[relativePath] = image;
+});
+
+// Helper function to get image data
+const getImage = (path: string) => {
+  return imageMap[path] || null;
+};
+
+// Group events by year
+const eventsByYear = events.reduce((acc, event) => {
+  if (!acc[event.year]) {
+    acc[event.year] = [];
+  }
+  acc[event.year].push(event);
+  return acc;
+}, {} as Record<number, typeof events>);
+
+const sortedYears = Object.keys(eventsByYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<Layout>
+  <section id="banner">
+    <div class="inner">
+      <div class="logo">
+        {getImage('logo.png') && (
+          <Image
+            src={getImage('logo.png')}
+            alt=""
+            class="icon"
+            width={100}
+            height={100}
+            style={{ height: '100px', width: '100px', objectFit: 'contain' }}
+          />
+        )}
+      </div>
+      <HeaderSection />
+    </div>
+  </section>
+
+  <section id="wrapper">
+    <section id="one" class="wrapper spotlight style1">
+      <div class="inner">
+        <ScrollReveal className="image" client:load>
+          {getImage('s24-team.jpg') && (
+            <Image
+              src={getImage('s24-team.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:load>
+          <h2 class="major">Who are we?</h2>
+          <p>
+            Established in 1972, Asian Cultural Union remains the only Asian
+            umbrella group at NYU and is one of the largest and most
+            prominent organizations in the history of the university.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="two" class="wrapper alt spotlight style2">
+      <div class="inner">
+        <ScrollReveal className="image" client:load>
+          {getImage('icon2.jpg') && (
+            <Image
+              src={getImage('icon2.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:load>
+          <h2 class="major">Our Mission</h2>
+          <p>
+            Our mission is to celebrate and promote Asian cultures through
+            cultural, social, and business-oriented events, as well as
+            community service projects.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="three" class="wrapper spotlight style3">
+      <div class="inner">
+        <ScrollReveal className="image" client:load>
+          {getImage('icon3.jpg') && (
+            <Image
+              src={getImage('icon3.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:load>
+          <h2 class="major">Why ACU?</h2>
+          <p>
+            Because of our diverse membership, ACU seeks to promote the
+            learning and understanding of individual heritages, while
+            simultaneously creating unity among students of all ethnic
+            backgrounds.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="four" class="wrapper alt spotlight style5">
+      <div class="inner">
+        <ScrollReveal className="image" client:load>
+          {getImage('icon1.jpg') && (
+            <Image
+              src={getImage('icon1.jpg')}
+              alt=""
+              width={800}
+              height={600}
+            />
+          )}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:load>
+          <h2 class="major">Who can join?</h2>
+          <p>
+            ACU is an all-inclusive organization that welcomes members of
+            all backgrounds. ACU was founded upon and continues to operate
+            under the precepts of racial and social tolerance,
+            indiscrimination, and equality.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+    <section id="five" class="wrapper style1">
+      <div class="inner">
+        <ScrollReveal client:load>
+          <h2 class="major">Recent and Past Events</h2>
+        </ScrollReveal>
+
+        {sortedYears.map((year) => (
+          <div key={year} style={{ marginBottom: '4rem' }}>
+            <h3 class="major">{year}</h3>
+            <Carousel client:load>
+              {eventsByYear[Number(year)].map((event, index) => (
+                <div
+                  key={index}
+                  class="features"
+                  style={{
+                    minWidth: '350px',
+                    maxWidth: '350px',
+                    margin: 0,
+                    display: 'block',
+                  }}
+                >
+                  <Event
+                    image={getImage(event.image)}
+                    title={event.title}
+                    description={event.description}
+                    delay={index * 0.1}
+                  />
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        ))}
+      </div>
+    </section>
+  </section>
+</Layout>
