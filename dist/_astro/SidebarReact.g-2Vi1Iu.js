@@ -1,1 +1,115 @@
-import{j as e}from"./jsx-runtime.D_zvdyIk.js";import{r as s}from"./index.DYrVU9rO.js";function i({onMenuToggle:r=()=>{}}){return e.jsx("nav",{id:"menu",children:e.jsxs("div",{className:"inner",children:[e.jsx("h2",{children:"Menu"}),e.jsxs("ul",{className:"links",children:[e.jsx("li",{children:e.jsx("a",{onClick:()=>{r()},href:"/",children:"Home"})}),e.jsx("li",{children:e.jsx("a",{onClick:()=>{r()},href:"/Team",children:"Team"})}),e.jsx("li",{children:e.jsx("a",{onClick:()=>{r()},href:"/Alumni",children:"Alumni"})}),e.jsx("li",{children:e.jsx("a",{href:"http://eepurl.com/bc5n6r",target:"_blank",rel:"noreferrer",onClick:()=>{r()},className:"button special shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5",style:{marginTop:"1rem",backgroundColor:"#ffffff",borderColor:"#ffffff",color:"#dc2626",borderRadius:"9999px",padding:"0 2.5rem",height:"3rem",lineHeight:"3rem",display:"inline-block",fontSize:"0.8rem",letterSpacing:"0.1em",boxShadow:"0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"},children:"Join Us"})})]}),e.jsx("a",{className:"close",onClick:n=>{n.preventDefault(),r()},href:"#menu",children:""})]})})}function t({fullMenu:r=!1}){const[n,a]=s.useState(!1);return e.jsxs(e.Fragment,{children:[e.jsxs("header",{id:"header",className:r?"":"alt",children:[e.jsx("h1",{children:e.jsx("a",{href:"/",children:"Asian Cultural Union at NYU"})}),e.jsx("nav",{children:e.jsx("a",{href:"#menu",onClick:l=>{l.preventDefault(),a(!n)},className:"menuToggle",children:e.jsx("span",{children:"Menu"})})})]}),e.jsx("div",{className:`${n?"is-menu-visible":" "}`,children:e.jsx(i,{onMenuToggle:()=>a(!n)})})]})}export{t as default};
+import { j as e } from './jsx-runtime.D_zvdyIk.js';
+import { r as s } from './index.DYrVU9rO.js';
+function i({ onMenuToggle: r = () => {} }) {
+  return e.jsx('nav', {
+    id: 'menu',
+    children: e.jsxs('div', {
+      className: 'inner',
+      children: [
+        e.jsx('h2', { children: 'Menu' }),
+        e.jsxs('ul', {
+          className: 'links',
+          children: [
+            e.jsx('li', {
+              children: e.jsx('a', {
+                onClick: () => {
+                  r();
+                },
+                href: '/',
+                children: 'Home',
+              }),
+            }),
+            e.jsx('li', {
+              children: e.jsx('a', {
+                onClick: () => {
+                  r();
+                },
+                href: '/Team',
+                children: 'Team',
+              }),
+            }),
+            e.jsx('li', {
+              children: e.jsx('a', {
+                onClick: () => {
+                  r();
+                },
+                href: '/Alumni',
+                children: 'Alumni',
+              }),
+            }),
+            e.jsx('li', {
+              children: e.jsx('a', {
+                href: 'http://eepurl.com/bc5n6r',
+                target: '_blank',
+                rel: 'noreferrer',
+                onClick: () => {
+                  r();
+                },
+                className:
+                  'button special shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5',
+                style: {
+                  marginTop: '1rem',
+                  backgroundColor: '#ffffff',
+                  borderColor: '#ffffff',
+                  color: '#dc2626',
+                  borderRadius: '9999px',
+                  padding: '0 2.5rem',
+                  height: '3rem',
+                  lineHeight: '3rem',
+                  display: 'inline-block',
+                  fontSize: '0.8rem',
+                  letterSpacing: '0.1em',
+                  boxShadow:
+                    '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                },
+                children: 'Join Us',
+              }),
+            }),
+          ],
+        }),
+        e.jsx('a', {
+          className: 'close',
+          onClick: (n) => {
+            (n.preventDefault(), r());
+          },
+          href: '#menu',
+          children: '',
+        }),
+      ],
+    }),
+  });
+}
+function t({ fullMenu: r = !1 }) {
+  const [n, a] = s.useState(!1);
+  return e.jsxs(e.Fragment, {
+    children: [
+      e.jsxs('header', {
+        id: 'header',
+        className: r ? '' : 'alt',
+        children: [
+          e.jsx('h1', {
+            children: e.jsx('a', {
+              href: '/',
+              children: 'Asian Cultural Union at NYU',
+            }),
+          }),
+          e.jsx('nav', {
+            children: e.jsx('a', {
+              href: '#menu',
+              onClick: (l) => {
+                (l.preventDefault(), a(!n));
+              },
+              className: 'menuToggle',
+              children: e.jsx('span', { children: 'Menu' }),
+            }),
+          }),
+        ],
+      }),
+      e.jsx('div', {
+        className: `${n ? 'is-menu-visible' : ' '}`,
+        children: e.jsx(i, { onMenuToggle: () => a(!n) }),
+      }),
+    ],
+  });
+}
+export { t as default };

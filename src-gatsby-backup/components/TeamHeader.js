@@ -14,19 +14,34 @@ const TeamHeader = () => {
       </motion.div>
       <motion.div
         animate={{ y: [0, 20, 0], rotate: [0, -10, 5, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+          ease: 'easeInOut',
+          delay: 1,
+        }}
         className="absolute bottom-12 right-10 md:right-32 text-4xl md:text-5xl opacity-30 pointer-events-none select-none drop-shadow-sm hidden sm:block"
       >
         🍂
       </motion.div>
       <motion.div
         animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }}
-        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: 'easeInOut',
+          delay: 2,
+        }}
         className="absolute top-1/2 left-1/4 w-32 h-32 bg-red-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 pointer-events-none"
       ></motion.div>
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.25, 0.1] }}
-        transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: 'easeInOut',
+          delay: 0.5,
+        }}
         className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 pointer-events-none"
       ></motion.div>
 
@@ -80,7 +95,10 @@ const TeamHeader = () => {
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
         >
-          Our E-Board applications are currently <strong className="font-bold text-slate-700">closed</strong>. We are excited for the upcoming semester and look forward to welcoming new faces to the team in the fall!
+          Our E-Board applications are currently{' '}
+          <strong className="font-bold text-slate-700">closed</strong>. We are
+          excited for the upcoming semester and look forward to welcoming new
+          faces to the team in the fall!
         </motion.p>
       </div>
 
