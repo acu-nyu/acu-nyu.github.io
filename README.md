@@ -8,8 +8,8 @@ Official Website for the Asian Cultural Union at NYU, NYU's Largest Asian Umbrel
 
 ## Tech Stack
 
-- **Framework**: [Gatsby 5.16](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/) (React-based static site generator)
-- **React**: Version 19
+- **Framework**: [Astro 5.18](https://astro.build/) (Modern static site generator)
+- **React**: Version 19 (for interactive components)
 - **Styling**: Tailwind CSS + Sass
 - **UI Components**: Bootstrap + Custom components
 - **Animation**: Framer Motion
@@ -18,38 +18,31 @@ Official Website for the Asian Cultural Union at NYU, NYU's Largest Asian Umbrel
 
 ### Prerequisites
 
-- Node.js >= 18.0.0 (Node 24 recommended - Active LTS - see [Gatsby v5.16 release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/#nodejs-24))
-- npm (bundled with Node) - use `--legacy-peer-deps` flag to install due to React 19 peer dependency conflicts
-
-```shell
-# Install Node 24 (Active LTS)
-nvm install 24
-nvm use 24
-```
+- Node.js >= 20.0.0
 
 ### Installation
 
 ```shell
-# Install dependencies (use --legacy-peer-deps for React 19 compatibility)
-npm install --legacy-peer-deps
+# Install dependencies
+npm install
 
 # Start development server
 npm run develop
 ```
 
-Site runs at `http://localhost:8000`
-GraphQL playground at `http://localhost:8000/___graphql`
+Site runs at `http://localhost:4321`
 
 ## Scripts
 
-| Command           | Description                      |
-| ----------------- | -------------------------------- |
-| `npm run develop` | Start development server         |
-| `npm run build`   | Production build                 |
-| `npm run deploy`  | Build and deploy to GitHub Pages |
-| `npm run serve`   | Serve production build locally   |
-| `npm run lint`    | Run ESLint                       |
-| `npm run format`  | Format code with Prettier        |
+| Command           | Description                               |
+| ----------------- | ----------------------------------------- |
+| `npm run develop` | Start development server (localhost:4321) |
+| `npm run build`   | Production build                          |
+| `npm run deploy`  | Build and deploy to GitHub Pages          |
+| `npm run preview` | Serve production build locally            |
+| `npm run clean`   | Clean build artifacts                     |
+| `npm run lint`    | Run ESLint                                |
+| `npm run format`  | Format code with Prettier                 |
 
 ## Contributing
 
@@ -64,13 +57,13 @@ GraphQL playground at `http://localhost:8000/___graphql`
 ```
 ├── src/
 │   ├── assets/          # Static assets (images, fonts, etc.)
-│   ├── components/      # React components
+│   ├── components/      # Astro and React components
 │   ├── data/            # Data files (team, events)
+│   ├── layouts/         # Astro layout components
 │   ├── lib/            # Utilities
-│   ├── pages/           # Route pages
-│   └── styles/          # Global styles
-├── gatsby-config.js     # Gatsby plugins
-├── gatsby-node.js       # Node APIs
+│   └── pages/           # Astro route pages (.astro files)
+├── astro.config.mjs      # Astro configuration
+├── tsconfig.json         # TypeScript configuration
 ├── config.js            # Site configuration
 └── tailwind.config.js   # Tailwind config
 ```
