@@ -26,8 +26,8 @@ No test suite exists (`npm test` is a no-op).
 
 **Component model**: Two types of components coexist:
 
-- **Astro components** (`src/components/astro/`) — static, zero JS, rendered at build time (Sidebar, Footer, HeaderSection)
-- **React islands** (`src/components/react/`) — interactive, hydrated on client (Carousel, TeamSection, AlumniSection, ScrollReveal)
+- **Astro components** (`src/components/astro/`) — static, zero JS, rendered at build time (Sidebar, Footer, Nav, HeaderSection)
+- **React islands** (`src/components/react/`) — interactive, hydrated on client (Carousel, Event, TeamHeader, TeamMemberCard, TeamSection, AlumniHeader, AlumniSection, ScrollReveal)
 
 **Layout system**: `src/layouts/Layout.astro` wraps all pages, provides Sidebar and Footer. Inner pages pass `fullMenu` prop for full navigation display; the homepage omits it for the alt header style.
 
