@@ -8,6 +8,9 @@ interface EventProps {
   delay?: number;
 }
 
+// Each event card fades in and slides up 50px when it enters the viewport.
+// The `delay` prop (passed from Carousel) staggers cards within a row.
+// The CSS flip animation (front/back faces) is handled by SCSS, not Framer Motion.
 const Event: React.FC<EventProps> = ({
   imageSrc,
   title,

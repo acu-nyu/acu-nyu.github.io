@@ -3,6 +3,10 @@ import { motion, type Variants } from 'framer-motion';
 import TeamMemberCard from './TeamMemberCard';
 
 // Animation variants — identical to original Gatsby Alumni.js
+//
+// sectionVariants: slides the year block up 40px and fades in on scroll.
+//   viewport margin of -100px triggers the animation before the element
+//   fully enters the screen so it feels responsive.
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -10,11 +14,13 @@ const sectionVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as const,
     },
   },
 };
 
+// containerVariants: orchestrates card stagger (80 ms between cards,
+//   100 ms initial delay so the year heading settles first).
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -26,6 +32,8 @@ const containerVariants: Variants = {
   },
 };
 
+// cardVariants: each alumni card slides up 30px, fades in, and scales from
+//   95 % → 100 % for a subtle pop-in effect.
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   visible: {
@@ -34,7 +42,7 @@ const cardVariants: Variants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as const,
     },
   },
 };

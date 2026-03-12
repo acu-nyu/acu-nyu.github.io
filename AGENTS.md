@@ -55,6 +55,12 @@ Three styling systems coexist in a deliberate cascade order:
 
 **Path alias**: `@` maps to `src/` (configured in `astro.config.mjs`). Use `@/components/...`, `@/lib/...`.
 
+**Utilities** (`src/lib/`):
+
+- `images.ts` — `getImageUrl(relativePath)`: resolves image paths via Vite's `import.meta.glob`. Emits a build-time `console.warn` for missing or case-mismatched paths.
+- `events.ts` — `groupEventsByYear(events)` / `getSortedYears(eventsByYear)`: transforms the flat events array into a year-keyed record for the homepage carousel.
+- `utils.ts` — `cn(...inputs)`: Tailwind class merging via `clsx` + `tailwind-merge`.
+
 ## Deployment
 
 Merging to `master` triggers automatic GitHub Pages deployment via `.github/workflows/deploy.yml`. The workflow:

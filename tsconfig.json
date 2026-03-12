@@ -3,6 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": { "@/*": ["src/*"] },
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // Catch silent undefined from array/record index access (e.g. arr[i], record[key]).
+    // Astro strict base already enables strictNullChecks, so this extends that coverage.
+    "noUncheckedIndexedAccess": true
   }
 }

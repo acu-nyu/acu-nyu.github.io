@@ -3,6 +3,9 @@ import { motion, type Variants } from 'framer-motion';
 import TeamMemberCard from './TeamMemberCard';
 
 // Animation variants — identical to original Gatsby Team.js
+//
+// sectionVariants: slides the entire section up 40px and fades in when it
+//   enters the viewport.  easeOutQuart cubic-bezier gives a snappy deceleration.
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -10,11 +13,14 @@ const sectionVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as const,
     },
   },
 };
 
+// containerVariants: wraps the grid of cards.  Does not animate itself —
+//   just orchestrates child staggering (80 ms between each card, 100 ms
+//   initial delay so the section header has time to appear first).
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -26,6 +32,9 @@ const containerVariants: Variants = {
   },
 };
 
+// cardVariants: each member card slides up 30px, fades in, and scales from
+//   95 % → 100 %.  Combined with the stagger above this creates a cascading
+//   reveal effect across the grid.
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   visible: {
@@ -34,7 +43,7 @@ const cardVariants: Variants = {
     scale: 1,
     transition: {
       duration: 0.5,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as const,
     },
   },
 };

@@ -16,6 +16,10 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
   className,
   staggerChildren = 0,
 }) => {
+  // Default variant: slides up 50px and fades in.
+  // `delay` and `staggerChildren` are injected from props so callers can
+  // offset multiple ScrollReveal instances on the same page (e.g. the image
+  // and text columns on the homepage appear 200 ms apart).
   const defaultVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {

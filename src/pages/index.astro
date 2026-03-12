@@ -5,6 +5,7 @@ import Carousel from '../components/react/Carousel';
 import ScrollReveal from '../components/react/ScrollReveal';
 import events from '../data/events';
 import { getImageUrl } from '../lib/images';
+import { groupEventsByYear, getSortedYears } from '../lib/events';
 import { Image } from 'astro:assets';
 
 // Pre-resolve images for SSG
@@ -15,15 +16,8 @@ const icon2Url = getImageUrl('icon2.jpg');
 const icon3Url = getImageUrl('icon3.jpg');
 
 // Group events by year, descending
-const eventsByYear = events.reduce<Record<number, typeof events>>((acc, event) => {
-  if (!acc[event.year]) acc[event.year] = [];
-  acc[event.year].push(event);
-  return acc;
-}, {});
-
-const sortedYears = Object.keys(eventsByYear)
-  .map(Number)
-  .sort((a, b) => b - a);
+const eventsByYear = groupEventsByYear(events);
+const sortedYears = getSortedYears(eventsByYear);
 ---
 
 <Layout

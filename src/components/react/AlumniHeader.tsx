@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// Slide-up + fade-in for the header block on mount.
+// Uses a custom cubic-bezier (easeOutQuart) for a snappy but smooth feel.
 const headerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -8,7 +10,7 @@ const headerVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as const,
     },
   },
 };
