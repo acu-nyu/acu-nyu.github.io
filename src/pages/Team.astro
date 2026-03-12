@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TeamHeader from '../components/react/TeamHeader';
+import TeamSection from '../components/react/TeamSection';
+import { teamData } from '../data/teamData';
+import { getImageUrl } from '../lib/images';
+
+// Pre-resolve image URLs at build time (can't pass functions across island boundary)
+const resolvedTeamData = teamData.map((section) => ({
+  ...section,
+  members: section.members.map((member) => ({
+    name: member.name,
+    role: member.role,
+    imageSrc: getImageUrl(member.photo),
+    description: member.description,
+    linkedinUrl: member.linkedinUrl,
+  })),
+}));
+---
+
+<Layout
+  title="Team | ACU at NYU"
+  description="Meet the current E-board members of the Asian Cultural Union at NYU."
+  fullMenu
+>
+  <section id="wrapper">
+    <header>
+      <div class="inner">
+        <TeamHeader client:load />
+      </div>
+    </header>
+
+    <div class="wrapper team-page px-4 md:px-8 py-12">
+      <div class="inner max-w-7xl mx-auto">
+        {resolvedTeamData.map((section) => (
+          <TeamSection
+            client:visible
+            title={section.section}
+            members={section.members}
+            isPresidents={section.section === 'Presidents'}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
