@@ -1,0 +1,41 @@
+---
+import Nav from './Nav.astro';
+
+interface Props {
+  fullMenu?: boolean;
+}
+
+const { fullMenu = false } = Astro.props;
+---
+
+<header id="header" class={fullMenu ? '' : 'alt'}>
+  <h1>
+    <a href="/">Asian Cultural Union at NYU</a>
+  </h1>
+  <nav>
+    <a href="#menu" class="menuToggle" id="menu-toggle">
+      <span>Menu</span>
+    </a>
+  </nav>
+</header>
+
+<div id="menu-wrapper">
+  <Nav />
+</div>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const wrapper = document.getElementById('menu-wrapper');
+
+  toggle?.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper?.classList.toggle('is-menu-visible');
+  });
+
+  // Close menu when clicking the overlay background
+  document.getElementById('menu')?.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+      wrapper?.classList.remove('is-menu-visible');
+    }
+  });
+</script>

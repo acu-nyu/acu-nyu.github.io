@@ -1,0 +1,47 @@
+---
+// Nav.astro — interactive (menu toggle), but state is handled by Sidebar via JS
+---
+
+<nav id="menu">
+  <div class="inner">
+    <h2>Menu</h2>
+    <ul class="links">
+      <li>
+        <a href="/" data-nav-link>Home</a>
+      </li>
+      <li>
+        <a href="/Team" data-nav-link>Team</a>
+      </li>
+      <li>
+        <a href="/Alumni" data-nav-link>Alumni</a>
+      </li>
+      <li>
+        <a
+          href="http://eepurl.com/bc5n6r"
+          target="_blank"
+          rel="noreferrer"
+          class="button special shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+          style="margin-top: 1rem; background-color: #ffffff; border-color: #ffffff; color: #dc2626; border-radius: 9999px; padding: 0 2.5rem; height: 3rem; line-height: 3rem; display: inline-block; font-size: 0.8rem; letter-spacing: 0.1em; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);"
+        >
+          Join Us
+        </a>
+      </li>
+    </ul>
+    <a class="close" href="#menu" id="nav-close">{''}</a>
+  </div>
+</nav>
+
+<script>
+  // Close menu when a nav link is clicked
+  document.querySelectorAll('[data-nav-link]').forEach((link) => {
+    link.addEventListener('click', () => {
+      document.getElementById('menu-wrapper')?.classList.remove('is-menu-visible');
+    });
+  });
+
+  // Close button
+  document.getElementById('nav-close')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('menu-wrapper')?.classList.remove('is-menu-visible');
+  });
+</script>
