@@ -1,7 +1,7 @@
-@use "sass:color";
-@use "../libs/breakpoints";
-@use "../libs/functions";
-@use "../libs/vendor";
+@use 'sass:color';
+@use '../libs/breakpoints';
+@use '../libs/functions';
+@use '../libs/vendor';
 
 ///
 /// Solid State by HTML5 UP
@@ -44,12 +44,13 @@ html {
 .main-body {
   background-color: functions.palette(bg);
 
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       color.adjust(functions.palette(bg), $alpha: -0.2),
       color.adjust(functions.palette(bg), $alpha: -0.2)
     ),
-    url('../images/spring-wsp.jpg');
+    url('/images/spring-wsp.jpg');
 
   background-size: auto, cover;
 
