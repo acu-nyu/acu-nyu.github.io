@@ -62,7 +62,7 @@ const AlumniSection: React.FC<AlumniSectionProps> = ({ year, members }) => {
       variants={sectionVariants}
     >
       <div className="flex items-center gap-6 mb-8 md:mb-12 justify-center">
-        <h2 className="section-header text-xl md:text-3xl lg:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-sm text-center text-slate-900">
+        <h2 className="section-header text-xl md:text-2xl lg:text-3xl font-black tracking-tight uppercase m-0 drop-shadow-sm text-center text-slate-900">
           {year}
           <motion.div
             className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto shadow-[0_0_10px_rgba(220,38,38,0.5)]"

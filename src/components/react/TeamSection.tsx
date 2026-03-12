@@ -69,10 +69,10 @@ const TeamSection: React.FC<TeamSectionProps> = ({
       <div
         className={`flex items-center gap-6 mb-8 md:mb-12 ${isPresidents ? 'justify-center' : ''}`}
       >
-        <h2 className="section-header text-xl md:text-3xl lg:text-5xl font-black tracking-tight uppercase m-0 drop-shadow-lg text-center">
+        <h2 className="section-header text-xl md:text-2xl lg:text-3xl font-black tracking-tight uppercase m-0 drop-shadow-lg text-center">
           {title}
           <motion.div
-            className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto md:mx-0 shadow-[0_0_10px_rgba(220,38,38,0.5)]"
+            className="h-1 w-12 bg-red-600 mt-2 rounded-full mx-auto shadow-[0_0_10px_rgba(220,38,38,0.5)]"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
