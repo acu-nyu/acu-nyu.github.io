@@ -6,7 +6,7 @@ export const siteConfig = {
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: '/website-icon.png',
   pathPrefix: '/',
   heading: 'Asian Cultural Union at NYU',
   subHeading: "NYU's Largest Asian Umbrella Organization",

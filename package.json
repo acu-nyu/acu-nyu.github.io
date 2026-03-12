@@ -11,16 +11,12 @@
     "@astrojs/react": "^5.0.0",
     "@tailwindcss/vite": "^4.0.0",
     "astro": "^6.0.4",
-    "bootstrap": "^5.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^12.23.26",
     "react": "^19.0.0",
-    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
     "sass": "^1.81.0",
-    "sharp": "^0.33.0",
-    "smoothscroll-polyfill": "^0.4.4",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^4.0.0",
     "tailwindcss-animate": "^1.0.7"
@@ -32,7 +28,6 @@
     "check": "astro check",
     "lint": "eslint src --ext .ts,.tsx,.astro",
     "format": "prettier --write '**/*.{ts,tsx,astro,js}'",
-    "optimize-images": "node scripts/optimize-images.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
