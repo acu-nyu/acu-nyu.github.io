@@ -108,7 +108,7 @@ export const teamData: TeamSection[] = [
       {
         name: 'Alex Xie',
         role: '',
-        photo: 'e-board/Alex.jpg',
+        photo: 'e-board/alex.jpg',
         description:
           'Alex is a senior studying Computer Science and Data Science at CAS. In his free time, he enjoys playing various sports and going to cafes.',
         linkedinUrl: 'https://www.linkedin.com/in/alexanderxie04/',
