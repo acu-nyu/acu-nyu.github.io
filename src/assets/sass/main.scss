@@ -1,9 +1,10 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
+@use "sass:meta";
+@use 'libs/vars';
+@use 'libs/functions';
+@use 'libs/mixins';
+@use 'libs/vendor';
+@use 'libs/breakpoints';
+@use 'libs/html-grid';
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic');
 
@@ -15,7 +16,7 @@
 
 // Breakpoints.
 
-@include breakpoints(
+@include breakpoints.breakpoints(
   (
     xlarge: (
       1281px,
@@ -46,34 +47,34 @@
 
 // Base.
 
-@import 'base/reset';
-@import 'base/page';
-@import 'base/typography';
+@include meta.load-css('base/reset');
+@include meta.load-css('base/page');
+@include meta.load-css('base/typography');
 
 // Component.
 
-@import 'components/row';
-@import 'components/section';
-@import 'components/form';
-@import 'components/box';
-@import 'components/icon';
-@import 'components/image';
-@import 'components/list';
-@import 'components/actions';
-@import 'components/icons';
-@import 'components/contact';
-@import 'components/pagination';
-@import 'components/table';
-@import 'components/button';
-@import 'components/features';
+@include meta.load-css('components/row');
+@include meta.load-css('components/section');
+@include meta.load-css('components/form');
+@include meta.load-css('components/box');
+@include meta.load-css('components/icon');
+@include meta.load-css('components/image');
+@include meta.load-css('components/list');
+@include meta.load-css('components/actions');
+@include meta.load-css('components/icons');
+@include meta.load-css('components/contact');
+@include meta.load-css('components/pagination');
+@include meta.load-css('components/table');
+@include meta.load-css('components/button');
+@include meta.load-css('components/features');
 
 // Layout.
 
-@import 'layout/header';
-@import 'layout/banner';
-@import 'layout/wrapper';
-@import 'layout/footer';
-@import 'layout/menu';
+@include meta.load-css('layout/header');
+@include meta.load-css('layout/banner');
+@include meta.load-css('layout/wrapper');
+@include meta.load-css('layout/footer');
+@include meta.load-css('layout/menu');
 
 html, body {
   margin: 0;
@@ -90,11 +91,11 @@ html, body {
     text-align: left;
     font-size: 36px;
 
-    @include breakpoint(small) {
+    @include breakpoints.breakpoint(small) {
       font-size: 32px;
     }
 
-    @include breakpoint(xsmall) {
+    @include breakpoints.breakpoint(xsmall) {
       font-size: 24px;
     }
   }
@@ -107,11 +108,11 @@ html, body {
     gap: 20px; 
     margin: auto;
     
-    @include breakpoint(small) {
+    @include breakpoints.breakpoint(small) {
       gap: 15px;
     }
 
-    @include breakpoint(xsmall) {
+    @include breakpoints.breakpoint(xsmall) {
       gap: 15px;
     }
   }
@@ -123,19 +124,19 @@ html, body {
     text-align: center;
     width: calc(25% - 20px); 
 
-    @include breakpoint(large) {
+    @include breakpoints.breakpoint(large) {
       width: calc(33.33% - 20px); 
     }
 
-    @include breakpoint(medium) {
+    @include breakpoints.breakpoint(medium) {
       width: calc(33.33% - 15px); 
     }
 
-    @include breakpoint(small) {
+    @include breakpoints.breakpoint(small) {
       width: calc(50% - 15px); 
     }
 
-    @include breakpoint(xsmall) {
+    @include breakpoints.breakpoint(xsmall) {
       width: calc(50% - 15px); 
     }
   }
@@ -153,17 +154,17 @@ html, body {
     font-weight: 600;
     margin-bottom: 5px; 
 
-    @include breakpoint(medium) {
+    @include breakpoints.breakpoint(medium) {
       font-size: 12px;
       line-height: 1.3;
     }
 
-    @include breakpoint(small) {
+    @include breakpoints.breakpoint(small) {
       font-size: 11px;
       line-height: 1.4;
     }
 
-    @include breakpoint(xxsmall) {
+    @include breakpoints.breakpoint(xxsmall) {
       font-size: 12px;
     }
   }
@@ -173,15 +174,15 @@ html, body {
     color: rgb(214, 214, 214);
     margin: 0;
 
-    @include breakpoint(medium) {
+    @include breakpoints.breakpoint(medium) {
       font-size: 12px;
     }
 
-    @include breakpoint(small) {
+    @include breakpoints.breakpoint(small) {
       font-size: 11px;
     }
 
-    @include breakpoint(xxsmall) {
+    @include breakpoints.breakpoint(xxsmall) {
       font-size: 10px;
     }
   }
