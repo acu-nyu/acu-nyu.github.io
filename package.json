@@ -8,9 +8,9 @@
     "url": "git+https://github.com/acu-nyu/acu-nyu.github.io.git"
   },
   "dependencies": {
-    "@astrojs/react": "^4.0.0",
+    "@astrojs/react": "^5.0.0",
     "@tailwindcss/vite": "^4.0.0",
-    "astro": "^5.0.0",
+    "astro": "^6.0.4",
     "bootstrap": "^5.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -57,6 +57,6 @@
   },
   "homepage": "https://acu-nyu.github.io",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   }
 }
