@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderSection from '../components/astro/HeaderSection.astro';
+import Carousel from '../components/react/Carousel';
+import ScrollReveal from '../components/react/ScrollReveal';
+import events from '../data/events';
+import { getImageUrl } from '../lib/images';
+import { groupEventsByYear, getSortedYears } from '../lib/events';
+import { Image } from 'astro:assets';
+
+// Pre-resolve images for SSG
+const logoUrl = getImageUrl('logo.png');
+const s24teamUrl = getImageUrl('s24-team.jpg');
+const icon1Url = getImageUrl('icon1.jpg');
+const icon2Url = getImageUrl('icon2.jpg');
+const icon3Url = getImageUrl('icon3.jpg');
+
+// Group events by year, descending
+const eventsByYear = groupEventsByYear(events);
+const sortedYears = getSortedYears(eventsByYear);
+---
+
+<Layout
+  title="Home | ACU at NYU"
+  description="Official Website for the Asian Cultural Union at NYU, NYU's largest Asian umbrella organization."
+  googleVerification="UJigPNOUs3R-CEucJRTNmWtSxR8Vnpl4rhDm0p6bxrU"
+>
+  <section id="banner">
+    <div class="inner">
+      <div class="logo">
+        {logoUrl && (
+          <img
+            src={logoUrl}
+            alt=""
+            class="icon"
+            style="height: 100px; width: 100px; object-fit: contain;"
+          />
+        )}
+      </div>
+      <HeaderSection />
+    </div>
+  </section>
+
+  <section id="wrapper">
+    <section id="one" class="wrapper spotlight style1">
+      <div class="inner">
+        <ScrollReveal className="image" client:visible>
+          {s24teamUrl && <img src={s24teamUrl} alt="" />}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:visible>
+          <h2 class="major">Who are we?</h2>
+          <p>
+            Established in 1972, Asian Cultural Union remains the only Asian umbrella group
+            at NYU and is one of the largest and most prominent organizations in the history
+            of the university.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="two" class="wrapper alt spotlight style2">
+      <div class="inner">
+        <ScrollReveal className="image" client:visible>
+          {icon2Url && <img src={icon2Url} alt="" />}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:visible>
+          <h2 class="major">Our Mission</h2>
+          <p>
+            Our mission is to celebrate and promote Asian cultures through cultural, social,
+            and business-oriented events, as well as community service projects.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="three" class="wrapper spotlight style3">
+      <div class="inner">
+        <ScrollReveal className="image" client:visible>
+          {icon3Url && <img src={icon3Url} alt="" />}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:visible>
+          <h2 class="major">Why ACU?</h2>
+          <p>
+            Because of our diverse membership, ACU seeks to promote the learning and
+            understanding of individual heritages, while simultaneously creating unity among
+            students of all ethnic backgrounds.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="four" class="wrapper alt spotlight style5">
+      <div class="inner">
+        <ScrollReveal className="image" client:visible>
+          {icon1Url && <img src={icon1Url} alt="" />}
+        </ScrollReveal>
+        <ScrollReveal className="content" delay={0.2} client:visible>
+          <h2 class="major">Who can join?</h2>
+          <p>
+            ACU is an all-inclusive organization that welcomes members of all backgrounds.
+            ACU was founded upon and continues to operate under the precepts of racial and
+            social tolerance, indiscrimination, and equality.
+          </p>
+        </ScrollReveal>
+      </div>
+    </section>
+
+    <section id="five" class="wrapper style1">
+      <div class="inner">
+        <ScrollReveal client:visible>
+          <h2 class="major">Recent and Past Events</h2>
+        </ScrollReveal>
+
+        {sortedYears.map((year) => (
+          <div style="margin-bottom: 4rem;">
+            <h3 class="major">{year}</h3>
+            <Carousel
+              client:visible
+              events={eventsByYear[year].map((event) => ({
+                imageSrc: getImageUrl(event.image),
+                title: event.title,
+                description: event.description,
+              }))}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  </section>
+</Layout>

@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import '../assets/sass/main.scss';
+import Sidebar from '../components/astro/Sidebar.astro';
+import Footer from '../components/astro/Footer.astro';
+
+interface Props {
+  fullMenu?: boolean;
+  title?: string;
+  description?: string;
+  googleVerification?: string;
+}
+
+const {
+  fullMenu = false,
+  title = 'ACU at NYU',
+  description = '',
+  googleVerification = '',
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {googleVerification && (
+      <meta name="google-site-verification" content={googleVerification} />
+    )}
+    <link rel="icon" type="image/png" href="/website-icon.png" />
+  </head>
+  <body>
+    <div class="main-body is-preload">
+      <div id="page-wrapper">
+        <Sidebar fullMenu={fullMenu} />
+        <slot />
+        <Footer />
+      </div>
+    </div>
+    <script>
+      setTimeout(() => {
+        document.querySelector('.main-body')?.classList.remove('is-preload');
+      }, 100);
+    </script>
+  </body>
+</html>

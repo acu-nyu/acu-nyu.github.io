@@ -2,57 +2,45 @@
   "name": "acu-nyu",
   "version": "1.0.0",
   "description": "Asian Cultural Union (ACU) NYU Website",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/acu-nyu/acu-nyu.github.io.git"
   },
   "dependencies": {
-    "bootstrap": "^5.3.4",
-    "class-variance-authority": "^0.7.0",
+    "@astrojs/react": "^5.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "astro": "^6.0.4",
     "clsx": "^2.1.0",
     "framer-motion": "^12.23.26",
-    "gatsby": "^5.16.1",
-    "gatsby-plugin-image": "^3.16.0",
-    "gatsby-plugin-manifest": "^5.16.0",
-    "gatsby-plugin-sass": "^6.16.0",
-    "gatsby-plugin-sharp": "^5.16.0",
-    "gatsby-source-filesystem": "^5.16.0",
-    "gatsby-transformer-sharp": "^5.16.0",
     "react": "^19.0.0",
-    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
     "sass": "^1.81.0",
-    "smoothscroll-polyfill": "^0.4.4",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss": "^4.0.0"
   },
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public --no-history",
-    "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "lint": "eslint src --ext .js",
-    "format": "prettier --write '**/*.js'",
-    "optimize-images": "node scripts/optimize-images.js",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "lint": "eslint src --ext .ts,.tsx,.astro",
+    "format": "prettier --write '**/*.{ts,tsx,astro,js}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.28.6",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "autoprefixer": "^10.4.17",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "gatsby-plugin-postcss": "^6.16.0",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8.5.6",
     "prettier": "^3.6.2",
-    "rimraf": "^6.0.1",
-    "tailwindcss": "^3.4.1"
+    "typescript": "^5.0.0"
   },
   "keywords": [
-    "gatsby",
+    "astro",
     "acu",
     "nyu"
   ],
@@ -62,13 +50,6 @@
   },
   "homepage": "https://acu-nyu.github.io",
   "engines": {
-    "node": ">=20.0.0"
-  },
-  "overrides": {
-    "cookie": ">=0.7.0",
-    "tmp": ">=0.2.4",
-    "resolve-url-loader": {
-      "postcss": ">=8.4.31"
-    }
+    "node": ">=22.0.0"
   }
 }

@@ -8,46 +8,46 @@ Official Website for the Asian Cultural Union at NYU, NYU's Largest Asian Umbrel
 
 ## Tech Stack
 
-- **Framework**: [Gatsby 5.16](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/) (React-based static site generator)
-- **React**: Version 19
-- **Styling**: Tailwind CSS + Sass
-- **UI Components**: Bootstrap + Custom components
+- **Framework**: [Astro 6](https://astro.build/) (static site generator with React islands)
+- **React**: Version 19 (interactive components via `@astrojs/react`)
+- **Styling**: Tailwind CSS v4 + SCSS theme (HTML5UP base)
 - **Animation**: Framer Motion
+- **Build**: Vite 7
+- **Deploy**: GitHub Pages via GitHub Actions
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js >= 18.0.0 (Node 24 recommended - Active LTS - see [Gatsby v5.16 release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v5.16/#nodejs-24))
-- npm (bundled with Node) - use `--legacy-peer-deps` flag to install due to React 19 peer dependency conflicts
+- Node.js >= 22.0.0 (required by Astro 6 / Vite 7)
+- npm (bundled with Node)
 
 ```shell
-# Install Node 24 (Active LTS)
-nvm install 24
-nvm use 24
+# Install Node 22+
+nvm install 22
+nvm use 22
 ```
 
 ### Installation
 
 ```shell
-# Install dependencies (use --legacy-peer-deps for React 19 compatibility)
-npm install --legacy-peer-deps
+# Install dependencies
+npm install
 
 # Start development server
-npm run develop
+npm run dev
 ```
 
-Site runs at `http://localhost:8000`
-GraphQL playground at `http://localhost:8000/___graphql`
+Site runs at `http://localhost:4321`
 
 ## Scripts
 
 | Command           | Description                      |
 | ----------------- | -------------------------------- |
-| `npm run develop` | Start development server         |
+| `npm run dev`     | Start development server         |
 | `npm run build`   | Production build                 |
-| `npm run deploy`  | Build and deploy to GitHub Pages |
-| `npm run serve`   | Serve production build locally   |
+| `npm run preview` | Preview production build locally |
+| `npm run check`   | Run Astro type checking          |
 | `npm run lint`    | Run ESLint                       |
 | `npm run format`  | Format code with Prettier        |
 
@@ -55,22 +55,27 @@ GraphQL playground at `http://localhost:8000/___graphql`
 
 1. Create a feature branch
 2. Make your changes
-3. Run `npm run lint` and fix any issues
-4. Run `npm run build` to verify the build passes
-5. Submit a pull request
+3. Run `npm run build` to verify the build passes
+4. Submit a pull request
+
+Merging to `master` triggers automatic deployment to GitHub Pages.
 
 ## Project Structure
 
 ```
 ├── src/
-│   ├── assets/          # Static assets (images, fonts, etc.)
-│   ├── components/      # React components
-│   ├── data/            # Data files (team, events)
-│   ├── lib/            # Utilities
-│   ├── pages/           # Route pages
-│   └── styles/          # Global styles
-├── gatsby-config.js     # Gatsby plugins
-├── gatsby-node.js       # Node APIs
-├── config.js            # Site configuration
-└── tailwind.config.js   # Tailwind config
+│   ├── assets/          # Images, fonts, SCSS theme
+│   ├── components/
+│   │   ├── astro/       # Astro components (static)
+│   │   ├── react/       # React islands (interactive)
+│   │   └── ui/          # shadcn/ui components
+│   ├── data/            # TypeScript data files (team, alumni, events)
+│   ├── layouts/         # Layout.astro (main wrapper)
+│   ├── lib/             # Utilities
+│   ├── pages/           # File-based routes (.astro)
+│   └── styles/          # Tailwind CSS + custom properties
+├── public/              # Static assets served at root
+├── astro.config.mjs     # Astro + Vite + Tailwind config
+├── tsconfig.json        # TypeScript config
+└── components.json      # shadcn/ui config
 ```

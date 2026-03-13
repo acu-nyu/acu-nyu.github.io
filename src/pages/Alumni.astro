@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AlumniHeader from '../components/react/AlumniHeader';
+import AlumniSection from '../components/react/AlumniSection';
+import { alumniData } from '../data/alumniData';
+import { getImageUrl } from '../lib/images';
+
+// Pre-resolve image URLs at build time (can't pass functions across island boundary)
+const resolvedAlumniData = alumniData.map((yearBlock) => ({
+  ...yearBlock,
+  members: yearBlock.members.map((member) => ({
+    name: member.name,
+    role: member.role,
+    imageSrc: getImageUrl(member.photo),
+    linkedinUrl: member.linkedinUrl,
+  })),
+}));
+---
+
+<Layout
+  title="Alumni | ACU at NYU"
+  description="Meet the alumni of the Asian Cultural Union at NYU."
+  fullMenu
+>
+  <section id="wrapper">
+    <header>
+      <div class="inner">
+        <AlumniHeader client:load />
+      </div>
+    </header>
+
+    <div class="wrapper team-page px-4 md:px-8 py-12">
+      {/* Sticky Filter Bar */}
+      <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm mb-12 py-3 px-4 -mx-4 md:-mx-8">
+        <div class="max-w-7xl mx-auto overflow-x-auto no-scrollbar flex gap-3 pb-1 justify-start md:justify-center items-center">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mr-2 shrink-0 hidden md:block">
+            Jump to:
+          </span>
+          {alumniData.map((data) => (
+            <a
+              href={`#${data.year.replace(/\s+/g, '-')}`}
+              class="shrink-0 px-4 py-1.5 rounded-full bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-700 text-xs md:text-sm font-bold uppercase tracking-wide transition-colors duration-200 border-b-0 hover:border-b-0"
+            >
+              {data.year}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="inner max-w-7xl mx-auto">
+        {resolvedAlumniData.map((yearBlock) => (
+          <AlumniSection
+            client:visible
+            year={yearBlock.year}
+            members={yearBlock.members}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
