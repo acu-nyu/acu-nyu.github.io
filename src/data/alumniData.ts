@@ -15,12 +15,6 @@ export const alumniData: AlumniYear[] = [
     year: 'Class of 2026',
     members: [
       {
-        name: 'Evan Chan',
-        photo: 'alumni/evan.jpg',
-        role: '',
-        linkedinUrl: 'https://www.linkedin.com/in/evan-chan8/',
-      },
-      {
         name: 'Lina Gallo',
         photo: 'e-board/lina.jpg',
         role: 'Co-President',
@@ -35,7 +29,7 @@ export const alumniData: AlumniYear[] = [
       {
         name: 'Matthew Cheng',
         photo: 'e-board/matthew.jpg',
-        role: 'VP of Events',
+        role: '',
         linkedinUrl: 'https://www.linkedin.com/in/matthew-cheng4/',
       },
       {
@@ -47,19 +41,25 @@ export const alumniData: AlumniYear[] = [
       {
         name: 'Phoebe Huang',
         photo: 'e-board/phoebe.jpg',
-        role: 'VP of Marketing',
+        role: '',
         linkedinUrl: 'https://www.linkedin.com/in/phoebelhuang/',
       },
       {
         name: 'Sophia Liang',
         photo: 'e-board/Sophia.jpg',
-        role: 'VP of Marketing',
+        role: '',
         linkedinUrl: '',
+      },
+      {
+        name: 'Evan Chan',
+        photo: 'alumni/evan.jpg',
+        role: '',
+        linkedinUrl: 'https://www.linkedin.com/in/evan-chan8/',
       },
       {
         name: 'Avery Teano',
         photo: 'e-board/avery.jpg',
-        role: 'Historian',
+        role: '',
         linkedinUrl: 'https://www.linkedin.com/in/avery-teano-704395192/',
       },
       {
