@@ -23,14 +23,6 @@ export const teamData: TeamSection[] = [
           'Tyler is a very dedicated, hard working individual who puts others needs as his main priority. As a fourth year student at NYU studying Economics, he strives to do his best in planning fun events for the club for students at the school to have an amazing time!',
         linkedinUrl: '',
       },
-      {
-        name: 'Lina Gallo',
-        role: 'Co-President',
-        photo: 'e-board/lina.jpg',
-        description:
-          'Lina is a senior majoring in Data Science and Public Policy. In her free time she likes to crotchet, play mobile games, and nap.',
-        linkedinUrl: 'https://www.linkedin.com/in/lina-gallo-/',
-      },
     ],
   },
   {
@@ -69,14 +61,6 @@ export const teamData: TeamSection[] = [
         linkedinUrl: 'https://www.linkedin.com/in/eliseschweng/',
       },
       {
-        name: 'Amanda Foekri',
-        role: '',
-        photo: 'e-board/amanda.jpg',
-        description:
-          'Amanda was born and raised in Jakarta, Indonesia! She is currently studying Business and Technology Management at Tandon. In her free time, she enjoys drinking boba, thrifting, reading, and dancing!',
-        linkedinUrl: 'https://www.linkedin.com/in/amandafoekri/',
-      },
-      {
         name: 'Lily Le',
         role: '',
         photo: 'e-board/Lily.jpg',
@@ -96,22 +80,6 @@ export const teamData: TeamSection[] = [
         description:
           'Brian Wang is from Palos Verdes, California and is majoring in Media, Culture and Communication at NYU Steinhardt. He enjoys driving around aimlessly and late-night ocean swimming.',
         linkedinUrl: '',
-      },
-      {
-        name: 'Matthew Cheng',
-        role: 'VP of Events',
-        photo: 'e-board/matthew.jpg',
-        description:
-          'Matthew is a CS + DS major from Princeton NJ who enjoys trying new restaurants and reading.',
-        linkedinUrl: 'https://www.linkedin.com/in/matthew-cheng4/',
-      },
-      {
-        name: 'Alex Xie',
-        role: '',
-        photo: 'e-board/alex.jpg',
-        description:
-          'Alex is a senior studying Computer Science and Data Science at CAS. In his free time, he enjoys playing various sports and going to cafes.',
-        linkedinUrl: 'https://www.linkedin.com/in/alexanderxie04/',
       },
       {
         name: 'Haruto Uesugi',
@@ -204,38 +172,6 @@ export const teamData: TeamSection[] = [
     section: 'Marketing',
     members: [
       {
-        name: 'Phoebe Huang',
-        role: 'VP of Marketing',
-        photo: 'e-board/phoebe.jpg',
-        description:
-          'Phoebe Huang is from San Jose, CA and Taiwan, and she is a senior studying CS+DS at CAS. Phoebe loves to online shop and rot in bed\uD83D\uDCA4',
-        linkedinUrl: 'https://www.linkedin.com/in/phoebelhuang/',
-      },
-      {
-        name: 'Sophia Liang',
-        role: 'VP of Marketing',
-        photo: 'e-board/Sophia.jpg',
-        description:
-          'Sophia Liang is a senior in Gallatin concentrating in sustainable fashion. Born and raised in Seattle, Washington, she is always excited to explore new places. Besides fashion, Sophia is loves dancing, thrifting, and going to museums!',
-        linkedinUrl: '',
-      },
-      {
-        name: 'Avery Teano',
-        role: 'Historian',
-        photo: 'e-board/avery.jpg',
-        description:
-          'Avery is a Gallatin student who loves to eat, read, watch, listen, take photos, play games, shop, design, and explore :D',
-        linkedinUrl: 'https://www.linkedin.com/in/avery-teano-704395192/',
-      },
-      {
-        name: 'Daniel Li',
-        role: '',
-        photo: 'e-board/daniel.jpg',
-        description:
-          'Daniel is a third-year studying computer science and math at CAS. In his free time, he likes to play the piano, cook, and get lost in his daydreams. He hopes that someday, he can crack eggs properly.',
-        linkedinUrl: 'https://www.linkedin.com/in/daniel-li-435341267/',
-      },
-      {
         name: 'Isis Kim',
         role: '',
         photo: 'e-board/Isis_kim.jpg',
@@ -252,27 +188,11 @@ export const teamData: TeamSection[] = [
         linkedinUrl: 'https://www.linkedin.com/in/ashley-kikuta/',
       },
       {
-        name: 'Annika Vallabhanath',
-        role: '',
-        photo: 'e-board/annika.jpg',
-        description:
-          'Annika Vallabhanath is a senior majoring in Real Estate Finance and minoring in Economics and French. She was born and raised in Portland, Oregon. She loves listening to classical music and attending the ballet.',
-        linkedinUrl: 'https://www.linkedin.com/in/annika-vallabhanath/',
-      },
-      {
         name: 'Jack Kim',
         role: '',
         photo: 'e-board/jack.jpg',
         description: 'Jack is a Senior',
         linkedinUrl: 'https://www.linkedin.com/in/jack-kim-719356178/',
-      },
-      {
-        name: 'Kyle Park',
-        role: '',
-        photo: 'e-board/kyle.jpg',
-        description:
-          'Kyle is a senior from South Korea studying Business with minor in history. He enjoys exploring new cafes and reading in his free time. His favorite season is Fall!',
-        linkedinUrl: 'https://www.linkedin.com/in/kylekangminpark/',
       },
     ],
   },
