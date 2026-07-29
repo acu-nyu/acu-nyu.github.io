@@ -10,7 +10,7 @@
   "dependencies": {
     "@astrojs/react": "^5.0.0",
     "@tailwindcss/vite": "^4.0.0",
-    "astro": "^6.0.4",
+    "astro": "^6.4.8",
     "clsx": "^2.1.0",
     "framer-motion": "^12.23.26",
     "react": "^19.0.0",
@@ -51,5 +51,9 @@
   "homepage": "https://acu-nyu.github.io",
   "engines": {
     "node": ">=22.0.0"
+  },
+  "overrides": {
+    "js-yaml": "^4.3.0",
+    "sharp": "^0.35.3"
   }
 }
