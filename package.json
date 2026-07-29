@@ -8,9 +8,9 @@
     "url": "git+https://github.com/acu-nyu/acu-nyu.github.io.git"
   },
   "dependencies": {
-    "@astrojs/react": "^5.0.4",
+    "@astrojs/react": "^6.0.2",
     "@tailwindcss/vite": "^4.0.0",
-    "astro": "^6.3.0",
+    "astro": "^7.1.6",
     "clsx": "^2.1.0",
     "framer-motion": "^12.23.26",
     "react": "^19.0.0",
@@ -51,5 +51,12 @@
   "homepage": "https://acu-nyu.github.io",
   "engines": {
     "node": ">=22.0.0"
+  },
+  "overrides": {
+    "js-yaml": "^4.3.0",
+    "sharp": "^0.35.3",
+    "brace-expansion@1": "1.1.17",
+    "brace-expansion@>=5": "^5.0.8",
+    "minimatch": "^10.2.4"
   }
 }
