@@ -28,7 +28,7 @@ export const teamData: TeamSection[] = [
         role: 'Co-President',
         photo: 'e-board/JamesShin.jpg',
         description:
-          'James is a junior from Queens, New York studying Business and Computer Science who likes playing instruments, listening to music, going to cafes, and dancing',
+          'James is a senior from Queens, New York studying Business and Computer Science who likes playing instruments, listening to music, going to cafes, and dancing',
         linkedinUrl: 'https://www.linkedin.com/in/james-shin-nyu/',
       },
     ],
@@ -41,7 +41,7 @@ export const teamData: TeamSection[] = [
         role: 'R/S Chair',
         photo: 'e-board/Lily.jpg',
         description:
-          "Lily is a sophomore in Steinhardt from California. She really loves making friends, eating out at restaurants, and online personality quizzes. She can't wait to meet everyone!",
+          "Lily is a junior in Steinhardt from California. She really loves making friends, eating out at restaurants, and online personality quizzes. She can't wait to meet everyone!",
         linkedinUrl: 'https://www.linkedin.com/in/lily-le-1b2370382/',
       },
       {
@@ -49,7 +49,7 @@ export const teamData: TeamSection[] = [
         role: 'R/S Chair',
         photo: 'e-board/Noah.jpg',
         description:
-          'Noah Jacinto is a secony year undergraduate student in Chemical Engineering. He is proud to be Filipino and from the city of Chicago.',
+          'Noah Jacinto is a third year undergraduate student in Chemical Engineering. He is proud to be Filipino and from the city of Chicago.',
         linkedinUrl: 'https://www.linkedin.com/in/noahjacinto/',
       },
       {
@@ -57,7 +57,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Callie.jpg',
         description:
-          'Callie is a freshman from Maryland in the Liberal Studies Core program. In her free time, she likes trying new coffee shops and visiting art museums.',
+          'Callie is a sophomore from Maryland in the Liberal Studies Core program. In her free time, she likes trying new coffee shops and visiting art museums.',
         linkedinUrl: 'https://www.linkedin.com/in/callie-bao-1ba958338/',
       },
       {
@@ -94,7 +94,7 @@ export const teamData: TeamSection[] = [
         role: 'VP of Events',
         photo: 'e-board/SafiaLee.jpg',
         description:
-          'Safia is a sophomore from Connecticut majoring in liberal studies. In her free time, she enjoys visiting museums, trying new restaurants and exploring the city.',
+          'Safia is a junior from Connecticut studying Art History and Business. In her free time, she enjoys trying new coffee spots, going to art galleries and collecting new vinyl records. ',
         linkedinUrl: 'https://www.linkedin.com/in/safia-lee-366095290/',
       },
       {
@@ -118,7 +118,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/haruto.jpg',
         description:
-          'Haruto is a junior from San Francisco studying Data Science and Biology. In his free time, he enjoys running, playing soccer, and reading. His favorite soccer teams are Barcelona and Brighton.',
+          'Haruto is a senior from San Francisco majoring in Data Science and Computer Science with a minor in Genomics & Bioinformatics. He enjoys playing soccer/basketball, reading, and running down the west side highway.',
         linkedinUrl: 'https://www.linkedin.com/in/haruto-uesugi-41b25931b/',
       },
       {
@@ -126,7 +126,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Peter_ye.jpg',
         description:
-          'Peter is a sophomore from Atlanta studying Real Estate Finance. He likes to play soccer and pickleball, try new restaurants, and watch superhero films.',
+          'Peter is a junior from Atlanta studying Real Estate Finance. He likes to play soccer and pickleball, try new restaurants, and watch superhero films.',
         linkedinUrl: 'https://www.linkedin.com/in/peterye210/',
       },
       {
@@ -134,7 +134,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Steph.jpg',
         description:
-          'Stephan is a sophomore from South Korea studying Econ. He recently finished serving in the South Korean Army and is excited to be back!',
+          'Stephan is a junior from South Korea studying Econ. He recently finished serving in the South Korean Army and is excited to be back!',
         linkedinUrl: 'https://www.linkedin.com/in/stephanpark1228/',
       },
       {
@@ -142,7 +142,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Tae_kim.jpg',
         description:
-          "Tae is a junior in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, cooking (although he isn't good), and snowball fights.",
+          "Tae is a senior in CAS studying CS and Econ. He enjoys playing sports, trying different restaurants, cooking (although he isn't good), and snowball fights.",
         linkedinUrl: 'https://www.linkedin.com/in/tae-kim-807621230/',
       },
       {
@@ -150,7 +150,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Anant.jpg',
         description:
-          'Anant is a freshman from South Korea studying business. He enjoys playing basketball, bowling, and trying new cuisines.',
+          'Anant is a sophomore from South Korea studying business. He enjoys playing basketball, bowling, and trying new cuisines.',
         linkedinUrl: 'https://www.linkedin.com/in/anantvik',
       },
     ],
@@ -171,7 +171,7 @@ export const teamData: TeamSection[] = [
         role: 'Treasurer',
         photo: 'e-board/Leo.jpg',
         description:
-          'Leo is a freshman from Downingtown, PA studying business. In his free time, he likes playing tennis, rock climbing, and snowboarding.',
+          'Leo is a sophomore from Downingtown, PA studying business. In his free time, he likes playing tennis, rock climbing, and snowboarding.',
         linkedinUrl: 'https://www.linkedin.com/in/leo-shi-467bab323/',
       },
       {
@@ -200,7 +200,7 @@ export const teamData: TeamSection[] = [
         role: 'VP of Marketing',
         photo: 'e-board/Tiffany.jpg',
         description:
-          'Tiffany is a junior studying Media, Culture & Communications from Los Angeles, California. In her free time she likes to dance, go thrifting, and try new food spots!!',
+          'Tiffany is a senior studying Media, Culture & Communications from Los Angeles, California. In her free time she likes to dance, go thrifting, and try new food spots!!',
         linkedinUrl: 'https://www.linkedin.com/in/tiffanyyoungli/',
       },
       {
@@ -208,7 +208,7 @@ export const teamData: TeamSection[] = [
         role: 'VP of Marketing',
         photo: 'e-board/Ashley.jpg',
         description:
-          'Ashley is a sophomore studying Business Marketing and Management from Tustin, California. In her free time, she likes trying new matcha cafes, bouldering, and going to concerts!',
+          'Ashley is a junior studying Business Marketing and Management from Tustin, California. In her free time, she likes trying new matcha cafes, bouldering, and going to concerts!',
         linkedinUrl: 'https://www.linkedin.com/in/ashley-kikuta/',
       },
       {
@@ -216,22 +216,15 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Isis_kim.jpg',
         description:
-          "Isis is a sophomore majoring in Biology at CAS. She's from L.A, California and likes to go cafe hopping, play block blast, and take naps.",
+          "Isis is a junior majoring in Biology at CAS. She's from L.A, California and likes to go cafe hopping, play block blast, and take naps.",
         linkedinUrl: 'https://www.linkedin.com/in/isis-kim-64a11834a/',
-      },
-      {
-        name: 'Jack Kim',
-        role: '',
-        photo: 'e-board/jack.jpg',
-        description: 'Jack is a Senior',
-        linkedinUrl: 'https://www.linkedin.com/in/jack-kim-719356178/',
       },
       {
         name: 'Shanya Khanthong',
         role: '',
         photo: 'e-board/Shanya.jpg',
         description:
-          'Shanya is a sophomore studying Psychology at CAS and she is from New York City. Love trying new food places and traveling. ',
+          'Shanya is a junior studying Psychology at CAS and she is from New York City. Love trying new food places and traveling. ',
         linkedinUrl: 'https://www.linkedin.com/in/shanya-khanthong-6140a7384',
       },
       {
@@ -247,7 +240,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/Natalie.jpg',
         description:
-          'Natalie is a freshman from the Bay Area (Palo Alto, CA) studying politics & journalism at CAS. She loves sports (basketball), learning guitar, attending concerts, and trying new cafes in the city.',
+          'Natalie is a sophomore from the Bay Area (Palo Alto, CA) studying politics & journalism at CAS. She loves sports (basketball), learning guitar, attending concerts, and trying new cafes in the city.',
         linkedinUrl: 'https://www.linkedin.com/in/natalieeneumann/',
       },
       {
@@ -255,7 +248,7 @@ export const teamData: TeamSection[] = [
         role: '',
         photo: 'e-board/David.jpg',
         description:
-          'David is a freshman studying Media, Culture, and Communication (MCC). He is from Jakarta, Indonesia, and he enjoys meeting new people, trying new foods, and watching films.',
+          'David is a sophomore studying Media, Culture, and Communication (MCC). He is from Jakarta, Indonesia, and he enjoys meeting new people, trying new foods, and watching films.',
         linkedinUrl: 'https://www.linkedin.com/in/davidtahirsetiawan/',
       },
     ],
